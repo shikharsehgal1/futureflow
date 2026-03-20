@@ -1,0 +1,2 @@
+best_model,description,mean_home,mean_away
+D,Separate lambda_H / lambda_A via Poisson regression,1.454830755436001,1.1464758061933582

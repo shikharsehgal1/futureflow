@@ -1,0 +1,10 @@
+transfermarket data/
+data/big5_with_probs.csv
+data/big5_football.csv
+data/weather_cache.json
+data/tm_injuries_cache.json
+data/tm_valuations_cache.json
+__pycache__/
+.venv/
+*.pkl
+*.pyc

@@ -1,0 +1,5 @@
+Date,Div,HomeTeam,AwayTeam,mu,pH_model,pD_model,pA_model,pH_mkt,pD_mkt,pA_mkt,predicted_at,pOver_model,fair_H,fair_D,fair_A,ah_spread,HomeGoals,AwayGoals,Result,ll_model,ll_mkt,clv,model_pick,pick_correct
+2026-03-18,I2,Frosinone,Bari,0.929,59.4,23.1,17.4,62.3,21.8,15.9,2026-03-17 18:26,,,,,,2.0,1.0,H,0.5208759596194922,0.4732087601946839,,H,True
+2026-03-18,I2,Avellino,Sudtirol,0.001,36.8,26.4,36.8,34.5,31.6,33.9,2026-03-17 18:26,,,,,,3.0,2.0,H,0.9996723408132061,1.0642108619507773,,H,True
+2026-03-18,I2,Carrarese,Sampdoria,0.113,39.5,26.3,34.2,36.7,34.6,28.7,2026-03-17 18:26,,,,,,2.0,0.0,H,0.9288695140810151,1.0023934309275666,,H,True
+2026-03-18,I2,Pescara,Virtus Entella,-0.011,36.5,26.4,37.1,42.4,28.3,29.2,2026-03-17 18:26,,,,,,3.0,0.0,H,1.0078579253996456,0.8580218237501793,,A,False

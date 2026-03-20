@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Predictions Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #0d1117;
+  --bg2: #161b22;
+  --bg3: #1c2333;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text2: #8b949e;
+  --green: #00ff87;
+  --green2: #00cc6a;
+  --amber: #ffb347;
+  --red: #ff6b6b;
+  --blue: #58a6ff;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+a { color:var(--blue); text-decoration:none; }
+
+/* ── Nav ── */
+.nav { display:flex; background:var(--bg2); border-bottom:1px solid var(--border); padding:0 1rem; overflow-x:auto; }
+.nav button { background:none; border:none; color:var(--text2); padding:.75rem 1.25rem; cursor:pointer; font-size:.85rem; font-weight:500; white-space:nowrap; border-bottom:2px solid transparent; transition:all .2s; }
+.nav button:hover { color:var(--text); }
+.nav button.active { color:var(--green); border-bottom-color:var(--green); }
+
+/* ── Tabs ── */
+.tab { display:none; padding:1.5rem; max-width:1400px; margin:0 auto; }
+.tab.active { display:block; }
+h2 { font-size:1.3rem; margin-bottom:1rem; color:var(--green); }
+h3 { font-size:1rem; margin:1.5rem 0 .75rem; color:var(--text); }
+
+/* ── Tables ── */
+table { width:100%; border-collapse:collapse; font-size:.8rem; margin-bottom:1.5rem; }
+th { background:var(--bg3); color:var(--green); font-weight:600; text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--border); position:sticky; top:0; }
+td { padding:.4rem .6rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.num { text-align:right; font-variant-numeric:tabular-nums; }
+.pos-ev { color:var(--green); font-weight:600; }
+.neg-ev { color:var(--red); }
+.alert-row { background:rgba(255,179,71,.08); }
+.alert-icon { color:var(--amber); font-weight:bold; }
+
+/* ── League group headers ── */
+.league-header { background:var(--bg3); padding:.5rem .8rem; font-weight:600; color:var(--green); border-bottom:1px solid var(--border); font-size:.85rem; margin-top:1rem; }
+.league-header:first-child { margin-top:0; }
+
+/* ── Buttons ── */
+.btn { display:inline-flex; align-items:center; gap:.4rem; padding:.5rem 1rem; border:1px solid var(--border); border-radius:6px; background:var(--bg3); color:var(--text); font-size:.8rem; cursor:pointer; transition:all .2s; }
+.btn:hover { border-color:var(--green); color:var(--green); }
+.btn.primary { background:var(--green); color:var(--bg); border-color:var(--green); font-weight:600; }
+.btn.primary:hover { background:var(--green2); }
+.btn:disabled { opacity:.4; cursor:not-allowed; }
+.btn-group { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem; }
+
+/* ── Filter pills ── */
+.filters { display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:1rem; }
+.pill { padding:.3rem .7rem; border-radius:20px; border:1px solid var(--border); background:var(--bg2); color:var(--text2); font-size:.75rem; cursor:pointer; transition:all .15s; }
+.pill:hover, .pill.active { border-color:var(--green); color:var(--green); background:var(--bg3); }
+
+/* ── Terminal panel ── */
+.terminal { background:#000; border:1px solid var(--border); border-radius:6px; padding:.75rem; font-family:'JetBrains Mono','Fira Code',monospace; font-size:.75rem; color:#ccc; max-height:350px; overflow-y:auto; margin-top:1rem; white-space:pre-wrap; word-break:break-all; line-height:1.5; }
+.terminal .step-ok { color:var(--green); }
+.terminal .step-err { color:var(--red); }
+
+/* ── Pipeline steps ── */
+.pipeline-steps { display:flex; gap:.5rem; flex-wrap:wrap; margin:.75rem 0; }
+.step-badge { padding:.3rem .6rem; border-radius:4px; font-size:.75rem; background:var(--bg3); border:1px solid var(--border); }
+.step-badge.running { border-color:var(--blue); color:var(--blue); }
+.step-badge.done { border-color:var(--green); color:var(--green); }
+.step-badge.error { border-color:var(--red); color:var(--red); }
+
+/* ── Status cards ── */
+.status-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:.75rem; margin-bottom:1.5rem; }
+.status-card { background:var(--bg2); border:1px solid var(--border); border-radius:6px; padding:.75rem 1rem; }
+.status-card .label { font-size:.75rem; color:var(--text2); margin-bottom:.25rem; }
+.status-card .value { font-size:.85rem; color:var(--text); font-variant-numeric:tabular-nums; }
+
+/* ── Forms ── */
+.form-row { display:flex; gap:.75rem; flex-wrap:wrap; align-items:end; margin-bottom:1rem; }
+.form-group { display:flex; flex-direction:column; gap:.25rem; }
+.form-group label { font-size:.7rem; color:var(--text2); text-transform:uppercase; letter-spacing:.5px; }
+.form-group input, .form-group select { padding:.4rem .6rem; border:1px solid var(--border); border-radius:4px; background:var(--bg3); color:var(--text); font-size:.8rem; }
+
+/* ── Charts ── */
+.chart-container { background:var(--bg2); border:1px solid var(--border); border-radius:6px; padding:1rem; margin-bottom:1.5rem; position:relative; }
+.chart-container canvas { max-height:500px; }
+
+/* ── Dropdown ── */
+select { padding:.4rem .6rem; border:1px solid var(--border); border-radius:4px; background:var(--bg3); color:var(--text); font-size:.8rem; cursor:pointer; }
+
+/* ── Injury details ── */
+.injury-details { font-size:.75rem; color:var(--text2); max-width:500px; }
+
+/* ── Summary stats ── */
+.stats-row { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.stat-box { background:var(--bg2); border:1px solid var(--border); border-radius:6px; padding:1rem 1.25rem; min-width:150px; text-align:center; }
+.stat-box .val { font-size:1.5rem; font-weight:700; color:var(--green); }
+.stat-box .lbl { font-size:.7rem; color:var(--text2); margin-top:.25rem; text-transform:uppercase; letter-spacing:.5px; }
+
+/* ── Scrollable table wrapper ── */
+.table-wrap { overflow-x:auto; }
+
+/* ── Workflow sections ── */
+.workflow { background:var(--bg2); border:1px solid var(--border); border-radius:6px; padding:1rem 1.25rem; margin-bottom:1rem; }
+.workflow h3 { margin:0 0 .75rem; font-size:.9rem; }
+.workflow p { font-size:.75rem; color:var(--text2); margin-bottom:.5rem; }
+
+/* ── Date range filter ── */
+.date-filters { display:flex; gap:.75rem; align-items:end; flex-wrap:wrap; margin-bottom:1rem; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <button class="active" data-tab="predictions" onclick="switchTab('predictions')">Predictions</button>
+  <button data-tab="ratings" onclick="switchTab('ratings')">Ratings</button>
+  <button data-tab="injuries" onclick="switchTab('injuries')">Injuries</button>
+  <button data-tab="european" onclick="switchTab('european')">CL / European</button>
+  <button data-tab="history" onclick="switchTab('history')">Historical</button>
+  <button data-tab="pipeline" onclick="switchTab('pipeline')">Pipeline</button>
+</div>
+
+<!-- ═══════════════════════ TAB 1: PREDICTIONS ═══════════════════════ -->
+<div id="tab-predictions" class="tab active">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem;">
+    <h2>Upcoming Predictions</h2>
+    <button class="btn primary" id="btn-friday-pred" onclick="runPipeline('friday','btn-friday-pred')">▶ Run Friday Pipeline</button>
+  </div>
+  <div class="filters" id="pred-filters"></div>
+  <div id="pred-terminal" style="display:none;"><div class="pipeline-steps" id="pred-steps"></div><div class="terminal" id="pred-log"></div></div>
+  <div class="table-wrap"><div id="pred-table"></div></div>
+</div>
+
+<!-- ═══════════════════════ TAB 2: RATINGS ═══════════════════════ -->
+<div id="tab-ratings" class="tab">
+  <h2>Power Ratings</h2>
+  <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+    <select id="ratings-league" onchange="loadRatingsLeague()"><option value="">Loading…</option></select>
+  </div>
+  <div class="chart-container"><canvas id="ratings-chart"></canvas></div>
+  <div class="table-wrap"><table id="ratings-table"></table></div>
+</div>
+
+<!-- ═══════════════════════ TAB 3: INJURIES ═══════════════════════ -->
+<div id="tab-injuries" class="tab">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem;">
+    <h2>Injury Adjustments</h2>
+    <div style="display:flex;gap:.75rem;align-items:center;">
+      <span id="inj-updated" style="font-size:.75rem;color:var(--text2);"></span>
+      <button class="btn" id="btn-inj-refresh" onclick="runScript('tm_injuries_all','btn-inj-refresh','inj')">↻ Refresh Injuries</button>
+    </div>
+  </div>
+  <div id="inj-terminal" style="display:none;"><div class="terminal" id="inj-log"></div></div>
+  <div class="table-wrap"><table id="injuries-table"></table></div>
+</div>
+
+<!-- ═══════════════════════ TAB 4: CL / EUROPEAN ═══════════════════════ -->
+<div id="tab-european" class="tab">
+  <h2>Cross-League Ratings & CL Predictions</h2>
+  <div class="btn-group">
+    <button class="btn" id="btn-rebuild-cross" onclick="runScript('build_cross_ratings','btn-rebuild-cross','cl')">↻ Rebuild Cross Ratings</button>
+  </div>
+  <div id="cl-terminal" style="display:none;"><div class="terminal" id="cl-log"></div></div>
+  <h3>Top 20 Cross-League Ratings</h3>
+  <div class="chart-container"><canvas id="cross-chart"></canvas></div>
+  <div class="table-wrap"><table id="cross-table"></table></div>
+  <h3>Predict Custom Fixture</h3>
+  <div class="form-row">
+    <div class="form-group"><label>Date</label><input type="date" id="cl-date"></div>
+    <div class="form-group"><label>Home</label><input type="text" id="cl-home" placeholder="e.g. Arsenal"></div>
+    <div class="form-group"><label>Away</label><input type="text" id="cl-away" placeholder="e.g. Bayern Munich"></div>
+    <div class="form-group"><label>Competition</label><input type="text" id="cl-comp" value="Champions League"></div>
+    <div class="form-group"><label>Odds H</label><input type="number" step="0.01" id="cl-oddsH" placeholder="2.10"></div>
+    <div class="form-group"><label>Odds D</label><input type="number" step="0.01" id="cl-oddsD" placeholder="3.50"></div>
+    <div class="form-group"><label>Odds A</label><input type="number" step="0.01" id="cl-oddsA" placeholder="3.20"></div>
+    <button class="btn primary" onclick="predictCL()">Predict</button>
+  </div>
+  <div class="terminal" id="cl-predict-result" style="display:none;"></div>
+</div>
+
+<!-- ═══════════════════════ TAB 5: HISTORICAL ═══════════════════════ -->
+<div id="tab-history" class="tab">
+  <h2>Historical Performance</h2>
+  <div class="date-filters">
+    <div class="form-group"><label>From</label><input type="date" id="hist-from"></div>
+    <div class="form-group"><label>To</label><input type="date" id="hist-to"></div>
+    <button class="btn" onclick="loadHistory()">Apply</button>
+  </div>
+  <div class="filters" id="hist-filters"></div>
+  <div class="stats-row" id="hist-stats"></div>
+  <div class="chart-container"><canvas id="hist-clv-chart"></canvas></div>
+  <div class="chart-container"><canvas id="hist-alert-chart"></canvas></div>
+</div>
+
+<!-- ═══════════════════════ TAB 6: PIPELINE ═══════════════════════ -->
+<div id="tab-pipeline" class="tab">
+  <h2>Pipeline Control</h2>
+  <div class="status-grid" id="pipeline-status"></div>
+
+  <div class="workflow">
+    <h3>📅 Monday — Update Results</h3>
+    <p>Fetch new match results and update fixture list.</p>
+    <button class="btn primary pipeline-btn" id="btn-monday" onclick="runPipeline('monday','btn-monday')">▶ Run Monday Workflow</button>
+  </div>
+
+  <div class="workflow">
+    <h3>📊 Friday — Full Prediction Pipeline</h3>
+    <p>Fetch fixtures → Scrape injuries → Refit ratings → Generate predictions</p>
+    <button class="btn primary pipeline-btn" id="btn-friday" onclick="runPipeline('friday','btn-friday')">▶ Run Friday Pipeline</button>
+  </div>
+
+  <div class="workflow">
+    <h3>🏆 European Weeks</h3>
+    <p>Rebuild cross-league ratings and predict CL/Europa fixtures.</p>
+    <button class="btn primary pipeline-btn" id="btn-european" onclick="runPipeline('european','btn-european')">▶ Run European Pipeline</button>
+  </div>
+
+  <div class="workflow">
+    <h3>🏁 Season Start (August)</h3>
+    <p>Fetch Transfermarkt squad valuations for carry-weight adjustments.</p>
+    <button class="btn pipeline-btn" id="btn-valuations" onclick="runScript('tm_valuations','btn-valuations','pipe')">▶ Fetch TM Valuations</button>
+  </div>
+
+  <div id="pipe-terminal" style="display:none;"><div class="pipeline-steps" id="pipe-steps"></div><div class="terminal" id="pipe-log"></div></div>
+</div>
+
+<script>
+// ── Globals ──
+const DIV_NAMES = {
+  E0:'Premier League', E1:'Championship', D1:'Bundesliga', D2:'2. Bundesliga',
+  SP1:'La Liga', SP2:'Segunda', I1:'Serie A', I2:'Serie B', F1:'Ligue 1', F2:'Ligue 2'
+};
+let predData=[], histData=[], ratingsData={}, crossData=[];
+let predLeagueFilter='all', histLeagueFilter='all';
+let ratingsChart=null, crossChart=null, clvChart=null, alertChart=null;
+
+// ── Tab switching ──
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.querySelector(`.nav button[data-tab="${name}"]`).classList.add('active');
+  // Load data on first visit
+  if(name==='predictions' && !predData.length) loadPredictions();
+  if(name==='ratings' && !Object.keys(ratingsData).length) loadRatings();
+  if(name==='injuries') loadInjuries();
+  if(name==='european' && !crossData.length) loadCrossRatings();
+  if(name==='history' && !histData.length) loadHistory();
+  if(name==='pipeline') loadStatus();
+}
+
+// ═══════════════════════ TAB 1: PREDICTIONS ═══════════════════════
+async function loadPredictions(){
+  try {
+    const r = await fetch('/api/predictions');
+    predData = await r.json();
+    renderPredFilters();
+    renderPredictions();
+  } catch(e){ console.error('loadPredictions',e); }
+}
+
+function renderPredFilters(){
+  const leagues = [...new Set(predData.map(r=>r.Div))].sort();
+  const c = document.getElementById('pred-filters');
+  c.innerHTML = '<span class="pill active" onclick="filterPred(\'all\',this)">All</span>';
+  leagues.forEach(l=>{
+    c.innerHTML += `<span class="pill" onclick="filterPred('${l}',this)">${DIV_NAMES[l]||l}</span>`;
+  });
+}
+
+function filterPred(league,el){
+  predLeagueFilter=league;
+  document.querySelectorAll('#pred-filters .pill').forEach(p=>p.classList.remove('active'));
+  if(el) el.classList.add('active');
+  renderPredictions();
+}
+
+function renderPredictions(){
+  const filtered = predLeagueFilter==='all' ? predData : predData.filter(r=>r.Div===predLeagueFilter);
+  // Group by league
+  const groups = {};
+  filtered.forEach(r=>{ (groups[r.Div]=groups[r.Div]||[]).push(r); });
+
+  let html = '';
+  for(const [div,rows] of Object.entries(groups).sort((a,b)=>a[0].localeCompare(b[0]))){
+    html += `<div class="league-header">${DIV_NAMES[div]||div}</div>`;
+    html += `<table><thead><tr>
+      <th>Date</th><th>Home</th><th>Away</th>
+      <th class="num">xGH</th><th class="num">xGA</th>
+      <th class="num">H%</th><th class="num">D%</th><th class="num">A%</th><th class="num">O2.5%</th>
+      <th class="num">Fair H</th><th class="num">Fair D</th><th class="num">Fair A</th>
+      <th class="num">EV H</th><th class="num">EV D</th><th class="num">EV A</th>
+      <th class="num">AH</th><th>Inj</th><th></th>
+    </tr></thead><tbody>`;
+    rows.forEach(r=>{
+      const isAlert = r.alert==='True';
+      const cls = isAlert?'alert-row':'';
+      html += `<tr class="${cls}">
+        <td>${r.Date||''}</td><td>${r.HomeTeam||''}</td><td>${r.AwayTeam||''}</td>
+        <td class="num">${fmt(r.xGH)}</td><td class="num">${fmt(r.xGA)}</td>
+        <td class="num">${fmt(r.pH_model)}</td><td class="num">${fmt(r.pD_model)}</td><td class="num">${fmt(r.pA_model)}</td>
+        <td class="num">${fmt(r.pOver_model)}</td>
+        <td class="num">${fmt(r.fair_H)}</td><td class="num">${fmt(r.fair_D)}</td><td class="num">${fmt(r.fair_A)}</td>
+        <td class="num ${evClass(r.ev_H)}">${fmtEv(r.ev_H)}</td>
+        <td class="num ${evClass(r.ev_D)}">${fmtEv(r.ev_D)}</td>
+        <td class="num ${evClass(r.ev_A)}">${fmtEv(r.ev_A)}</td>
+        <td class="num">${fmt(r.ah_spread)}</td>
+        <td class="injury-details" title="${esc(r.injury_notes||'')}">${r.injury_adj_net?fmtSigned(r.injury_adj_net):''}</td>
+        <td>${isAlert?'<span class="alert-icon">◀</span>':''}</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+  }
+  document.getElementById('pred-table').innerHTML = html || '<p style="color:var(--text2)">No predictions loaded. Run the Friday pipeline or check data/predictions.csv.</p>';
+}
+
+function fmt(v){ return v!=null && v!=='' ? parseFloat(v).toFixed(1) : '—'; }
+function fmtEv(v){ return v!=null && v!=='' ? (parseFloat(v)>0?'+':'')+parseFloat(v).toFixed(1)+'%' : '—'; }
+function fmtSigned(v){ const n=parseFloat(v); return isNaN(n)?'':((n>0?'+':'')+n.toFixed(3)); }
+function evClass(v){ if(v==null||v==='') return ''; return parseFloat(v)>0?'pos-ev':'neg-ev'; }
+function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+// ═══════════════════════ TAB 2: RATINGS ═══════════════════════
+async function loadRatings(){
+  try {
+    const r = await fetch('/api/ratings');
+    if(!r.ok){ ratingsData={}; return; }
+    ratingsData = await r.json();
+    const sel = document.getElementById('ratings-league');
+    sel.innerHTML = '';
+    for(const [div,info] of Object.entries(ratingsData).sort((a,b)=>a[1].name.localeCompare(b[1].name))){
+      sel.innerHTML += `<option value="${div}">${info.name}</option>`;
+    }
+    loadRatingsLeague();
+  } catch(e){ console.error('loadRatings',e); }
+}
+
+function loadRatingsLeague(){
+  const div = document.getElementById('ratings-league').value;
+  const info = ratingsData[div];
+  if(!info) return;
+  const teams = info.teams;
+
+  // Chart
+  const labels = teams.map(t=>t.team);
+  const data = teams.map(t=>t.overall);
+  const colors = data.map(v=>v>=0?'rgba(0,255,135,.7)':'rgba(255,107,107,.7)');
+
+  if(ratingsChart) ratingsChart.destroy();
+  ratingsChart = new Chart(document.getElementById('ratings-chart'),{
+    type:'bar',
+    data:{ labels, datasets:[{ label:'Overall Rating', data, backgroundColor:colors, borderWidth:0 }] },
+    options:{
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false} },
+      scales:{
+        x:{ grid:{color:'#30363d'}, ticks:{color:'#8b949e'} },
+        y:{ grid:{display:false}, ticks:{color:'#e6edf3',font:{size:11}} }
+      }
+    }
+  });
+  document.getElementById('ratings-chart').parentElement.style.height = Math.max(400, teams.length*28)+'px';
+
+  // Table
+  let html = `<thead><tr><th class="num">#</th><th>Team</th><th class="num">Overall</th><th class="num">Attack</th><th class="num">Defence</th><th class="num">Win% vs .500</th><th class="num">GP</th></tr></thead><tbody>`;
+  teams.forEach(t=>{
+    html += `<tr><td class="num">${t.rank}</td><td>${t.team}</td><td class="num">${t.overall.toFixed(3)}</td><td class="num">${t.attack.toFixed(3)}</td><td class="num">${t.defence.toFixed(3)}</td><td class="num">${t.win_pct.toFixed(1)}%</td><td class="num">${t.gp}</td></tr>`;
+  });
+  html += '</tbody>';
+  document.getElementById('ratings-table').innerHTML = html;
+}
+
+// ═══════════════════════ TAB 3: INJURIES ═══════════════════════
+async function loadInjuries(){
+  try {
+    const r = await fetch('/api/injuries');
+    const data = await r.json();
+    // Show last updated
+    const sr = await fetch('/api/status');
+    const status = await sr.json();
+    const ts = status['tm_injuries.csv'];
+    document.getElementById('inj-updated').textContent = ts ? `Last updated: ${ts}` : '';
+
+    let html = `<thead><tr><th>Date</th><th>Div</th><th>Home</th><th>Away</th><th class="num">Home Adj</th><th class="num">Away Adj</th><th class="num">Net Adj</th><th>Details</th></tr></thead><tbody>`;
+    data.forEach(r=>{
+      const net = parseFloat(r.injury_adj_net)||0;
+      const netCls = net>0?'pos-ev':net<0?'neg-ev':'';
+      html += `<tr>
+        <td>${r.Date||''}</td><td>${DIV_NAMES[r.Div]||r.Div||''}</td><td>${r.HomeTeam||''}</td><td>${r.AwayTeam||''}</td>
+        <td class="num">${fmtSigned(r.injury_adj_home)}</td>
+        <td class="num">${fmtSigned(r.injury_adj_away)}</td>
+        <td class="num ${netCls}">${fmtSigned(r.injury_adj_net)}</td>
+        <td class="injury-details">${esc(r.injury_notes||'')}</td>
+      </tr>`;
+    });
+    html += '</tbody>';
+    document.getElementById('injuries-table').innerHTML = html;
+  } catch(e){ console.error('loadInjuries',e); }
+}
+
+// ═══════════════════════ TAB 4: EUROPEAN ═══════════════════════
+async function loadCrossRatings(){
+  try {
+    const r = await fetch('/api/cross-ratings');
+    crossData = await r.json();
+    renderCrossRatings();
+  } catch(e){ console.error('loadCrossRatings',e); }
+}
+
+function renderCrossRatings(){
+  const sorted = [...crossData].sort((a,b)=>parseFloat(b.Rating)-parseFloat(a.Rating));
+  const top20 = sorted.slice(0,20);
+
+  // Chart
+  if(crossChart) crossChart.destroy();
+  crossChart = new Chart(document.getElementById('cross-chart'),{
+    type:'bar',
+    data:{
+      labels: top20.map(t=>t.Team),
+      datasets:[{ label:'Cross-League Rating', data:top20.map(t=>parseFloat(t.Rating)),
+        backgroundColor:'rgba(0,255,135,.7)', borderWidth:0 }]
+    },
+    options:{
+      indexAxis:'y', responsive:true,
+      plugins:{ legend:{display:false} },
+      scales:{
+        x:{ grid:{color:'#30363d'}, ticks:{color:'#8b949e'} },
+        y:{ grid:{display:false}, ticks:{color:'#e6edf3',font:{size:11}} }
+      }
+    }
+  });
+
+  // Table
+  let html = `<thead><tr><th class="num">#</th><th>Team</th><th class="num">Rating</th><th class="num">CL GP</th></tr></thead><tbody>`;
+  sorted.forEach((t,i)=>{
+    html += `<tr><td class="num">${i+1}</td><td>${t.Team}</td><td class="num">${parseFloat(t.Rating).toFixed(4)}</td><td class="num">${t.CL_GP||'—'}</td></tr>`;
+  });
+  html += '</tbody>';
+  document.getElementById('cross-table').innerHTML = html;
+}
+
+async function predictCL(){
+  const data = {
+    date: document.getElementById('cl-date').value,
+    home: document.getElementById('cl-home').value,
+    away: document.getElementById('cl-away').value,
+    competition: document.getElementById('cl-comp').value,
+    oddsH: document.getElementById('cl-oddsH').value,
+    oddsD: document.getElementById('cl-oddsD').value,
+    oddsA: document.getElementById('cl-oddsA').value,
+  };
+  if(!data.home||!data.away){ alert('Enter home and away teams'); return; }
+  const el = document.getElementById('cl-predict-result');
+  el.style.display='block';
+  el.textContent='Running prediction…';
+  try {
+    const r = await fetch('/api/predict-cl',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const res = await r.json();
+    el.textContent = res.stdout || res.stderr || res.error || 'No output';
+  } catch(e){ el.textContent='Error: '+e.message; }
+}
+
+// ═══════════════════════ TAB 5: HISTORICAL ═══════════════════════
+async function loadHistory(){
+  try {
+    const r = await fetch('/api/history');
+    histData = await r.json();
+    renderHistFilters();
+    renderHistory();
+  } catch(e){ console.error('loadHistory',e); }
+}
+
+function renderHistFilters(){
+  const leagues = [...new Set(histData.map(r=>r.Div))].sort();
+  const c = document.getElementById('hist-filters');
+  c.innerHTML = '<span class="pill active" onclick="filterHist(\'all\',this)">All</span>';
+  leagues.forEach(l=>{
+    c.innerHTML += `<span class="pill" onclick="filterHist('${l}',this)">${DIV_NAMES[l]||l}</span>`;
+  });
+}
+
+function filterHist(league,el){
+  histLeagueFilter=league;
+  document.querySelectorAll('#hist-filters .pill').forEach(p=>p.classList.remove('active'));
+  if(el) el.classList.add('active');
+  renderHistory();
+}
+
+function renderHistory(){
+  const fromDate = document.getElementById('hist-from').value;
+  const toDate = document.getElementById('hist-to').value;
+  let filtered = histData;
+  if(fromDate) filtered = filtered.filter(r=>r.Date>=fromDate);
+  if(toDate) filtered = filtered.filter(r=>r.Date<=toDate);
+  if(histLeagueFilter!=='all') filtered = filtered.filter(r=>r.Div===histLeagueFilter);
+
+  // Summary stats
+  const total = filtered.length;
+  const withPH = filtered.filter(r=>r.pH_model && r.pH_mkt);
+  // Calculate alerts: model disagrees >6pp with market on any outcome
+  const alerts = withPH.filter(r=>{
+    const dH = Math.abs(parseFloat(r.pH_model)-parseFloat(r.pH_mkt));
+    const dD = Math.abs(parseFloat(r.pD_model)-parseFloat(r.pD_mkt));
+    const dA = Math.abs(parseFloat(r.pA_model)-parseFloat(r.pA_mkt));
+    return dH>6||dD>6||dA>6;
+  });
+
+  document.getElementById('hist-stats').innerHTML = `
+    <div class="stat-box"><div class="val">${total}</div><div class="lbl">Total Predictions</div></div>
+    <div class="stat-box"><div class="val">${alerts.length}</div><div class="lbl">Alerts Fired</div></div>
+    <div class="stat-box"><div class="val">${total?((alerts.length/total)*100).toFixed(1)+'%':'—'}</div><div class="lbl">Alert Rate</div></div>
+  `;
+
+  // CLV chart by league over time
+  renderCLVChart(filtered);
+  renderAlertChart(filtered);
+}
+
+function renderCLVChart(data){
+  // Group by league, sort by date, compute cumulative CLV
+  // pH_model/pH_mkt are 0-100 (percentage points) — divide by 100 for decimal probs
+  const byLeague = {};
+  const allDates = new Set();
+  data.forEach(r=>{
+    if(!r.pH_model||!r.pH_mkt) return;
+    const div = r.Div;
+    if(!byLeague[div]) byLeague[div]=[];
+    byLeague[div].push({ date:r.Date, edge: (parseFloat(r.pH_model)-parseFloat(r.pH_mkt))/100 });
+    allDates.add(r.Date);
+  });
+
+  // Sorted global date labels
+  const labels = [...allDates].sort();
+
+  const datasets = [];
+  const palette = ['#00ff87','#58a6ff','#ffb347','#ff6b6b','#d2a8ff','#79c0ff','#ffa657','#f778ba','#7ee787','#ffc658'];
+  let ci=0;
+  for(const [div,rows] of Object.entries(byLeague).sort()){
+    rows.sort((a,b)=>a.date.localeCompare(b.date));
+    let cum=0;
+    // Build a map from date → cumulative value, filling gaps with last known value
+    const cumByDate = {};
+    rows.forEach(r=>{ cum+=r.edge; cumByDate[r.date]=Math.round(cum*1000)/1000; });
+    // Produce data points aligned to sorted labels (skip dates with no data for this league)
+    let lastVal=null;
+    const pts = [];
+    labels.forEach(d=>{
+      if(d in cumByDate) lastVal=cumByDate[d];
+      if(lastVal!==null) pts.push({x:d, y:lastVal});
+    });
+    datasets.push({ label:DIV_NAMES[div]||div, data:pts, borderColor:palette[ci%palette.length], backgroundColor:'transparent', borderWidth:2, pointRadius:1, tension:.3 });
+    ci++;
+  }
+
+  if(clvChart) clvChart.destroy();
+  clvChart = new Chart(document.getElementById('hist-clv-chart'),{
+    type:'line',
+    data:{ labels, datasets },
+    options:{
+      responsive:true,
+      plugins:{ title:{display:true,text:'Cumulative Model Edge Over Time (probability units)',color:'#e6edf3'} },
+      scales:{
+        x:{ grid:{color:'#30363d'}, ticks:{color:'#8b949e',maxTicksLimit:15} },
+        y:{ grid:{color:'#30363d'}, ticks:{color:'#8b949e',callback:v=>v.toFixed(2)} }
+      }
+    }
+  });
+}
+
+function renderAlertChart(data){
+  // Alert hit rate by league — alert where model disagrees >6pp
+  const byLeague = {};
+  data.forEach(r=>{
+    if(!r.pH_model||!r.pH_mkt) return;
+    const div = r.Div;
+    if(!byLeague[div]) byLeague[div]={alerts:0,total:0};
+    byLeague[div].total++;
+    const dH = Math.abs(parseFloat(r.pH_model)-parseFloat(r.pH_mkt));
+    const dD = Math.abs(parseFloat(r.pD_model)-parseFloat(r.pD_mkt));
+    const dA = Math.abs(parseFloat(r.pA_model)-parseFloat(r.pA_mkt));
+    if(dH>6||dD>6||dA>6) byLeague[div].alerts++;
+  });
+
+  const labels = Object.keys(byLeague).sort();
+  const rates = labels.map(l=>byLeague[l].total ? (byLeague[l].alerts/byLeague[l].total*100) : 0);
+
+  if(alertChart) alertChart.destroy();
+  alertChart = new Chart(document.getElementById('hist-alert-chart'),{
+    type:'bar',
+    data:{
+      labels: labels.map(l=>DIV_NAMES[l]||l),
+      datasets:[{ label:'Alert Rate %', data:rates, backgroundColor:'rgba(255,179,71,.7)', borderWidth:0 }]
+    },
+    options:{
+      responsive:true,
+      plugins:{ title:{display:true,text:'Alert Rate by League (>6pp disagreement)',color:'#e6edf3'} },
+      scales:{
+        x:{ grid:{display:false}, ticks:{color:'#8b949e'} },
+        y:{ grid:{color:'#30363d'}, ticks:{color:'#8b949e',callback:v=>v+'%'} }
+      }
+    }
+  });
+}
+
+// ═══════════════════════ TAB 6: PIPELINE ═══════════════════════
+async function loadStatus(){
+  try {
+    const r = await fetch('/api/status');
+    const status = await r.json();
+    const grid = document.getElementById('pipeline-status');
+    grid.innerHTML = '';
+    for(const [name,ts] of Object.entries(status)){
+      grid.innerHTML += `<div class="status-card"><div class="label">${name}</div><div class="value">${ts||'Not found'}</div></div>`;
+    }
+  } catch(e){ console.error('loadStatus',e); }
+}
+
+// ═══════════════════════ SSE HELPERS ═══════════════════════
+function runScript(scriptKey, btnId, termPrefix){
+  const btn = document.getElementById(btnId);
+  btn.disabled = true;
+  const termWrap = document.getElementById(termPrefix+'-terminal');
+  const logEl = document.getElementById(termPrefix+'-log');
+  termWrap.style.display='block';
+  logEl.textContent='Starting…\n';
+
+  fetch('/api/run/'+scriptKey,{method:'POST'})
+    .then(r=>{
+      if(!r.ok) return r.json().then(d=>{throw new Error(d.error||'Request failed ('+r.status+')')});
+      return r.json();
+    })
+    .then(res=>{
+      if(res.error){ logEl.textContent=res.error; btn.disabled=false; return; }
+      streamJob(res.job_id, logEl, null, ()=>{ btn.disabled=false; refreshAfterRun(scriptKey); });
+    })
+    .catch(e=>{ logEl.textContent='Error: '+e.message; btn.disabled=false; });
+}
+
+function runPipeline(pipelineKey, btnId){
+  // Disable all pipeline buttons
+  document.querySelectorAll('.pipeline-btn, .btn.primary').forEach(b=>b.disabled=true);
+  const btn = document.getElementById(btnId);
+
+  // Determine which terminal to use
+  const isTab1 = btnId.includes('pred');
+  const termPrefix = isTab1 ? 'pred' : 'pipe';
+  const termWrap = document.getElementById(termPrefix+'-terminal');
+  const logEl = document.getElementById(termPrefix+'-log');
+  const stepsEl = document.getElementById(termPrefix+'-steps');
+  termWrap.style.display='block';
+  logEl.textContent='Starting pipeline…\n';
+  if(stepsEl) stepsEl.innerHTML='';
+
+  fetch('/api/run-pipeline/'+pipelineKey,{method:'POST'})
+    .then(r=>{
+      if(!r.ok) return r.json().then(d=>{throw new Error(d.error||'Request failed ('+r.status+')')});
+      return r.json();
+    })
+    .then(res=>{
+      if(res.error){ logEl.textContent=res.error; enableButtons(); return; }
+      streamJob(res.job_id, logEl, stepsEl, ()=>{ enableButtons(); refreshAfterPipeline(pipelineKey); });
+    })
+    .catch(e=>{ logEl.textContent='Error: '+e.message; enableButtons(); });
+}
+
+function enableButtons(){
+  document.querySelectorAll('.pipeline-btn, .btn.primary, .btn').forEach(b=>b.disabled=false);
+}
+
+function streamJob(jobId, logEl, stepsEl, onDone){
+  const es = new EventSource('/api/stream/'+jobId);
+  es.onmessage = function(e){
+    const msg = JSON.parse(e.data);
+    if(msg.type==='output'){
+      const line = msg.line;
+      const span = document.createElement('span');
+      if(line.startsWith('✓')) span.className='step-ok';
+      else if(line.startsWith('✗')||line.startsWith('ERROR')) span.className='step-err';
+      span.textContent = line+'\n';
+      logEl.appendChild(span);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+    if(msg.type==='done'){
+      es.close();
+      if(msg.steps && stepsEl){
+        stepsEl.innerHTML = msg.steps.map(s=>{
+          const cls = s.status==='done'?'done':s.status==='error'?'error':'';
+          const icon = s.status==='done'?'✓':s.status==='error'?'✗':'○';
+          return `<span class="step-badge ${cls}">${icon} ${s.name}</span>`;
+        }).join('');
+      }
+      if(onDone) onDone();
+    }
+    if(msg.error){
+      logEl.textContent += '\nError: '+msg.error;
+      es.close();
+      if(onDone) onDone();
+    }
+  };
+  es.onerror = function(){ es.close(); if(onDone) onDone(); };
+}
+
+function refreshAfterRun(scriptKey){
+  if(scriptKey.includes('injur')) loadInjuries();
+  if(scriptKey.includes('cross')) loadCrossRatings();
+  loadStatus();
+}
+
+function refreshAfterPipeline(key){
+  if(key==='friday'){ loadPredictions(); loadRatings(); loadInjuries(); }
+  if(key==='monday') loadStatus();
+  if(key==='european') loadCrossRatings();
+  loadStatus();
+}
+
+// ── Init ──
+loadPredictions();
+</script>
+</body>
+</html>
