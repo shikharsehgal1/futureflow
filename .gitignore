@@ -8,3 +8,13 @@ __pycache__/
 .venv/
 *.pkl
 *.pyc
+.DS_Store
+__pycache__/
+*.pyc
+*.pkl
+.venv/
+data/weather_cache.json
+data/tm_injuries_cache.json
+data/tm_valuations_cache.json
+data/big5_with_probs.csv
+data/big5_football.csv
