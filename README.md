@@ -457,7 +457,7 @@ pip3.10 install pandas numpy scipy requests flask cloudscraper beautifulsoup4 lx
 **Python version**: 3.10+
 
 **API keys needed**:
-- The Odds API: set `API_KEY` in `preliminarymodel/fetch_fixtures.py` — [the-odds-api.com](https://the-odds-api.com) (free tier: 500 req/month)
+- The Odds API: I have left my key in here because it's free
 - Open-Meteo: no key required
 - Transfermarkt: no key required (scraped via cloudscraper)
 
