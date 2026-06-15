@@ -1,0 +1,209 @@
+match_date,team,opponent,days_rest,is_back_to_back,prev_city,city,travel_km
+2026-06-30,1A,3C/E/F/H/I,,False,,Mexico City,
+2026-07-02,1B,3E/F/G/I/J,,False,,Vancouver,
+2026-06-29,1C,2F,,False,,Houston,
+2026-07-01,1D,3B/E/F/I/J,,False,,San Francisco Bay Area,
+2026-06-29,1E,3A/B/C/D/F,,False,,Boston (Foxborough),
+2026-06-29,1F,2C,,False,,Monterrey,
+2026-07-01,1G,3A/E/H/I/J,,False,,Seattle,
+2026-07-02,1H,2J,,False,,Los Angeles (Inglewood),
+2026-06-30,1I,3C/D/F/G/H,,False,,New York/New Jersey,
+2026-07-03,1J,2H,,False,,Miami (Miami Gardens),
+2026-07-03,1K,3D/E/I/J/L,,False,,Kansas City,
+2026-07-01,1L,3E/H/I/J/K,,False,,Atlanta,
+2026-06-28,2A,2B,,False,,Los Angeles (Inglewood),
+2026-06-28,2B,2A,,False,,Los Angeles (Inglewood),
+2026-06-29,2C,1F,,False,,Monterrey,
+2026-07-03,2D,2G,,False,,Dallas (Arlington),
+2026-06-30,2E,2I,,False,,Dallas (Arlington),
+2026-06-29,2F,1C,,False,,Houston,
+2026-07-03,2G,2D,,False,,Dallas (Arlington),
+2026-07-03,2H,1J,,False,,Miami (Miami Gardens),
+2026-06-30,2I,2E,,False,,Dallas (Arlington),
+2026-07-02,2J,1H,,False,,Los Angeles (Inglewood),
+2026-07-02,2K,2L,,False,,Toronto,
+2026-07-02,2L,2K,,False,,Toronto,
+2026-06-29,3A/B/C/D/F,1E,,False,,Boston (Foxborough),
+2026-07-01,3A/E/H/I/J,1G,,False,,Seattle,
+2026-07-01,3B/E/F/I/J,1D,,False,,San Francisco Bay Area,
+2026-06-30,3C/D/F/G/H,1I,,False,,New York/New Jersey,
+2026-06-30,3C/E/F/H/I,1A,,False,,Mexico City,
+2026-07-03,3D/E/I/J/L,1K,,False,,Kansas City,
+2026-07-02,3E/F/G/I/J,1B,,False,,Vancouver,
+2026-07-01,3E/H/I/J/K,1L,,False,,Atlanta,
+2026-06-16,Algeria,Argentina,,False,,Kansas City,
+2026-06-22,Algeria,Jordan,6.0,False,Kansas City,San Francisco Bay Area,2398.8
+2026-06-27,Algeria,Austria,5.0,False,San Francisco Bay Area,Kansas City,2398.8
+2026-06-16,Argentina,Algeria,,False,,Kansas City,
+2026-06-22,Argentina,Austria,6.0,False,Kansas City,Dallas (Arlington),739.0
+2026-06-27,Argentina,Jordan,5.0,False,Dallas (Arlington),Dallas (Arlington),0.0
+2026-06-13,Australia,Turkey,,False,,Vancouver,
+2026-06-19,Australia,USA,6.0,False,Vancouver,Seattle,195.6
+2026-06-25,Australia,Paraguay,6.0,False,Seattle,San Francisco Bay Area,1133.7
+2026-06-16,Austria,Jordan,,False,,San Francisco Bay Area,
+2026-06-22,Austria,Argentina,6.0,False,San Francisco Bay Area,Dallas (Arlington),2314.9
+2026-06-27,Austria,Algeria,5.0,False,Dallas (Arlington),Kansas City,739.0
+2026-06-15,Belgium,Egypt,,False,,Seattle,
+2026-06-21,Belgium,Iran,6.0,False,Seattle,Los Angeles (Inglewood),1553.1
+2026-06-26,Belgium,New Zealand,5.0,False,Los Angeles (Inglewood),Vancouver,1748.5
+2026-06-12,Bosnia & Herzegovina,Canada,,False,,Toronto,
+2026-06-18,Bosnia & Herzegovina,Switzerland,6.0,False,Toronto,Los Angeles (Inglewood),3504.4
+2026-06-24,Bosnia & Herzegovina,Qatar,6.0,False,Los Angeles (Inglewood),Seattle,1553.1
+2026-06-13,Brazil,Morocco,,False,,New York/New Jersey,
+2026-06-19,Brazil,Haiti,6.0,False,New York/New Jersey,Philadelphia,137.4
+2026-06-24,Brazil,Scotland,5.0,False,Philadelphia,Miami (Miami Gardens),1620.2
+2026-06-12,Canada,Bosnia & Herzegovina,,False,,Toronto,
+2026-06-18,Canada,Qatar,6.0,False,Toronto,Vancouver,3356.8
+2026-06-24,Canada,Switzerland,6.0,False,Vancouver,Vancouver,0.0
+2026-06-15,Cape Verde,Spain,,False,,Atlanta,
+2026-06-21,Cape Verde,Uruguay,6.0,False,Atlanta,Miami (Miami Gardens),955.2
+2026-06-26,Cape Verde,Saudi Arabia,5.0,False,Miami (Miami Gardens),Houston,1547.1
+2026-06-17,Colombia,Uzbekistan,,False,,Mexico City,
+2026-06-23,Colombia,DR Congo,6.0,False,Mexico City,Guadalajara,475.9
+2026-06-27,Colombia,Portugal,4.0,True,Guadalajara,Miami (Miami Gardens),2439.1
+2026-06-17,Croatia,England,,False,,Dallas (Arlington),
+2026-06-23,Croatia,Panama,6.0,False,Dallas (Arlington),Toronto,1955.4
+2026-06-27,Croatia,Ghana,4.0,True,Toronto,Philadelphia,544.4
+2026-06-14,Curaçao,Germany,,False,,Houston,
+2026-06-20,Curaçao,Ecuador,6.0,False,Houston,Kansas City,1044.7
+2026-06-25,Curaçao,Ivory Coast,5.0,False,Kansas City,Philadelphia,1657.4
+2026-06-11,Czech Republic,South Korea,,False,,Guadalajara,
+2026-06-18,Czech Republic,South Africa,7.0,False,Guadalajara,Atlanta,2373.1
+2026-06-24,Czech Republic,Mexico,6.0,False,Atlanta,Mexico City,2171.0
+2026-06-17,DR Congo,Portugal,,False,,Houston,
+2026-06-23,DR Congo,Colombia,6.0,False,Houston,Guadalajara,1286.9
+2026-06-27,DR Congo,Uzbekistan,4.0,True,Guadalajara,Atlanta,2373.1
+2026-06-14,Ecuador,Ivory Coast,,False,,Philadelphia,
+2026-06-20,Ecuador,Curaçao,6.0,False,Philadelphia,Kansas City,1657.4
+2026-06-25,Ecuador,Germany,5.0,False,Kansas City,New York/New Jersey,1747.3
+2026-06-15,Egypt,Belgium,,False,,Seattle,
+2026-06-21,Egypt,New Zealand,6.0,False,Seattle,Vancouver,195.6
+2026-06-26,Egypt,Iran,5.0,False,Vancouver,Seattle,195.6
+2026-06-17,England,Croatia,,False,,Dallas (Arlington),
+2026-06-23,England,Ghana,6.0,False,Dallas (Arlington),Boston (Foxborough),2493.6
+2026-06-27,England,Panama,4.0,True,Boston (Foxborough),New York/New Jersey,273.9
+2026-06-16,France,Senegal,,False,,New York/New Jersey,
+2026-06-22,France,Iraq,6.0,False,New York/New Jersey,Philadelphia,137.4
+2026-06-26,France,Norway,4.0,True,Philadelphia,Boston (Foxborough),408.1
+2026-06-14,Germany,Curaçao,,False,,Houston,
+2026-06-20,Germany,Ivory Coast,6.0,False,Houston,Toronto,2099.8
+2026-06-25,Germany,Ecuador,5.0,False,Toronto,New York/New Jersey,540.1
+2026-06-17,Ghana,Panama,,False,,Toronto,
+2026-06-23,Ghana,England,6.0,False,Toronto,Boston (Foxborough),686.1
+2026-06-27,Ghana,Croatia,4.0,True,Boston (Foxborough),Philadelphia,408.1
+2026-06-13,Haiti,Scotland,,False,,Boston (Foxborough),
+2026-06-19,Haiti,Brazil,6.0,False,Boston (Foxborough),Philadelphia,408.1
+2026-06-24,Haiti,Morocco,5.0,False,Philadelphia,Atlanta,1067.7
+2026-06-15,Iran,New Zealand,,False,,Los Angeles (Inglewood),
+2026-06-21,Iran,Belgium,6.0,False,Los Angeles (Inglewood),Los Angeles (Inglewood),0.0
+2026-06-26,Iran,Egypt,5.0,False,Los Angeles (Inglewood),Seattle,1553.1
+2026-06-16,Iraq,Norway,,False,,Boston (Foxborough),
+2026-06-22,Iraq,France,6.0,False,Boston (Foxborough),Philadelphia,408.1
+2026-06-26,Iraq,Senegal,4.0,True,Philadelphia,Toronto,544.4
+2026-06-14,Ivory Coast,Ecuador,,False,,Philadelphia,
+2026-06-20,Ivory Coast,Germany,6.0,False,Philadelphia,Toronto,544.4
+2026-06-25,Ivory Coast,Curaçao,5.0,False,Toronto,Philadelphia,544.4
+2026-06-14,Japan,Netherlands,,False,,Dallas (Arlington),
+2026-06-20,Japan,Tunisia,6.0,False,Dallas (Arlington),Monterrey,844.2
+2026-06-25,Japan,Sweden,5.0,False,Monterrey,Dallas (Arlington),844.2
+2026-06-16,Jordan,Austria,,False,,San Francisco Bay Area,
+2026-06-22,Jordan,Algeria,6.0,False,San Francisco Bay Area,San Francisco Bay Area,0.0
+2026-06-27,Jordan,Argentina,5.0,False,San Francisco Bay Area,Dallas (Arlington),2314.9
+2026-07-18,L101,L102,,False,,Miami (Miami Gardens),
+2026-07-18,L102,L101,,False,,Miami (Miami Gardens),
+2026-06-11,Mexico,South Africa,,False,,Mexico City,
+2026-06-18,Mexico,South Korea,7.0,False,Mexico City,Guadalajara,475.9
+2026-06-24,Mexico,Czech Republic,6.0,False,Guadalajara,Mexico City,475.9
+2026-06-13,Morocco,Brazil,,False,,New York/New Jersey,
+2026-06-19,Morocco,Scotland,6.0,False,New York/New Jersey,Boston (Foxborough),273.9
+2026-06-24,Morocco,Haiti,5.0,False,Boston (Foxborough),Atlanta,1475.8
+2026-06-14,Netherlands,Japan,,False,,Dallas (Arlington),
+2026-06-20,Netherlands,Sweden,6.0,False,Dallas (Arlington),Houston,376.3
+2026-06-25,Netherlands,Tunisia,5.0,False,Houston,Kansas City,1044.7
+2026-06-15,New Zealand,Iran,,False,,Los Angeles (Inglewood),
+2026-06-21,New Zealand,Egypt,6.0,False,Los Angeles (Inglewood),Vancouver,1748.5
+2026-06-26,New Zealand,Belgium,5.0,False,Vancouver,Vancouver,0.0
+2026-06-16,Norway,Iraq,,False,,Boston (Foxborough),
+2026-06-22,Norway,Senegal,6.0,False,Boston (Foxborough),New York/New Jersey,273.9
+2026-06-26,Norway,France,4.0,True,New York/New Jersey,Boston (Foxborough),273.9
+2026-06-17,Panama,Ghana,,False,,Toronto,
+2026-06-23,Panama,Croatia,6.0,False,Toronto,Toronto,0.0
+2026-06-27,Panama,England,4.0,True,Toronto,New York/New Jersey,540.1
+2026-06-12,Paraguay,USA,,False,,Los Angeles (Inglewood),
+2026-06-19,Paraguay,Turkey,7.0,False,Los Angeles (Inglewood),San Francisco Bay Area,504.6
+2026-06-25,Paraguay,Australia,6.0,False,San Francisco Bay Area,San Francisco Bay Area,0.0
+2026-06-17,Portugal,DR Congo,,False,,Houston,
+2026-06-23,Portugal,Uzbekistan,6.0,False,Houston,Houston,0.0
+2026-06-27,Portugal,Colombia,4.0,True,Houston,Miami (Miami Gardens),1547.1
+2026-06-13,Qatar,Switzerland,,False,,San Francisco Bay Area,
+2026-06-18,Qatar,Canada,5.0,False,San Francisco Bay Area,Vancouver,1323.5
+2026-06-24,Qatar,Bosnia & Herzegovina,6.0,False,Vancouver,Seattle,195.6
+2026-06-15,Saudi Arabia,Uruguay,,False,,Miami (Miami Gardens),
+2026-06-21,Saudi Arabia,Spain,6.0,False,Miami (Miami Gardens),Atlanta,955.2
+2026-06-26,Saudi Arabia,Cape Verde,5.0,False,Atlanta,Houston,1134.7
+2026-06-13,Scotland,Haiti,,False,,Boston (Foxborough),
+2026-06-19,Scotland,Morocco,6.0,False,Boston (Foxborough),Boston (Foxborough),0.0
+2026-06-24,Scotland,Brazil,5.0,False,Boston (Foxborough),Miami (Miami Gardens),1972.5
+2026-06-16,Senegal,France,,False,,New York/New Jersey,
+2026-06-22,Senegal,Norway,6.0,False,New York/New Jersey,New York/New Jersey,0.0
+2026-06-26,Senegal,Iraq,4.0,True,New York/New Jersey,Toronto,540.1
+2026-06-11,South Africa,Mexico,,False,,Mexico City,
+2026-06-18,South Africa,Czech Republic,7.0,False,Mexico City,Atlanta,2171.0
+2026-06-24,South Africa,South Korea,6.0,False,Atlanta,Monterrey,1771.5
+2026-06-11,South Korea,Czech Republic,,False,,Guadalajara,
+2026-06-18,South Korea,Mexico,7.0,False,Guadalajara,Guadalajara,0.0
+2026-06-24,South Korea,South Africa,6.0,False,Guadalajara,Monterrey,644.8
+2026-06-15,Spain,Cape Verde,,False,,Atlanta,
+2026-06-21,Spain,Saudi Arabia,6.0,False,Atlanta,Atlanta,0.0
+2026-06-26,Spain,Uruguay,5.0,False,Atlanta,Guadalajara,2373.1
+2026-06-14,Sweden,Tunisia,,False,,Monterrey,
+2026-06-20,Sweden,Netherlands,6.0,False,Monterrey,Houston,652.5
+2026-06-25,Sweden,Japan,5.0,False,Houston,Dallas (Arlington),376.3
+2026-06-13,Switzerland,Qatar,,False,,San Francisco Bay Area,
+2026-06-18,Switzerland,Bosnia & Herzegovina,5.0,False,San Francisco Bay Area,Los Angeles (Inglewood),504.6
+2026-06-24,Switzerland,Canada,6.0,False,Los Angeles (Inglewood),Vancouver,1748.5
+2026-06-14,Tunisia,Sweden,,False,,Monterrey,
+2026-06-20,Tunisia,Japan,6.0,False,Monterrey,Monterrey,0.0
+2026-06-25,Tunisia,Netherlands,5.0,False,Monterrey,Kansas City,1582.1
+2026-06-13,Turkey,Australia,,False,,Vancouver,
+2026-06-19,Turkey,Paraguay,6.0,False,Vancouver,San Francisco Bay Area,1323.5
+2026-06-25,Turkey,USA,6.0,False,San Francisco Bay Area,Los Angeles (Inglewood),504.6
+2026-06-12,USA,Paraguay,,False,,Los Angeles (Inglewood),
+2026-06-19,USA,Australia,7.0,False,Los Angeles (Inglewood),Seattle,1553.1
+2026-06-25,USA,Turkey,6.0,False,Seattle,Los Angeles (Inglewood),1553.1
+2026-06-15,Uruguay,Saudi Arabia,,False,,Miami (Miami Gardens),
+2026-06-21,Uruguay,Cape Verde,6.0,False,Miami (Miami Gardens),Miami (Miami Gardens),0.0
+2026-06-26,Uruguay,Spain,5.0,False,Miami (Miami Gardens),Guadalajara,2439.1
+2026-06-17,Uzbekistan,Colombia,,False,,Mexico City,
+2026-06-23,Uzbekistan,Portugal,6.0,False,Mexico City,Houston,1214.6
+2026-06-27,Uzbekistan,DR Congo,4.0,True,Houston,Atlanta,1134.7
+2026-07-15,W100,W99,,False,,Atlanta,
+2026-07-19,W101,W102,,False,,New York/New Jersey,
+2026-07-19,W102,W101,,False,,New York/New Jersey,
+2026-07-04,W73,W75,,False,,Houston,
+2026-07-04,W74,W77,,False,,Philadelphia,
+2026-07-04,W75,W73,,False,,Houston,
+2026-07-05,W76,W78,,False,,New York/New Jersey,
+2026-07-04,W77,W74,,False,,Philadelphia,
+2026-07-05,W78,W76,,False,,New York/New Jersey,
+2026-07-05,W79,W80,,False,,Mexico City,
+2026-07-05,W80,W79,,False,,Mexico City,
+2026-07-06,W81,W82,,False,,Seattle,
+2026-07-06,W82,W81,,False,,Seattle,
+2026-07-06,W83,W84,,False,,Dallas (Arlington),
+2026-07-06,W84,W83,,False,,Dallas (Arlington),
+2026-07-07,W85,W87,,False,,Vancouver,
+2026-07-07,W86,W88,,False,,Atlanta,
+2026-07-07,W87,W85,,False,,Vancouver,
+2026-07-07,W88,W86,,False,,Atlanta,
+2026-07-09,W89,W90,,False,,Boston (Foxborough),
+2026-07-09,W90,W89,,False,,Boston (Foxborough),
+2026-07-11,W91,W92,,False,,Miami (Miami Gardens),
+2026-07-11,W92,W91,,False,,Miami (Miami Gardens),
+2026-07-10,W93,W94,,False,,Los Angeles (Inglewood),
+2026-07-10,W94,W93,,False,,Los Angeles (Inglewood),
+2026-07-11,W95,W96,,False,,Kansas City,
+2026-07-11,W96,W95,,False,,Kansas City,
+2026-07-14,W97,W98,,False,,Dallas (Arlington),
+2026-07-14,W98,W97,,False,,Dallas (Arlington),
+2026-07-15,W99,W100,,False,,Atlanta,

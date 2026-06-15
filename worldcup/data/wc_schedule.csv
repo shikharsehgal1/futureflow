@@ -1,0 +1,105 @@
+date,team1,team2,group,ground
+2026-06-11,Mexico,South Africa,Group A,Mexico City
+2026-06-11,South Korea,Czech Republic,Group A,Guadalajara (Zapopan)
+2026-06-18,Czech Republic,South Africa,Group A,Atlanta
+2026-06-18,Mexico,South Korea,Group A,Guadalajara (Zapopan)
+2026-06-24,Czech Republic,Mexico,Group A,Mexico City
+2026-06-24,South Africa,South Korea,Group A,Monterrey (Guadalupe)
+2026-06-12,Canada,Bosnia & Herzegovina,Group B,Toronto
+2026-06-13,Qatar,Switzerland,Group B,San Francisco Bay Area (Santa Clara)
+2026-06-18,Switzerland,Bosnia & Herzegovina,Group B,Los Angeles (Inglewood)
+2026-06-18,Canada,Qatar,Group B,Vancouver
+2026-06-24,Switzerland,Canada,Group B,Vancouver
+2026-06-24,Bosnia & Herzegovina,Qatar,Group B,Seattle
+2026-06-13,Brazil,Morocco,Group C,New York/New Jersey (East Rutherford)
+2026-06-13,Haiti,Scotland,Group C,Boston (Foxborough)
+2026-06-19,Scotland,Morocco,Group C,Boston (Foxborough)
+2026-06-19,Brazil,Haiti,Group C,Philadelphia
+2026-06-24,Scotland,Brazil,Group C,Miami (Miami Gardens)
+2026-06-24,Morocco,Haiti,Group C,Atlanta
+2026-06-12,USA,Paraguay,Group D,Los Angeles (Inglewood)
+2026-06-13,Australia,Turkey,Group D,Vancouver
+2026-06-19,USA,Australia,Group D,Seattle
+2026-06-19,Turkey,Paraguay,Group D,San Francisco Bay Area (Santa Clara)
+2026-06-25,Turkey,USA,Group D,Los Angeles (Inglewood)
+2026-06-25,Paraguay,Australia,Group D,San Francisco Bay Area (Santa Clara)
+2026-06-14,Germany,Curaçao,Group E,Houston
+2026-06-14,Ivory Coast,Ecuador,Group E,Philadelphia
+2026-06-20,Germany,Ivory Coast,Group E,Toronto
+2026-06-20,Ecuador,Curaçao,Group E,Kansas City
+2026-06-25,Curaçao,Ivory Coast,Group E,Philadelphia
+2026-06-25,Ecuador,Germany,Group E,New York/New Jersey (East Rutherford)
+2026-06-14,Netherlands,Japan,Group F,Dallas (Arlington)
+2026-06-14,Sweden,Tunisia,Group F,Monterrey (Guadalupe)
+2026-06-20,Netherlands,Sweden,Group F,Houston
+2026-06-20,Tunisia,Japan,Group F,Monterrey (Guadalupe)
+2026-06-25,Japan,Sweden,Group F,Dallas (Arlington)
+2026-06-25,Tunisia,Netherlands,Group F,Kansas City
+2026-06-15,Belgium,Egypt,Group G,Seattle
+2026-06-15,Iran,New Zealand,Group G,Los Angeles (Inglewood)
+2026-06-21,Belgium,Iran,Group G,Los Angeles (Inglewood)
+2026-06-21,New Zealand,Egypt,Group G,Vancouver
+2026-06-26,Egypt,Iran,Group G,Seattle
+2026-06-26,New Zealand,Belgium,Group G,Vancouver
+2026-06-15,Spain,Cape Verde,Group H,Atlanta
+2026-06-15,Saudi Arabia,Uruguay,Group H,Miami (Miami Gardens)
+2026-06-21,Spain,Saudi Arabia,Group H,Atlanta
+2026-06-21,Uruguay,Cape Verde,Group H,Miami (Miami Gardens)
+2026-06-26,Cape Verde,Saudi Arabia,Group H,Houston
+2026-06-26,Uruguay,Spain,Group H,Guadalajara (Zapopan)
+2026-06-16,France,Senegal,Group I,New York/New Jersey (East Rutherford)
+2026-06-16,Iraq,Norway,Group I,Boston (Foxborough)
+2026-06-22,France,Iraq,Group I,Philadelphia
+2026-06-22,Norway,Senegal,Group I,New York/New Jersey (East Rutherford)
+2026-06-26,Norway,France,Group I,Boston (Foxborough)
+2026-06-26,Senegal,Iraq,Group I,Toronto
+2026-06-16,Argentina,Algeria,Group J,Kansas City
+2026-06-16,Austria,Jordan,Group J,San Francisco Bay Area (Santa Clara)
+2026-06-22,Argentina,Austria,Group J,Dallas (Arlington)
+2026-06-22,Jordan,Algeria,Group J,San Francisco Bay Area (Santa Clara)
+2026-06-27,Algeria,Austria,Group J,Kansas City
+2026-06-27,Jordan,Argentina,Group J,Dallas (Arlington)
+2026-06-17,Portugal,DR Congo,Group K,Houston
+2026-06-17,Uzbekistan,Colombia,Group K,Mexico City
+2026-06-23,Portugal,Uzbekistan,Group K,Houston
+2026-06-23,Colombia,DR Congo,Group K,Guadalajara (Zapopan)
+2026-06-27,Colombia,Portugal,Group K,Miami (Miami Gardens)
+2026-06-27,DR Congo,Uzbekistan,Group K,Atlanta
+2026-06-17,England,Croatia,Group L,Dallas (Arlington)
+2026-06-17,Ghana,Panama,Group L,Toronto
+2026-06-23,England,Ghana,Group L,Boston (Foxborough)
+2026-06-23,Panama,Croatia,Group L,Toronto
+2026-06-27,Panama,England,Group L,New York/New Jersey (East Rutherford)
+2026-06-27,Croatia,Ghana,Group L,Philadelphia
+2026-06-28,2A,2B,,Los Angeles (Inglewood)
+2026-06-29,1E,3A/B/C/D/F,,Boston (Foxborough)
+2026-06-29,1F,2C,,Monterrey (Guadalupe)
+2026-06-29,1C,2F,,Houston
+2026-06-30,1I,3C/D/F/G/H,,New York/New Jersey (East Rutherford)
+2026-06-30,2E,2I,,Dallas (Arlington)
+2026-06-30,1A,3C/E/F/H/I,,Mexico City
+2026-07-01,1L,3E/H/I/J/K,,Atlanta
+2026-07-01,1D,3B/E/F/I/J,,San Francisco Bay Area (Santa Clara)
+2026-07-01,1G,3A/E/H/I/J,,Seattle
+2026-07-02,2K,2L,,Toronto
+2026-07-02,1H,2J,,Los Angeles (Inglewood)
+2026-07-02,1B,3E/F/G/I/J,,Vancouver
+2026-07-03,1J,2H,,Miami (Miami Gardens)
+2026-07-03,1K,3D/E/I/J/L,,Kansas City
+2026-07-03,2D,2G,,Dallas (Arlington)
+2026-07-04,W74,W77,,Philadelphia
+2026-07-04,W73,W75,,Houston
+2026-07-05,W76,W78,,New York/New Jersey (East Rutherford)
+2026-07-05,W79,W80,,Mexico City
+2026-07-06,W83,W84,,Dallas (Arlington)
+2026-07-06,W81,W82,,Seattle
+2026-07-07,W86,W88,,Atlanta
+2026-07-07,W85,W87,,Vancouver
+2026-07-09,W89,W90,,Boston (Foxborough)
+2026-07-10,W93,W94,,Los Angeles (Inglewood)
+2026-07-11,W91,W92,,Miami (Miami Gardens)
+2026-07-11,W95,W96,,Kansas City
+2026-07-14,W97,W98,,Dallas (Arlington)
+2026-07-15,W99,W100,,Atlanta
+2026-07-18,L101,L102,,Miami (Miami Gardens)
+2026-07-19,W101,W102,,New York/New Jersey (East Rutherford)

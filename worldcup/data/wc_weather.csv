@@ -1,0 +1,72 @@
+match_id,match,venue,city,date,lat,lon,temp_c,wind_kmh,precip_mm,weather_adj
+384cbb5d76b535896a24fe65f93cfac8,South Korea vs Czech Republic,Estadio Akron,Guadalajara,2026-06-11,20.6817,-103.4628,20.2,9.1,3.3,0.97
+d1f4f946c70a0b4e81f5d43e9d32361c,Canada vs Bosnia & Herzegovina,BMO Field,Toronto,2026-06-12,43.6332,-79.4185,22.0,24.6,0.0,0.8832
+c12986f447a515fbe641addd786dbb24,USA vs Paraguay,SoFi Stadium,Los Angeles (Inglewood),2026-06-12,33.9535,-118.3392,19.4,19.2,0.0,0.98
+26634922d3f78c146440816023e40de8,Qatar vs Switzerland,Levi's Stadium,San Francisco Bay Area,2026-06-13,37.403,-121.97,22.7,16.5,0.0,0.9016
+f6c8748a16516e0998f95de14235432a,Brazil vs Morocco,MetLife Stadium,New York/New Jersey,2026-06-13,40.8136,-74.0744,27.0,18.2,0.0,0.9016
+5ae41a06735c926eeb7f74006933adce,Haiti vs Scotland,Gillette Stadium,Boston (Foxborough),2026-06-13,42.0909,-71.2643,24.9,17.1,0.0,0.9016
+564084f52cc9f1abcc18187c168a7cdc,Australia vs Turkey,BC Place,Vancouver,2026-06-13,49.2768,-123.1119,19.3,14.3,0.0,0.98
+d79edbd6aaeb578d33e313446b18d333,Germany vs Curaçao,NRG Stadium,Houston,2026-06-14,29.6847,-95.4107,28.8,21.3,0.0,0.816
+32ec06abda2398ac41501c86eb9aa376,Netherlands vs Japan,AT&T Stadium,Dallas (Arlington),2026-06-14,32.7473,-97.0945,28.7,24.6,36.6,0.7344
+05752bb341e197001387b64f3a06b9b2,Ivory Coast vs Ecuador,Lincoln Financial Field,Philadelphia,2026-06-14,39.9008,-75.1675,24.2,19.7,5.4,0.8565
+b55f9569de3f4d731bc5537ff5ff43e4,Sweden vs Tunisia,Estadio BBVA,Monterrey,2026-06-14,25.6694,-100.2444,27.8,21.8,5.5,0.839
+c54f00b11925751d2b62988775c6c239,Spain vs Cape Verde,Mercedes-Benz Stadium,Atlanta,2026-06-15,33.7554,-84.4008,24.1,13.7,8.1,0.8565
+fbfb95c62003fd6d828b309f96ee1f9b,Belgium vs Egypt,Lumen Field,Seattle,2026-06-15,47.5952,-122.3316,22.7,14.8,0.0,0.9016
+64b91c5f2db61c7358a4f05459e83c52,Saudi Arabia vs Uruguay,Hard Rock Stadium,Miami (Miami Gardens),2026-06-15,25.958,-80.2389,30.3,27.6,16.5,0.7344
+ec51b9c44ad5e34552f3ab53f7262813,Iran vs New Zealand,SoFi Stadium,Los Angeles (Inglewood),2026-06-15,33.9535,-118.3392,21.0,23.7,0.0,0.8832
+73a4fcd14cc9766b9b9bfd50b8ca153a,France vs Senegal,MetLife Stadium,New York/New Jersey,2026-06-16,40.8136,-74.0744,20.6,14.2,1.4,0.98
+4d4f2b9b78182b557d4fbf8dcf4f4af2,Iraq vs Norway,Gillette Stadium,Boston (Foxborough),2026-06-16,42.0909,-71.2643,17.1,8.5,0.3,1.0
+f31b2ee9e1cc6f7e641467f8237eaa21,Argentina vs Algeria,Arrowhead Stadium,Kansas City,2026-06-16,39.0489,-94.4839,20.0,26.3,3.3,0.9312
+25161cf6cf0cd9be17ae2e7e224a1f45,Austria vs Jordan,Levi's Stadium,San Francisco Bay Area,2026-06-16,37.403,-121.97,27.0,17.3,0.0,0.9016
+6cc871c121a1869b4612d3fb22fa9d55,Portugal vs DR Congo,NRG Stadium,Houston,2026-06-17,29.6847,-95.4107,28.6,23.2,0.0,0.816
+689096c8cd7e2753b9fec95321943c5d,England vs Croatia,AT&T Stadium,Dallas (Arlington),2026-06-17,32.7473,-97.0945,30.0,31.4,0.0,0.782
+87afdb85c977b451e1c00f5e3e632601,Ghana vs Panama,BMO Field,Toronto,2026-06-17,43.6332,-79.4185,18.1,34.0,0.6,0.92
+22083e7a8e5362c711bc05c1e1319a1f,Uzbekistan vs Colombia,Estadio Azteca,Mexico City,2026-06-17,19.303,-99.1505,17.1,6.0,5.2,0.95
+66ebb9e3f949caded535d97ce686ca09,Czech Republic vs South Africa,Mercedes-Benz Stadium,Atlanta,2026-06-18,33.7554,-84.4008,27.8,19.8,0.0,0.9016
+289bc2e9f5adad8ae4d9a75a7c5461ad,Switzerland vs Bosnia & Herzegovina,SoFi Stadium,Los Angeles (Inglewood),2026-06-18,33.9535,-118.3392,21.0,21.3,0.0,0.8832
+fa9502285b257b03e62968d50d9229fc,Canada vs Qatar,BC Place,Vancouver,2026-06-18,49.2768,-123.1119,14.7,11.7,0.0,0.98
+0f2aeae6ac8e77223848d23a4ca86b0d,Mexico vs South Korea,Estadio Akron,Guadalajara,2026-06-18,20.6817,-103.4628,19.8,11.7,0.0,0.98
+065b3573e875f8d23803357f73e5b99e,USA vs Australia,Lumen Field,Seattle,2026-06-19,47.5952,-122.3316,15.9,10.6,0.0,0.98
+4cd769aa7bae0ad9762bd69b80ef2903,Scotland vs Morocco,Gillette Stadium,Boston (Foxborough),2026-06-19,42.0909,-71.2643,21.3,27.8,0.0,0.8832
+ef0f74a991d3e35798ae5af77667bce1,Brazil vs Haiti,Lincoln Financial Field,Philadelphia,2026-06-19,39.9008,-75.1675,24.7,24.4,0.0,0.8832
+f955d4b3395ce6e3b5ac1031ca52ca4e,Turkey vs Paraguay,Levi's Stadium,San Francisco Bay Area,2026-06-19,37.403,-121.97,19.3,16.9,0.0,0.98
+4f0c518545b0096c68326daf25bffc1e,Netherlands vs Sweden,NRG Stadium,Houston,2026-06-20,29.6847,-95.4107,29.5,20.6,0.0,0.816
+f1ab0f69832972a329243522ceaa7804,Germany vs Ivory Coast,BMO Field,Toronto,2026-06-20,43.6332,-79.4185,17.4,18.2,0.0,0.98
+681895f294b670b4c7b14495dfb583bc,Ecuador vs Curaçao,Arrowhead Stadium,Kansas City,2026-06-20,39.0489,-94.4839,23.6,14.8,28.3,0.8114
+dfc5202cf1b8ae002cf952cd04f235b9,Tunisia vs Japan,Estadio BBVA,Monterrey,2026-06-20,25.6694,-100.2444,27.1,23.6,0.3,0.8832
+73529a242e319a86bf3d00ddb4accc37,Spain vs Saudi Arabia,Mercedes-Benz Stadium,Atlanta,2026-06-21,33.7554,-84.4008,28.7,17.6,1.2,0.833
+5f92f257386ec5bf7c6e2498a21f3a61,Belgium vs Iran,SoFi Stadium,Los Angeles (Inglewood),2026-06-21,33.9535,-118.3392,19.6,21.5,0.0,0.96
+852a3abe6d46820720febc0fedebff9a,Uruguay vs Cape Verde,Hard Rock Stadium,Miami (Miami Gardens),2026-06-21,25.958,-80.2389,29.8,26.1,0.6,0.816
+c1ec9a65f4b4cf74477b368a7d6282de,New Zealand vs Egypt,BC Place,Vancouver,2026-06-21,49.2768,-123.1119,19.6,13.0,0.3,0.98
+be6c63f416c67bca1300a98f5b89c3af,Argentina vs Austria,AT&T Stadium,Dallas (Arlington),2026-06-22,32.7473,-97.0945,31.2,18.9,0.0,0.833
+7ad7a0ce2ef2618bb59b066da5642f70,France vs Iraq,Lincoln Financial Field,Philadelphia,2026-06-22,39.9008,-75.1675,24.3,13.2,0.0,0.9016
+3f48473742ca0fd2a85930554720c75e,Norway vs Senegal,MetLife Stadium,New York/New Jersey,2026-06-22,40.8136,-74.0744,23.4,12.7,0.0,0.9016
+fd8533b650e655030f6a7946f8795db2,Jordan vs Algeria,Levi's Stadium,San Francisco Bay Area,2026-06-22,37.403,-121.97,20.0,18.8,0.0,0.98
+8ba93d190f1f934e33862a97a6353a6e,Portugal vs Uzbekistan,NRG Stadium,Houston,2026-06-23,29.6847,-95.4107,29.9,21.4,0.0,0.816
+2f49dd8deae3079dc4eb2d634d18a99c,England vs Ghana,Gillette Stadium,Boston (Foxborough),2026-06-23,42.0909,-71.2643,20.7,20.8,0.3,0.96
+c1bc8c26480cd42b89a0de5329581314,Panama vs Croatia,BMO Field,Toronto,2026-06-23,43.6332,-79.4185,20.1,14.2,0.0,0.98
+68bfc965eb267508e04d8e8d75c1a0ae,Colombia vs DR Congo,Estadio Akron,Guadalajara,2026-06-23,20.6817,-103.4628,18.5,14.5,9.4,0.931
+512ac18beb5aa936a59f7ea3e497ada2,Bosnia & Herzegovina vs Qatar,Lumen Field,Seattle,2026-06-24,47.5952,-122.3316,19.3,12.5,0.0,0.98
+c9ef5822ee64fd5275f7c73251bb56c7,Switzerland vs Canada,BC Place,Vancouver,2026-06-24,49.2768,-123.1119,17.7,10.5,0.0,0.98
+885ba95805db310a7bcc3fb1a7a6dd28,Scotland vs Brazil,Hard Rock Stadium,Miami (Miami Gardens),2026-06-24,25.958,-80.2389,30.4,21.6,0.0,0.816
+d1279ce7f33136a33e99ad442fc855e8,Morocco vs Haiti,Mercedes-Benz Stadium,Atlanta,2026-06-24,33.7554,-84.4008,29.5,13.8,0.3,0.833
+5993bd5196ca09f83990f0c3261e442e,Czech Republic vs Mexico,Estadio Azteca,Mexico City,2026-06-24,19.303,-99.1505,16.0,9.6,3.9,0.97
+c0355dfc6e26ec327e379b6ef5824a5f,South Africa vs South Korea,Estadio BBVA,Monterrey,2026-06-24,25.6694,-100.2444,25.9,23.5,0.0,0.8832
+a5a0b544a984ab16e564264f3e859b43,Curaçao vs Ivory Coast,Lincoln Financial Field,Philadelphia,2026-06-25,39.9008,-75.1675,25.6,18.9,0.0,0.9016
+0ec28b84ec399bd4dffbe8d1bc72b3c4,Ecuador vs Germany,MetLife Stadium,New York/New Jersey,2026-06-25,40.8136,-74.0744,24.2,19.4,0.0,0.9016
+0ed0233bddc4eafc8507f86a9c17b998,Japan vs Sweden,AT&T Stadium,Dallas (Arlington),2026-06-25,32.7473,-97.0945,32.6,18.3,0.0,0.833
+f3c4657daa143a0c5bd62cb370d01ce4,Tunisia vs Netherlands,Arrowhead Stadium,Kansas City,2026-06-25,39.0489,-94.4839,27.9,22.8,0.0,0.8832
+22f6ac06dfcc88a847920f62633e6459,Paraguay vs Australia,Levi's Stadium,San Francisco Bay Area,2026-06-25,37.403,-121.97,22.6,15.9,0.0,0.9016
+f41aeac9a8343a84b4950f15ea25fba2,Turkey vs USA,SoFi Stadium,Los Angeles (Inglewood),2026-06-25,33.9535,-118.3392,21.7,20.1,0.0,0.8832
+b86b4d60f773e9e3c46c00e9a6496e79,Norway vs France,Gillette Stadium,Boston (Foxborough),2026-06-26,42.0909,-71.2643,19.7,20.1,2.7,0.9312
+7e6aee294ea1a4792c59558791084528,Senegal vs Iraq,BMO Field,Toronto,2026-06-26,43.6332,-79.4185,21.1,11.9,6.3,0.8565
+e07b1926be5a4d515c7eb108dbcee9c5,Cape Verde vs Saudi Arabia,NRG Stadium,Houston,2026-06-26,29.6847,-95.4107,28.1,16.4,0.0,0.833
+dcff2e31c0bce001a4db5caaf4fa8822,Uruguay vs Spain,Estadio Akron,Guadalajara,2026-06-26,20.6817,-103.4628,20.6,14.5,0.3,0.98
+581691da05dcd75b5c6d3be91ee9d2ab,New Zealand vs Belgium,BC Place,Vancouver,2026-06-26,49.2768,-123.1119,17.9,11.9,0.0,0.98
+3e3b5fa2b3c963e74cf044c60db0b573,Egypt vs Iran,Lumen Field,Seattle,2026-06-26,47.5952,-122.3316,19.3,14.4,0.0,0.98
+537c0997cd899394f47f16545b7068b2,Croatia vs Ghana,Lincoln Financial Field,Philadelphia,2026-06-27,39.9008,-75.1675,,,,1.0
+4be17c8e1ccfecb0f2a5ef79e045c415,Panama vs England,MetLife Stadium,New York/New Jersey,2026-06-27,40.8136,-74.0744,,,,1.0
+67ae5751c401a98409b8566ae4897069,Colombia vs Portugal,Hard Rock Stadium,Miami (Miami Gardens),2026-06-27,25.958,-80.2389,,,,1.0
+13eab94a136b9c264ba974cf437a5f71,DR Congo vs Uzbekistan,Mercedes-Benz Stadium,Atlanta,2026-06-27,33.7554,-84.4008,,,,1.0
+8756200e539155e571557c4f2e0d7f05,Algeria vs Austria,Arrowhead Stadium,Kansas City,2026-06-27,39.0489,-94.4839,,,,1.0
+54697f453437ab26276d773be1d72e9b,Jordan vs Argentina,AT&T Stadium,Dallas (Arlington),2026-06-27,32.7473,-97.0945,,,,1.0

@@ -1,0 +1,8 @@
+# Large raw StatsBomb event data (707MB) — regenerable via fetch_statsbomb.py
+data/sb_events/
+
+__pycache__/
+*.pyc
+*.pkl
+.venv/
+.DS_Store
