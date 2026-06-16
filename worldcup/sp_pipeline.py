@@ -7,6 +7,8 @@ already-locked matches are skipped automatically.
 
   fetch_sp.py   -> data/sp_questions.csv   (live questions)
   predict_wc.py + apply_adjustments.py     (refresh model, optional)
+  tilt_matches.py -> tilts wc_match_summary lambdas for selected matches
+                     (clean baseline kept in wc_match_summary.csv.bak)
   sp_solver.py  -> data/sp_entries.csv     (map questions -> model probs)
   sp_submit.py                              (POST to open markets, with backoff)
 
@@ -30,6 +32,11 @@ def main():
     if "--refresh-model" in sys.argv:
         run("python3", f"{HERE}/predict_wc.py")
         run("python3", f"{HERE}/apply_adjustments.py")
+        # capture the freshly-regenerated honest numbers as the new clean baseline,
+        # then re-apply the directional tilts on top.
+        run("python3", f"{HERE}/tilt_matches.py", "--rebaseline")
+    else:
+        run("python3", f"{HERE}/tilt_matches.py")
     run("python3", f"{HERE}/sp_solver.py")
     run("python3", f"{HERE}/sp_submit.py", "--delay", "1.6")
     print("[sp_pipeline done]")

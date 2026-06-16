@@ -1,0 +1,39 @@
+match,market,question,prob,pct,source,note,match_id,commence
+France vs Senegal,Moneyline,Will France win the match?,0.8872,88.7,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Moneyline,Will Senegal win the match?,0.03,3.0,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Moneyline,Will the match end in a draw?,0.0904,9.0,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Double Chance,France or Draw (1X),0.97,97.0,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Double Chance,Senegal or Draw (X2),0.1128,11.3,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Double Chance,France or Senegal (12),0.9096,91.0,france-tilt,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Total Goals,Will total goals be over 1.5?,0.8365,83.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Total Goals,Will total goals be over 2.5?,0.63,63.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Total Goals,Will total goals be over 3.5?,0.4082,40.8,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Total Goals O/E,Will the total goals be even?,0.5038,50.4,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Total Goals O/E,Will the total goals be odd?,0.4962,49.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,BTTS,Will both teams score?,0.2718,27.2,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,BTTS,Will NOT both teams score?,0.7282,72.8,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Team Total,Will France score over 0.5?,0.9456,94.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Team Total,Will France score over 1.5?,0.7872,78.7,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Team Total,Will Senegal score over 0.5?,0.2858,28.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Team Total,Will Senegal score over 1.5?,0.0454,4.5,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,First To Score,Will France score first?,0.8602,86.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,First To Score,Will Senegal score first?,0.0994,9.9,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,First To Score,Will there be no goals (0-0)?,0.0404,4.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Handicap,Will France win by 2+ goals?,0.7103,71.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Handicap,Will France win by 3+ goals?,0.4849,48.5,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Handicap,Will Senegal win by 2+ goals?,0.03,3.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Handicap,Will France avoid losing by 2+ (+1.5)?,0.97,97.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Handicap,Will Senegal avoid losing by 2+ (+1.5)?,0.2897,29.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 2-0 Senegal?,0.1647,16.5,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 3-0 Senegal?,0.1598,16.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 4-0 Senegal?,0.1163,11.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 1-0 Senegal?,0.1116,11.2,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 5-0 Senegal?,0.0677,6.8,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Correct Score,Will the score be France 2-1 Senegal?,0.0554,5.5,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,1st Half,Will there be over 0.5 goals in the 1st half?,0.7663,76.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,1st Half,Will there be over 1.5 goals in the 1st half?,0.4311,43.1,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,1st Half,Will France lead at half-time?,0.6763,67.6,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,1st Half,Will it be level at half-time?,0.2839,28.4,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,1st Half,Will Senegal lead at half-time?,0.0399,4.0,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,2nd Half,Will there be over 1.5 goals in the 2nd half?,0.5351,53.5,poisson,,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z
+France vs Senegal,Half Compare,Will the 2nd half have more goals than the 1st?,0.52,52.0,heuristic,2H slightly goal-heavier on average,73a4fcd14cc9766b9b9bfd50b8ca153a,2026-06-16T19:00:00Z

@@ -49,6 +49,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--max", type=int, default=0, help="submit at most N (0=all)")
+    ap.add_argument("--match", default="", help="only submit rows whose match equals this (e.g. 'ESP vs CPV')")
     ap.add_argument("--delay", type=float, default=1.3, help="seconds between submissions")
     args = ap.parse_args()
 
@@ -59,7 +60,8 @@ def main():
     status = {m["id"]: m.get("status") for m in json.loads(urllib.request.urlopen(req, timeout=30).read())}
     entries = [r for r in csv.DictReader(open(f"{DATA}/sp_entries.csv"))
                if r["confidence"] in ("high", "med") and r["prob_pct"] not in ("", None)
-               and status.get(r["market_id"]) == "open"]
+               and status.get(r["market_id"]) == "open"
+               and (not args.match or r["match"] == args.match)]
     n_locked = sum(1 for r in csv.DictReader(open(f"{DATA}/sp_entries.csv"))
                    if status.get(r["market_id"]) and status.get(r["market_id"]) != "open")
     # existing predictions: market_id -> (prediction_id, current_probability)  [for PATCH-update]

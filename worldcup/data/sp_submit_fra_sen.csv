@@ -1,0 +1,11 @@
+market_id,question,prob_pct,source
+9c5459a1-4edc-429b-bdaf-1223d3764b5a,Will France win the match?,89,france-tilt
+6f0a2ca7-d1e8-4f11-ab6b-cce2e91448a2,"At halftime, will France be winning?",68,france-tilt
+fc032969-f65c-4e9f-913b-c21f5474b020,Will France score in the first half?,73,france-tilt
+b86d03ef-3e9b-4029-bf1a-2a7706a53a86,Will both teams score AND the match have 3 or more total goals?,23,france-tilt
+44edc25a-6d65-4602-a0f0-7319d4731fbd,Will France have more shots on target than Senegal in the second half?,62,france-tilt
+b8fd5895-4f4d-4706-8bf8-8dbf72487c89,Will Senegal have 4 or more shots on target?,18,france-tilt
+a42ddd0a-f256-4673-b105-14f678bba629,Will France be caught offside 2 or more times?,38,teamstat
+49c796d9-068f-4889-bfb8-ff99a884c0d0,Will Senegal be caught offside 2 or more times?,47,teamstat
+d09a87e1-f556-40d1-97c8-ecbe8bbb83ca,Will Sadio Mané score a goal (excluding own goals)?,20,est
+02f1082e-cb12-43c6-aadb-0e8b89e66f49,Will Senegal receive at least 1 card in the second half?,40,est
