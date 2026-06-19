@@ -24,18 +24,25 @@ SUMMARY = os.path.join(DATA, "wc_match_summary.csv")
 BAK = SUMMARY + ".bak"
 
 # (match, favored team, strength)
+# GROUP STAGE favorite-tilts: Argentina, Portugal, England, France, Spain, Brazil,
+# Morocco (s=1.0, very heavy). Norway/Austria dropped as favorites. Underdog-back
+# shots (Switzerland, Japan, Norway, Türkiye, Paraguay, Egypt, Cape Verde, Mexico)
+# are submitted at HONEST numbers (already a big fade of the field) — not tilted here.
 TILTS = [
-    ("Iraq vs Norway",        "Norway",    0.4),
-    ("Argentina vs Algeria",  "Argentina", 1.0),
-    ("Austria vs Jordan",     "Austria",   0.7),
-    ("Portugal vs DR Congo",  "Portugal",  1.0),
-    ("Argentina vs Austria",  "Argentina", 1.0),   # both targets -> Argentina (very heavy) wins
-    ("Norway vs Senegal",     "Norway",    0.4),
-    ("Portugal vs Uzbekistan","Portugal",  1.0),
-    ("Norway vs France",      "Norway",    0.4),    # France (competitor) downweighted here
-    ("Colombia vs Portugal",  "Portugal",  1.0),
-    ("Algeria vs Austria",    "Austria",   0.7),
-    ("Jordan vs Argentina",   "Argentina", 1.0),
+    ("Argentina vs Austria",       "Argentina", 1.0),
+    ("Jordan vs Argentina",        "Argentina", 1.0),
+    ("Colombia vs Portugal",       "Portugal",  1.0),
+    ("Portugal vs Uzbekistan",     "Portugal",  1.0),
+    ("England vs Ghana",           "England",   1.0),
+    ("Panama vs England",          "England",   1.0),
+    ("France vs Iraq",             "France",    1.0),
+    ("Norway vs France",           "France",    1.0),   # France fav -> Norway down here
+    ("Spain vs Saudi Arabia",      "Spain",     1.0),
+    ("Uruguay vs Spain",           "Spain",     1.0),
+    ("Brazil vs Haiti",            "Brazil",    1.0),
+    ("Scotland vs Brazil",         "Brazil",    1.0),
+    ("Scotland vs Morocco",        "Morocco",   1.0),
+    ("Morocco vs Haiti",           "Morocco",   1.0),
 ]
 
 
