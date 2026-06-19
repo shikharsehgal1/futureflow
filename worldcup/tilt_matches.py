@@ -43,6 +43,7 @@ TILTS = [
     ("Scotland vs Brazil",         "Brazil",    1.0),
     ("Scotland vs Morocco",        "Morocco",   1.0),
     ("Morocco vs Haiti",           "Morocco",   1.0),
+    ("USA vs Australia",           "Australia", 0.4),   # Pulisic out -> fade USA toward Australia/draw
 ]
 
 
