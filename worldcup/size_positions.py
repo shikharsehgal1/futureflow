@@ -49,7 +49,7 @@ KELLY_FRAC = 0.30        # fraction of full Kelly (conservative)
 RISK_SLOTS = 25.0        # assume up to ~this many concurrent meaningful positions
 RISK_FRAC = 0.5          # use at most this fraction of the threshold as tail budget
 ADVERSE_Q = 0.05         # 5th/95th percentile defines the "bad case"
-MIN_EDGE_FRAC = 0.03     # ignore edges smaller than this fraction of price range
+MIN_EDGE_FRAC = 0.01     # ignore edges smaller than this fraction of price range
 
 
 @dataclass
