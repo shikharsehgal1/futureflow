@@ -1,351 +1,131 @@
 match,market,question,prob,pct,source,note,commence,match_id
-Canada vs Bosnia & Herzegovina,Moneyline,Will Canada win the match?,0.7084,70.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-12T19:02:00Z,d1f4f946c70a0b4e81f5d43e9d32361c
-Canada vs Bosnia & Herzegovina,Moneyline,Will Bosnia & Herzegovina win the match?,0.1001,10.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-12T19:02:00Z,d1f4f946c70a0b4e81f5d43e9d32361c
-Canada vs Bosnia & Herzegovina,Moneyline,Will the match end in a draw?,0.1915,19.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-12T19:02:00Z,d1f4f946c70a0b4e81f5d43e9d32361c
-Canada vs Bosnia & Herzegovina,Total Goals,Will total goals be over 2.5?,0.4889,48.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-12T19:02:00Z,d1f4f946c70a0b4e81f5d43e9d32361c
-Canada vs Bosnia & Herzegovina,BTTS,Will both teams score?,0.394,39.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-12T19:02:00Z,d1f4f946c70a0b4e81f5d43e9d32361c
-USA vs Paraguay,Moneyline,Will USA win the match?,0.549,54.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T01:00:00Z,c12986f447a515fbe641addd786dbb24
-USA vs Paraguay,Moneyline,Will Paraguay win the match?,0.1817,18.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T01:00:00Z,c12986f447a515fbe641addd786dbb24
-USA vs Paraguay,Moneyline,Will the match end in a draw?,0.2693,26.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T01:00:00Z,c12986f447a515fbe641addd786dbb24
-USA vs Paraguay,Total Goals,Will total goals be over 2.5?,0.3624,36.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T01:00:00Z,c12986f447a515fbe641addd786dbb24
-USA vs Paraguay,BTTS,Will both teams score?,0.3852,38.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T01:00:00Z,c12986f447a515fbe641addd786dbb24
-Qatar vs Switzerland,Moneyline,Will Qatar win the match?,0.0935,9.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T19:00:00Z,26634922d3f78c146440816023e40de8
-Qatar vs Switzerland,Moneyline,Will Switzerland win the match?,0.7576,75.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T19:00:00Z,26634922d3f78c146440816023e40de8
-Qatar vs Switzerland,Moneyline,Will the match end in a draw?,0.149,14.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T19:00:00Z,26634922d3f78c146440816023e40de8
-Qatar vs Switzerland,Total Goals,Will total goals be over 2.5?,0.6631,66.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T19:00:00Z,26634922d3f78c146440816023e40de8
-Qatar vs Switzerland,BTTS,Will both teams score?,0.5148,51.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T19:00:00Z,26634922d3f78c146440816023e40de8
-Brazil vs Morocco,Moneyline,Will Brazil win the match?,0.5018,50.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T22:00:00Z,f6c8748a16516e0998f95de14235432a
-Brazil vs Morocco,Moneyline,Will Morocco win the match?,0.2015,20.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T22:00:00Z,f6c8748a16516e0998f95de14235432a
-Brazil vs Morocco,Moneyline,Will the match end in a draw?,0.2967,29.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T22:00:00Z,f6c8748a16516e0998f95de14235432a
-Brazil vs Morocco,Total Goals,Will total goals be over 2.5?,0.3055,30.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T22:00:00Z,f6c8748a16516e0998f95de14235432a
-Brazil vs Morocco,BTTS,Will both teams score?,0.3526,35.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-13T22:00:00Z,f6c8748a16516e0998f95de14235432a
-Haiti vs Scotland,Moneyline,Will Haiti win the match?,0.208,20.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T01:00:00Z,5ae41a06735c926eeb7f74006933adce
-Haiti vs Scotland,Moneyline,Will Scotland win the match?,0.5727,57.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T01:00:00Z,5ae41a06735c926eeb7f74006933adce
-Haiti vs Scotland,Moneyline,Will the match end in a draw?,0.2192,21.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T01:00:00Z,5ae41a06735c926eeb7f74006933adce
-Haiti vs Scotland,Total Goals,Will total goals be over 2.5?,0.5806,58.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T01:00:00Z,5ae41a06735c926eeb7f74006933adce
-Haiti vs Scotland,BTTS,Will both teams score?,0.5654,56.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T01:00:00Z,5ae41a06735c926eeb7f74006933adce
-Australia vs Turkey,Moneyline,Will Australia win the match?,0.4365,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T04:00:00Z,564084f52cc9f1abcc18187c168a7cdc
-Australia vs Turkey,Moneyline,Will Turkey win the match?,0.3139,31.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T04:00:00Z,564084f52cc9f1abcc18187c168a7cdc
-Australia vs Turkey,Moneyline,Will the match end in a draw?,0.2497,25.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T04:00:00Z,564084f52cc9f1abcc18187c168a7cdc
-Australia vs Turkey,Total Goals,Will total goals be over 2.5?,0.533,53.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T04:00:00Z,564084f52cc9f1abcc18187c168a7cdc
-Australia vs Turkey,BTTS,Will both teams score?,0.565,56.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T04:00:00Z,564084f52cc9f1abcc18187c168a7cdc
-Germany vs Curaçao,Moneyline,Will Germany win the match?,0.8513,85.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T17:00:00Z,d79edbd6aaeb578d33e313446b18d333
-Germany vs Curaçao,Moneyline,Will Curaçao win the match?,0.0492,4.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T17:00:00Z,d79edbd6aaeb578d33e313446b18d333
-Germany vs Curaçao,Moneyline,Will the match end in a draw?,0.0994,9.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T17:00:00Z,d79edbd6aaeb578d33e313446b18d333
-Germany vs Curaçao,Total Goals,Will total goals be over 2.5?,0.7386,73.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T17:00:00Z,d79edbd6aaeb578d33e313446b18d333
-Germany vs Curaçao,BTTS,Will both teams score?,0.4746,47.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T17:00:00Z,d79edbd6aaeb578d33e313446b18d333
-Netherlands vs Japan,Moneyline,Will Netherlands win the match?,0.4264,42.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T20:00:00Z,32ec06abda2398ac41501c86eb9aa376
-Netherlands vs Japan,Moneyline,Will Japan win the match?,0.3213,32.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T20:00:00Z,32ec06abda2398ac41501c86eb9aa376
-Netherlands vs Japan,Moneyline,Will the match end in a draw?,0.2522,25.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T20:00:00Z,32ec06abda2398ac41501c86eb9aa376
-Netherlands vs Japan,Total Goals,Will total goals be over 2.5?,0.5244,52.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T20:00:00Z,32ec06abda2398ac41501c86eb9aa376
-Netherlands vs Japan,BTTS,Will both teams score?,0.5595,55.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T20:00:00Z,32ec06abda2398ac41501c86eb9aa376
-Ivory Coast vs Ecuador,Moneyline,Will Ivory Coast win the match?,0.2385,23.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T23:00:00Z,05752bb341e197001387b64f3a06b9b2
-Ivory Coast vs Ecuador,Moneyline,Will Ecuador win the match?,0.4475,44.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T23:00:00Z,05752bb341e197001387b64f3a06b9b2
-Ivory Coast vs Ecuador,Moneyline,Will the match end in a draw?,0.314,31.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T23:00:00Z,05752bb341e197001387b64f3a06b9b2
-Ivory Coast vs Ecuador,Total Goals,Will total goals be over 2.5?,0.2844,28.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T23:00:00Z,05752bb341e197001387b64f3a06b9b2
-Ivory Coast vs Ecuador,BTTS,Will both teams score?,0.3505,35.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-14T23:00:00Z,05752bb341e197001387b64f3a06b9b2
-Sweden vs Tunisia,Moneyline,Will Sweden win the match?,0.3918,39.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T02:00:00Z,b55f9569de3f4d731bc5537ff5ff43e4
-Sweden vs Tunisia,Moneyline,Will Tunisia win the match?,0.3187,31.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T02:00:00Z,b55f9569de3f4d731bc5537ff5ff43e4
-Sweden vs Tunisia,Moneyline,Will the match end in a draw?,0.2895,29.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T02:00:00Z,b55f9569de3f4d731bc5537ff5ff43e4
-Sweden vs Tunisia,Total Goals,Will total goals be over 2.5?,0.3799,38.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T02:00:00Z,b55f9569de3f4d731bc5537ff5ff43e4
-Sweden vs Tunisia,BTTS,Will both teams score?,0.4455,44.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T02:00:00Z,b55f9569de3f4d731bc5537ff5ff43e4
-Spain vs Cape Verde,Moneyline,Will Spain win the match?,0.8861,88.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T16:00:00Z,c54f00b11925751d2b62988775c6c239
-Spain vs Cape Verde,Moneyline,Will Cape Verde win the match?,0.03,3.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T16:00:00Z,c54f00b11925751d2b62988775c6c239
-Spain vs Cape Verde,Moneyline,Will the match end in a draw?,0.0851,8.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T16:00:00Z,c54f00b11925751d2b62988775c6c239
-Spain vs Cape Verde,Total Goals,Will total goals be over 2.5?,0.6821,68.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T16:00:00Z,c54f00b11925751d2b62988775c6c239
-Spain vs Cape Verde,BTTS,Will both teams score?,0.3369,33.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T16:00:00Z,c54f00b11925751d2b62988775c6c239
-Belgium vs Egypt,Moneyline,Will Belgium win the match?,0.5508,55.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T19:00:00Z,fbfb95c62003fd6d828b309f96ee1f9b
-Belgium vs Egypt,Moneyline,Will Egypt win the match?,0.1962,19.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T19:00:00Z,fbfb95c62003fd6d828b309f96ee1f9b
-Belgium vs Egypt,Moneyline,Will the match end in a draw?,0.253,25.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T19:00:00Z,fbfb95c62003fd6d828b309f96ee1f9b
-Belgium vs Egypt,Total Goals,Will total goals be over 2.5?,0.43,43.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T19:00:00Z,fbfb95c62003fd6d828b309f96ee1f9b
-Belgium vs Egypt,BTTS,Will both teams score?,0.4452,44.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T19:00:00Z,fbfb95c62003fd6d828b309f96ee1f9b
-Saudi Arabia vs Uruguay,Moneyline,Will Saudi Arabia win the match?,0.1222,12.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T22:00:00Z,64b91c5f2db61c7358a4f05459e83c52
-Saudi Arabia vs Uruguay,Moneyline,Will Uruguay win the match?,0.6347,63.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T22:00:00Z,64b91c5f2db61c7358a4f05459e83c52
-Saudi Arabia vs Uruguay,Moneyline,Will the match end in a draw?,0.2431,24.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T22:00:00Z,64b91c5f2db61c7358a4f05459e83c52
-Saudi Arabia vs Uruguay,Total Goals,Will total goals be over 2.5?,0.362,36.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T22:00:00Z,64b91c5f2db61c7358a4f05459e83c52
-Saudi Arabia vs Uruguay,BTTS,Will both teams score?,0.3335,33.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-15T22:00:00Z,64b91c5f2db61c7358a4f05459e83c52
-Iran vs New Zealand,Moneyline,Will Iran win the match?,0.6431,64.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T01:00:00Z,ec51b9c44ad5e34552f3ab53f7262813
-Iran vs New Zealand,Moneyline,Will New Zealand win the match?,0.1212,12.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T01:00:00Z,ec51b9c44ad5e34552f3ab53f7262813
-Iran vs New Zealand,Moneyline,Will the match end in a draw?,0.2357,23.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T01:00:00Z,ec51b9c44ad5e34552f3ab53f7262813
-Iran vs New Zealand,Total Goals,Will total goals be over 2.5?,0.382,38.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T01:00:00Z,ec51b9c44ad5e34552f3ab53f7262813
-Iran vs New Zealand,BTTS,Will both teams score?,0.3467,34.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T01:00:00Z,ec51b9c44ad5e34552f3ab53f7262813
-France vs Senegal,Moneyline,Will France win the match?,0.4809,48.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T19:00:00Z,73a4fcd14cc9766b9b9bfd50b8ca153a
-France vs Senegal,Moneyline,Will Senegal win the match?,0.2421,24.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T19:00:00Z,73a4fcd14cc9766b9b9bfd50b8ca153a
-France vs Senegal,Moneyline,Will the match end in a draw?,0.277,27.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T19:00:00Z,73a4fcd14cc9766b9b9bfd50b8ca153a
-France vs Senegal,Total Goals,Will total goals be over 2.5?,0.3892,38.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T19:00:00Z,73a4fcd14cc9766b9b9bfd50b8ca153a
-France vs Senegal,BTTS,Will both teams score?,0.4357,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T19:00:00Z,73a4fcd14cc9766b9b9bfd50b8ca153a
-Iraq vs Norway,Moneyline,Will Iraq win the match?,0.1825,18.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T22:00:00Z,4d4f2b9b78182b557d4fbf8dcf4f4af2
-Iraq vs Norway,Moneyline,Will Norway win the match?,0.5736,57.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T22:00:00Z,4d4f2b9b78182b557d4fbf8dcf4f4af2
-Iraq vs Norway,Moneyline,Will the match end in a draw?,0.2439,24.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T22:00:00Z,4d4f2b9b78182b557d4fbf8dcf4f4af2
-Iraq vs Norway,Total Goals,Will total goals be over 2.5?,0.4458,44.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T22:00:00Z,4d4f2b9b78182b557d4fbf8dcf4f4af2
-Iraq vs Norway,BTTS,Will both teams score?,0.4484,44.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-16T22:00:00Z,4d4f2b9b78182b557d4fbf8dcf4f4af2
-Argentina vs Algeria,Moneyline,Will Argentina win the match?,0.6858,68.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T01:00:00Z,f31b2ee9e1cc6f7e641467f8237eaa21
-Argentina vs Algeria,Moneyline,Will Algeria win the match?,0.1204,12.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T01:00:00Z,f31b2ee9e1cc6f7e641467f8237eaa21
-Argentina vs Algeria,Moneyline,Will the match end in a draw?,0.1938,19.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T01:00:00Z,f31b2ee9e1cc6f7e641467f8237eaa21
-Argentina vs Algeria,Total Goals,Will total goals be over 2.5?,0.5307,53.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T01:00:00Z,f31b2ee9e1cc6f7e641467f8237eaa21
-Argentina vs Algeria,BTTS,Will both teams score?,0.4528,45.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T01:00:00Z,f31b2ee9e1cc6f7e641467f8237eaa21
-Austria vs Jordan,Moneyline,Will Austria win the match?,0.5483,54.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T04:00:00Z,25161cf6cf0cd9be17ae2e7e224a1f45
-Austria vs Jordan,Moneyline,Will Jordan win the match?,0.212,21.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T04:00:00Z,25161cf6cf0cd9be17ae2e7e224a1f45
-Austria vs Jordan,Moneyline,Will the match end in a draw?,0.2398,24.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T04:00:00Z,25161cf6cf0cd9be17ae2e7e224a1f45
-Austria vs Jordan,Total Goals,Will total goals be over 2.5?,0.4974,49.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T04:00:00Z,25161cf6cf0cd9be17ae2e7e224a1f45
-Austria vs Jordan,BTTS,Will both teams score?,0.5049,50.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T04:00:00Z,25161cf6cf0cd9be17ae2e7e224a1f45
-Portugal vs DR Congo,Moneyline,Will Portugal win the match?,0.703,70.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T17:00:00Z,6cc871c121a1869b4612d3fb22fa9d55
-Portugal vs DR Congo,Moneyline,Will DR Congo win the match?,0.1076,10.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T17:00:00Z,6cc871c121a1869b4612d3fb22fa9d55
-Portugal vs DR Congo,Moneyline,Will the match end in a draw?,0.1894,18.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T17:00:00Z,6cc871c121a1869b4612d3fb22fa9d55
-Portugal vs DR Congo,Total Goals,Will total goals be over 2.5?,0.517,51.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T17:00:00Z,6cc871c121a1869b4612d3fb22fa9d55
-Portugal vs DR Congo,BTTS,Will both teams score?,0.4256,42.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T17:00:00Z,6cc871c121a1869b4612d3fb22fa9d55
-England vs Croatia,Moneyline,Will England win the match?,0.4858,48.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T20:00:00Z,689096c8cd7e2753b9fec95321943c5d
-England vs Croatia,Moneyline,Will Croatia win the match?,0.2401,24.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T20:00:00Z,689096c8cd7e2753b9fec95321943c5d
-England vs Croatia,Moneyline,Will the match end in a draw?,0.2741,27.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T20:00:00Z,689096c8cd7e2753b9fec95321943c5d
-England vs Croatia,Total Goals,Will total goals be over 2.5?,0.3972,39.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T20:00:00Z,689096c8cd7e2753b9fec95321943c5d
-England vs Croatia,BTTS,Will both teams score?,0.4412,44.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T20:00:00Z,689096c8cd7e2753b9fec95321943c5d
-Ghana vs Panama,Moneyline,Will Ghana win the match?,0.3842,38.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T23:00:00Z,87afdb85c977b451e1c00f5e3e632601
-Ghana vs Panama,Moneyline,Will Panama win the match?,0.334,33.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T23:00:00Z,87afdb85c977b451e1c00f5e3e632601
-Ghana vs Panama,Moneyline,Will the match end in a draw?,0.2817,28.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T23:00:00Z,87afdb85c977b451e1c00f5e3e632601
-Ghana vs Panama,Total Goals,Will total goals be over 2.5?,0.4093,40.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T23:00:00Z,87afdb85c977b451e1c00f5e3e632601
-Ghana vs Panama,BTTS,Will both teams score?,0.4705,47.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-17T23:00:00Z,87afdb85c977b451e1c00f5e3e632601
-Uzbekistan vs Colombia,Moneyline,Will Uzbekistan win the match?,0.1314,13.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T02:00:00Z,22083e7a8e5362c711bc05c1e1319a1f
-Uzbekistan vs Colombia,Moneyline,Will Colombia win the match?,0.6316,63.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T02:00:00Z,22083e7a8e5362c711bc05c1e1319a1f
-Uzbekistan vs Colombia,Moneyline,Will the match end in a draw?,0.237,23.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T02:00:00Z,22083e7a8e5362c711bc05c1e1319a1f
-Uzbekistan vs Colombia,Total Goals,Will total goals be over 2.5?,0.395,39.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T02:00:00Z,22083e7a8e5362c711bc05c1e1319a1f
-Uzbekistan vs Colombia,BTTS,Will both teams score?,0.3672,36.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T02:00:00Z,22083e7a8e5362c711bc05c1e1319a1f
-Czech Republic vs South Africa,Moneyline,Will Czech Republic win the match?,0.4749,47.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T16:00:00Z,66ebb9e3f949caded535d97ce686ca09
-Czech Republic vs South Africa,Moneyline,Will South Africa win the match?,0.2603,26.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T16:00:00Z,66ebb9e3f949caded535d97ce686ca09
-Czech Republic vs South Africa,Moneyline,Will the match end in a draw?,0.2647,26.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T16:00:00Z,66ebb9e3f949caded535d97ce686ca09
-Czech Republic vs South Africa,Total Goals,Will total goals be over 2.5?,0.4435,44.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T16:00:00Z,66ebb9e3f949caded535d97ce686ca09
-Czech Republic vs South Africa,BTTS,Will both teams score?,0.484,48.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T16:00:00Z,66ebb9e3f949caded535d97ce686ca09
-Switzerland vs Bosnia & Herzegovina,Moneyline,Will Switzerland win the match?,0.6619,66.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T19:00:00Z,289bc2e9f5adad8ae4d9a75a7c5461ad
-Switzerland vs Bosnia & Herzegovina,Moneyline,Will Bosnia & Herzegovina win the match?,0.1371,13.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T19:00:00Z,289bc2e9f5adad8ae4d9a75a7c5461ad
-Switzerland vs Bosnia & Herzegovina,Moneyline,Will the match end in a draw?,0.201,20.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T19:00:00Z,289bc2e9f5adad8ae4d9a75a7c5461ad
-Switzerland vs Bosnia & Herzegovina,Total Goals,Will total goals be over 2.5?,0.5383,53.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T19:00:00Z,289bc2e9f5adad8ae4d9a75a7c5461ad
-Switzerland vs Bosnia & Herzegovina,BTTS,Will both teams score?,0.478,47.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T19:00:00Z,289bc2e9f5adad8ae4d9a75a7c5461ad
-Canada vs Qatar,Moneyline,Will Canada win the match?,0.7997,80.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T22:00:00Z,fa9502285b257b03e62968d50d9229fc
-Canada vs Qatar,Moneyline,Will Qatar win the match?,0.0646,6.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T22:00:00Z,fa9502285b257b03e62968d50d9229fc
-Canada vs Qatar,Moneyline,Will the match end in a draw?,0.1358,13.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T22:00:00Z,fa9502285b257b03e62968d50d9229fc
-Canada vs Qatar,Total Goals,Will total goals be over 2.5?,0.6147,61.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T22:00:00Z,fa9502285b257b03e62968d50d9229fc
-Canada vs Qatar,BTTS,Will both teams score?,0.4159,41.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-18T22:00:00Z,fa9502285b257b03e62968d50d9229fc
-Mexico vs South Korea,Moneyline,Will Mexico win the match?,0.5977,59.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T01:00:00Z,0f2aeae6ac8e77223848d23a4ca86b0d
-Mexico vs South Korea,Moneyline,Will South Korea win the match?,0.1497,15.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T01:00:00Z,0f2aeae6ac8e77223848d23a4ca86b0d
-Mexico vs South Korea,Moneyline,Will the match end in a draw?,0.2525,25.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T01:00:00Z,0f2aeae6ac8e77223848d23a4ca86b0d
-Mexico vs South Korea,Total Goals,Will total goals be over 2.5?,0.3746,37.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T01:00:00Z,0f2aeae6ac8e77223848d23a4ca86b0d
-Mexico vs South Korea,BTTS,Will both teams score?,0.3701,37.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T01:00:00Z,0f2aeae6ac8e77223848d23a4ca86b0d
-USA vs Australia,Moneyline,Will USA win the match?,0.5157,51.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T19:00:00Z,065b3573e875f8d23803357f73e5b99e
-USA vs Australia,Moneyline,Will Australia win the match?,0.224,22.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T19:00:00Z,065b3573e875f8d23803357f73e5b99e
-USA vs Australia,Moneyline,Will the match end in a draw?,0.2604,26.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T19:00:00Z,065b3573e875f8d23803357f73e5b99e
-USA vs Australia,Total Goals,Will total goals be over 2.5?,0.4316,43.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T19:00:00Z,065b3573e875f8d23803357f73e5b99e
-USA vs Australia,BTTS,Will both teams score?,0.4611,46.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T19:00:00Z,065b3573e875f8d23803357f73e5b99e
-Scotland vs Morocco,Moneyline,Will Scotland win the match?,0.1791,17.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T22:00:00Z,4cd769aa7bae0ad9762bd69b80ef2903
-Scotland vs Morocco,Moneyline,Will Morocco win the match?,0.5499,55.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T22:00:00Z,4cd769aa7bae0ad9762bd69b80ef2903
-Scotland vs Morocco,Moneyline,Will the match end in a draw?,0.271,27.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T22:00:00Z,4cd769aa7bae0ad9762bd69b80ef2903
-Scotland vs Morocco,Total Goals,Will total goals be over 2.5?,0.3549,35.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T22:00:00Z,4cd769aa7bae0ad9762bd69b80ef2903
-Scotland vs Morocco,BTTS,Will both teams score?,0.3778,37.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-19T22:00:00Z,4cd769aa7bae0ad9762bd69b80ef2903
-Brazil vs Haiti,Moneyline,Will Brazil win the match?,0.9134,91.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T01:00:00Z,ef0f74a991d3e35798ae5af77667bce1
-Brazil vs Haiti,Moneyline,Will Haiti win the match?,0.03,3.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T01:00:00Z,ef0f74a991d3e35798ae5af77667bce1
-Brazil vs Haiti,Moneyline,Will the match end in a draw?,0.0635,6.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T01:00:00Z,ef0f74a991d3e35798ae5af77667bce1
-Brazil vs Haiti,Total Goals,Will total goals be over 2.5?,0.7764,77.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T01:00:00Z,ef0f74a991d3e35798ae5af77667bce1
-Brazil vs Haiti,BTTS,Will both teams score?,0.3866,38.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T01:00:00Z,ef0f74a991d3e35798ae5af77667bce1
-Turkey vs Paraguay,Moneyline,Will Turkey win the match?,0.3734,37.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T03:00:00Z,f955d4b3395ce6e3b5ac1031ca52ca4e
-Turkey vs Paraguay,Moneyline,Will Paraguay win the match?,0.3539,35.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T03:00:00Z,f955d4b3395ce6e3b5ac1031ca52ca4e
-Turkey vs Paraguay,Moneyline,Will the match end in a draw?,0.2727,27.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T03:00:00Z,f955d4b3395ce6e3b5ac1031ca52ca4e
-Turkey vs Paraguay,Total Goals,Will total goals be over 2.5?,0.4454,44.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T03:00:00Z,f955d4b3395ce6e3b5ac1031ca52ca4e
-Turkey vs Paraguay,BTTS,Will both teams score?,0.5003,50.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T03:00:00Z,f955d4b3395ce6e3b5ac1031ca52ca4e
-Netherlands vs Sweden,Moneyline,Will Netherlands win the match?,0.5665,56.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T17:00:00Z,4f0c518545b0096c68326daf25bffc1e
-Netherlands vs Sweden,Moneyline,Will Sweden win the match?,0.216,21.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T17:00:00Z,4f0c518545b0096c68326daf25bffc1e
-Netherlands vs Sweden,Moneyline,Will the match end in a draw?,0.2175,21.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T17:00:00Z,4f0c518545b0096c68326daf25bffc1e
-Netherlands vs Sweden,Total Goals,Will total goals be over 2.5?,0.5993,59.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T17:00:00Z,4f0c518545b0096c68326daf25bffc1e
-Netherlands vs Sweden,BTTS,Will both teams score?,0.5838,58.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T17:00:00Z,4f0c518545b0096c68326daf25bffc1e
-Germany vs Ivory Coast,Moneyline,Will Germany win the match?,0.5876,58.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T20:00:00Z,f1ab0f69832972a329243522ceaa7804
-Germany vs Ivory Coast,Moneyline,Will Ivory Coast win the match?,0.1861,18.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T20:00:00Z,f1ab0f69832972a329243522ceaa7804
-Germany vs Ivory Coast,Moneyline,Will the match end in a draw?,0.2264,22.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T20:00:00Z,f1ab0f69832972a329243522ceaa7804
-Germany vs Ivory Coast,Total Goals,Will total goals be over 2.5?,0.5186,51.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T20:00:00Z,f1ab0f69832972a329243522ceaa7804
-Germany vs Ivory Coast,BTTS,Will both teams score?,0.5052,50.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-20T20:00:00Z,f1ab0f69832972a329243522ceaa7804
-Ecuador vs Curaçao,Moneyline,Will Ecuador win the match?,0.7174,71.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T00:00:00Z,681895f294b670b4c7b14495dfb583bc
-Ecuador vs Curaçao,Moneyline,Will Curaçao win the match?,0.0898,9.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T00:00:00Z,681895f294b670b4c7b14495dfb583bc
-Ecuador vs Curaçao,Moneyline,Will the match end in a draw?,0.1928,19.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T00:00:00Z,681895f294b670b4c7b14495dfb583bc
-Ecuador vs Curaçao,Total Goals,Will total goals be over 2.5?,0.4572,45.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T00:00:00Z,681895f294b670b4c7b14495dfb583bc
-Ecuador vs Curaçao,BTTS,Will both teams score?,0.355,35.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T00:00:00Z,681895f294b670b4c7b14495dfb583bc
-Tunisia vs Japan,Moneyline,Will Tunisia win the match?,0.2199,22.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T04:00:00Z,dfc5202cf1b8ae002cf952cd04f235b9
-Tunisia vs Japan,Moneyline,Will Japan win the match?,0.496,49.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T04:00:00Z,dfc5202cf1b8ae002cf952cd04f235b9
-Tunisia vs Japan,Moneyline,Will the match end in a draw?,0.2841,28.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T04:00:00Z,dfc5202cf1b8ae002cf952cd04f235b9
-Tunisia vs Japan,Total Goals,Will total goals be over 2.5?,0.3523,35.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T04:00:00Z,dfc5202cf1b8ae002cf952cd04f235b9
-Tunisia vs Japan,BTTS,Will both teams score?,0.398,39.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T04:00:00Z,dfc5202cf1b8ae002cf952cd04f235b9
-Spain vs Saudi Arabia,Moneyline,Will Spain win the match?,0.8064,80.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T16:00:00Z,73529a242e319a86bf3d00ddb4accc37
-Spain vs Saudi Arabia,Moneyline,Will Saudi Arabia win the match?,0.0562,5.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T16:00:00Z,73529a242e319a86bf3d00ddb4accc37
-Spain vs Saudi Arabia,Moneyline,Will the match end in a draw?,0.1375,13.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T16:00:00Z,73529a242e319a86bf3d00ddb4accc37
-Spain vs Saudi Arabia,Total Goals,Will total goals be over 2.5?,0.5681,56.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T16:00:00Z,73529a242e319a86bf3d00ddb4accc37
-Spain vs Saudi Arabia,BTTS,Will both teams score?,0.3586,35.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T16:00:00Z,73529a242e319a86bf3d00ddb4accc37
-Belgium vs Iran,Moneyline,Will Belgium win the match?,0.4744,47.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T19:00:00Z,5f92f257386ec5bf7c6e2498a21f3a61
-Belgium vs Iran,Moneyline,Will Iran win the match?,0.2733,27.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T19:00:00Z,5f92f257386ec5bf7c6e2498a21f3a61
-Belgium vs Iran,Moneyline,Will the match end in a draw?,0.2523,25.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T19:00:00Z,5f92f257386ec5bf7c6e2498a21f3a61
-Belgium vs Iran,Total Goals,Will total goals be over 2.5?,0.5004,50.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T19:00:00Z,5f92f257386ec5bf7c6e2498a21f3a61
-Belgium vs Iran,BTTS,Will both teams score?,0.5314,53.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T19:00:00Z,5f92f257386ec5bf7c6e2498a21f3a61
-Uruguay vs Cape Verde,Moneyline,Will Uruguay win the match?,0.734,73.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T22:00:00Z,852a3abe6d46820720febc0fedebff9a
-Uruguay vs Cape Verde,Moneyline,Will Cape Verde win the match?,0.079,7.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T22:00:00Z,852a3abe6d46820720febc0fedebff9a
-Uruguay vs Cape Verde,Moneyline,Will the match end in a draw?,0.1871,18.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T22:00:00Z,852a3abe6d46820720febc0fedebff9a
-Uruguay vs Cape Verde,Total Goals,Will total goals be over 2.5?,0.4482,44.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T22:00:00Z,852a3abe6d46820720febc0fedebff9a
-Uruguay vs Cape Verde,BTTS,Will both teams score?,0.3293,32.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-21T22:00:00Z,852a3abe6d46820720febc0fedebff9a
-New Zealand vs Egypt,Moneyline,Will New Zealand win the match?,0.1895,19.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T01:00:00Z,c1ec9a65f4b4cf74477b368a7d6282de
-New Zealand vs Egypt,Moneyline,Will Egypt win the match?,0.5051,50.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T01:00:00Z,c1ec9a65f4b4cf74477b368a7d6282de
-New Zealand vs Egypt,Moneyline,Will the match end in a draw?,0.3054,30.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T01:00:00Z,c1ec9a65f4b4cf74477b368a7d6282de
-New Zealand vs Egypt,Total Goals,Will total goals be over 2.5?,0.277,27.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T01:00:00Z,c1ec9a65f4b4cf74477b368a7d6282de
-New Zealand vs Egypt,BTTS,Will both teams score?,0.3237,32.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T01:00:00Z,c1ec9a65f4b4cf74477b368a7d6282de
-Argentina vs Austria,Moneyline,Will Argentina win the match?,0.6719,67.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T17:00:00Z,be6c63f416c67bca1300a98f5b89c3af
-Argentina vs Austria,Moneyline,Will Austria win the match?,0.1239,12.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T17:00:00Z,be6c63f416c67bca1300a98f5b89c3af
-Argentina vs Austria,Moneyline,Will the match end in a draw?,0.2042,20.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T17:00:00Z,be6c63f416c67bca1300a98f5b89c3af
-Argentina vs Austria,Total Goals,Will total goals be over 2.5?,0.4962,49.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T17:00:00Z,be6c63f416c67bca1300a98f5b89c3af
-Argentina vs Austria,BTTS,Will both teams score?,0.4318,43.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T17:00:00Z,be6c63f416c67bca1300a98f5b89c3af
-France vs Iraq,Moneyline,Will France win the match?,0.7266,72.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T21:00:00Z,7ad7a0ce2ef2618bb59b066da5642f70
-France vs Iraq,Moneyline,Will Iraq win the match?,0.0877,8.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T21:00:00Z,7ad7a0ce2ef2618bb59b066da5642f70
-France vs Iraq,Moneyline,Will the match end in a draw?,0.1857,18.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T21:00:00Z,7ad7a0ce2ef2618bb59b066da5642f70
-France vs Iraq,Total Goals,Will total goals be over 2.5?,0.4779,47.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T21:00:00Z,7ad7a0ce2ef2618bb59b066da5642f70
-France vs Iraq,BTTS,Will both teams score?,0.3658,36.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-22T21:00:00Z,7ad7a0ce2ef2618bb59b066da5642f70
-Norway vs Senegal,Moneyline,Will Norway win the match?,0.3121,31.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T00:00:00Z,3f48473742ca0fd2a85930554720c75e
-Norway vs Senegal,Moneyline,Will Senegal win the match?,0.4116,41.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T00:00:00Z,3f48473742ca0fd2a85930554720c75e
-Norway vs Senegal,Moneyline,Will the match end in a draw?,0.2762,27.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T00:00:00Z,3f48473742ca0fd2a85930554720c75e
-Norway vs Senegal,Total Goals,Will total goals be over 2.5?,0.4248,42.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T00:00:00Z,3f48473742ca0fd2a85930554720c75e
-Norway vs Senegal,BTTS,Will both teams score?,0.4807,48.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T00:00:00Z,3f48473742ca0fd2a85930554720c75e
-Jordan vs Algeria,Moneyline,Will Jordan win the match?,0.2032,20.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T03:00:00Z,fd8533b650e655030f6a7946f8795db2
-Jordan vs Algeria,Moneyline,Will Algeria win the match?,0.5694,56.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T03:00:00Z,fd8533b650e655030f6a7946f8795db2
-Jordan vs Algeria,Moneyline,Will the match end in a draw?,0.2275,22.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T03:00:00Z,fd8533b650e655030f6a7946f8795db2
-Jordan vs Algeria,Total Goals,Will total goals be over 2.5?,0.5375,53.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T03:00:00Z,fd8533b650e655030f6a7946f8795db2
-Jordan vs Algeria,BTTS,Will both teams score?,0.5302,53.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T03:00:00Z,fd8533b650e655030f6a7946f8795db2
-Portugal vs Uzbekistan,Moneyline,Will Portugal win the match?,0.6723,67.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T17:00:00Z,8ba93d190f1f934e33862a97a6353a6e
-Portugal vs Uzbekistan,Moneyline,Will Uzbekistan win the match?,0.1201,12.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T17:00:00Z,8ba93d190f1f934e33862a97a6353a6e
-Portugal vs Uzbekistan,Moneyline,Will the match end in a draw?,0.2075,20.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T17:00:00Z,8ba93d190f1f934e33862a97a6353a6e
-Portugal vs Uzbekistan,Total Goals,Will total goals be over 2.5?,0.475,47.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T17:00:00Z,8ba93d190f1f934e33862a97a6353a6e
-Portugal vs Uzbekistan,BTTS,Will both teams score?,0.4118,41.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T17:00:00Z,8ba93d190f1f934e33862a97a6353a6e
-England vs Ghana,Moneyline,Will England win the match?,0.7564,75.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T20:00:00Z,2f49dd8deae3079dc4eb2d634d18a99c
-England vs Ghana,Moneyline,Will Ghana win the match?,0.0733,7.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T20:00:00Z,2f49dd8deae3079dc4eb2d634d18a99c
-England vs Ghana,Moneyline,Will the match end in a draw?,0.1702,17.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T20:00:00Z,2f49dd8deae3079dc4eb2d634d18a99c
-England vs Ghana,Total Goals,Will total goals be over 2.5?,0.494,49.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T20:00:00Z,2f49dd8deae3079dc4eb2d634d18a99c
-England vs Ghana,BTTS,Will both teams score?,0.3491,34.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T20:00:00Z,2f49dd8deae3079dc4eb2d634d18a99c
-Panama vs Croatia,Moneyline,Will Panama win the match?,0.1127,11.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
-Panama vs Croatia,Moneyline,Will Croatia win the match?,0.698,69.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
-Panama vs Croatia,Moneyline,Will the match end in a draw?,0.1893,18.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
-Panama vs Croatia,Total Goals,Will total goals be over 2.5?,0.5307,53.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
-Panama vs Croatia,BTTS,Will both teams score?,0.4427,44.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
-Colombia vs DR Congo,Moneyline,Will Colombia win the match?,0.6573,65.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
-Colombia vs DR Congo,Moneyline,Will DR Congo win the match?,0.1224,12.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
-Colombia vs DR Congo,Moneyline,Will the match end in a draw?,0.2204,22.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
-Colombia vs DR Congo,Total Goals,Will total goals be over 2.5?,0.4333,43.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
-Colombia vs DR Congo,BTTS,Will both teams score?,0.3846,38.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
-Bosnia & Herzegovina vs Qatar,Moneyline,Will Bosnia & Herzegovina win the match?,0.4401,44.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
-Bosnia & Herzegovina vs Qatar,Moneyline,Will Qatar win the match?,0.3121,31.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
-Bosnia & Herzegovina vs Qatar,Moneyline,Will the match end in a draw?,0.2479,24.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
-Bosnia & Herzegovina vs Qatar,Total Goals,Will total goals be over 2.5?,0.5401,54.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
-Bosnia & Herzegovina vs Qatar,BTTS,Will both teams score?,0.5702,57.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
-Switzerland vs Canada,Moneyline,Will Switzerland win the match?,0.2854,28.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
-Switzerland vs Canada,Moneyline,Will Canada win the match?,0.4445,44.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
-Switzerland vs Canada,Moneyline,Will the match end in a draw?,0.27,27.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
-Switzerland vs Canada,Total Goals,Will total goals be over 2.5?,0.4378,43.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
-Switzerland vs Canada,BTTS,Will both teams score?,0.4862,48.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
-Scotland vs Brazil,Moneyline,Will Scotland win the match?,0.0659,6.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
-Scotland vs Brazil,Moneyline,Will Brazil win the match?,0.7902,79.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
-Scotland vs Brazil,Moneyline,Will the match end in a draw?,0.1439,14.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
-Scotland vs Brazil,Total Goals,Will total goals be over 2.5?,0.5803,58.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
-Scotland vs Brazil,BTTS,Will both teams score?,0.3933,39.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
-Morocco vs Haiti,Moneyline,Will Morocco win the match?,0.7473,74.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
-Morocco vs Haiti,Moneyline,Will Haiti win the match?,0.0806,8.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
-Morocco vs Haiti,Moneyline,Will the match end in a draw?,0.1721,17.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
-Morocco vs Haiti,Total Goals,Will total goals be over 2.5?,0.51,51.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
-Morocco vs Haiti,BTTS,Will both teams score?,0.3752,37.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
-Czech Republic vs Mexico,Moneyline,Will Czech Republic win the match?,0.0977,9.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
-Czech Republic vs Mexico,Moneyline,Will Mexico win the match?,0.6979,69.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
-Czech Republic vs Mexico,Moneyline,Will the match end in a draw?,0.2044,20.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
-Czech Republic vs Mexico,Total Goals,Will total goals be over 2.5?,0.4357,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
-Czech Republic vs Mexico,BTTS,Will both teams score?,0.3528,35.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
-South Africa vs South Korea,Moneyline,Will South Africa win the match?,0.1816,18.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
-South Africa vs South Korea,Moneyline,Will South Korea win the match?,0.5633,56.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
-South Africa vs South Korea,Moneyline,Will the match end in a draw?,0.255,25.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
-South Africa vs South Korea,Total Goals,Will total goals be over 2.5?,0.4066,40.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
-South Africa vs South Korea,BTTS,Will both teams score?,0.4184,41.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
-Curaçao vs Ivory Coast,Moneyline,Will Curaçao win the match?,0.152,15.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
-Curaçao vs Ivory Coast,Moneyline,Will Ivory Coast win the match?,0.6073,60.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
-Curaçao vs Ivory Coast,Moneyline,Will the match end in a draw?,0.2408,24.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
-Curaçao vs Ivory Coast,Total Goals,Will total goals be over 2.5?,0.4147,41.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
-Curaçao vs Ivory Coast,BTTS,Will both teams score?,0.4015,40.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
-Ecuador vs Germany,Moneyline,Will Ecuador win the match?,0.3172,31.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
-Ecuador vs Germany,Moneyline,Will Germany win the match?,0.414,41.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
-Ecuador vs Germany,Moneyline,Will the match end in a draw?,0.2688,26.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
-Ecuador vs Germany,Total Goals,Will total goals be over 2.5?,0.4542,45.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
-Ecuador vs Germany,BTTS,Will both teams score?,0.5045,50.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
-Japan vs Sweden,Moneyline,Will Japan win the match?,0.4913,49.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
-Japan vs Sweden,Moneyline,Will Sweden win the match?,0.2596,26.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
-Japan vs Sweden,Moneyline,Will the match end in a draw?,0.2491,24.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
-Japan vs Sweden,Total Goals,Will total goals be over 2.5?,0.5041,50.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
-Japan vs Sweden,BTTS,Will both teams score?,0.5301,53.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
-Tunisia vs Netherlands,Moneyline,Will Tunisia win the match?,0.1889,18.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
-Tunisia vs Netherlands,Moneyline,Will Netherlands win the match?,0.5636,56.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
-Tunisia vs Netherlands,Moneyline,Will the match end in a draw?,0.2475,24.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
-Tunisia vs Netherlands,Total Goals,Will total goals be over 2.5?,0.4411,44.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
-Tunisia vs Netherlands,BTTS,Will both teams score?,0.4492,44.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
-Paraguay vs Australia,Moneyline,Will Paraguay win the match?,0.2883,28.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
-Paraguay vs Australia,Moneyline,Will Australia win the match?,0.4029,40.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
-Paraguay vs Australia,Moneyline,Will the match end in a draw?,0.3089,30.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
-Paraguay vs Australia,Total Goals,Will total goals be over 2.5?,0.3149,31.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
-Paraguay vs Australia,BTTS,Will both teams score?,0.3878,38.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
-Turkey vs USA,Moneyline,Will Turkey win the match?,0.1922,19.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
-Turkey vs USA,Moneyline,Will USA win the match?,0.5957,59.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
-Turkey vs USA,Moneyline,Will the match end in a draw?,0.2121,21.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
-Turkey vs USA,Total Goals,Will total goals be over 2.5?,0.5902,59.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
-Turkey vs USA,BTTS,Will both teams score?,0.5632,56.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
-Norway vs France,Moneyline,Will Norway win the match?,0.2065,20.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
-Norway vs France,Moneyline,Will France win the match?,0.5722,57.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
-Norway vs France,Moneyline,Will the match end in a draw?,0.2213,22.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
-Norway vs France,Total Goals,Will total goals be over 2.5?,0.5693,56.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
-Norway vs France,BTTS,Will both teams score?,0.556,55.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
-Senegal vs Iraq,Moneyline,Will Senegal win the match?,0.5445,54.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
-Senegal vs Iraq,Moneyline,Will Iraq win the match?,0.1681,16.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
-Senegal vs Iraq,Moneyline,Will the match end in a draw?,0.2874,28.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
-Senegal vs Iraq,Total Goals,Will total goals be over 2.5?,0.3016,30.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
-Senegal vs Iraq,BTTS,Will both teams score?,0.3298,33.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
-Cape Verde vs Saudi Arabia,Moneyline,Will Cape Verde win the match?,0.257,25.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
-Cape Verde vs Saudi Arabia,Moneyline,Will Saudi Arabia win the match?,0.4361,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
-Cape Verde vs Saudi Arabia,Moneyline,Will the match end in a draw?,0.3069,30.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
-Cape Verde vs Saudi Arabia,Total Goals,Will total goals be over 2.5?,0.3098,31.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
-Cape Verde vs Saudi Arabia,BTTS,Will both teams score?,0.377,37.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
-Uruguay vs Spain,Moneyline,Will Uruguay win the match?,0.2123,21.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
-Uruguay vs Spain,Moneyline,Will Spain win the match?,0.5316,53.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
-Uruguay vs Spain,Moneyline,Will the match end in a draw?,0.2561,25.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
-Uruguay vs Spain,Total Goals,Will total goals be over 2.5?,0.4361,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
-Uruguay vs Spain,BTTS,Will both teams score?,0.4588,45.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
-New Zealand vs Belgium,Moneyline,Will New Zealand win the match?,0.0779,7.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
-New Zealand vs Belgium,Moneyline,Will Belgium win the match?,0.7679,76.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
-New Zealand vs Belgium,Moneyline,Will the match end in a draw?,0.1542,15.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
-New Zealand vs Belgium,Total Goals,Will total goals be over 2.5?,0.5798,58.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
-New Zealand vs Belgium,BTTS,Will both teams score?,0.4203,42.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
-Egypt vs Iran,Moneyline,Will Egypt win the match?,0.2774,27.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
-Egypt vs Iran,Moneyline,Will Iran win the match?,0.4055,40.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
+Panama vs Croatia,Moneyline,Will Panama win the match?,0.1207,12.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
+Panama vs Croatia,Moneyline,Will Croatia win the match?,0.6887,68.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
+Panama vs Croatia,Moneyline,Will the match end in a draw?,0.1906,19.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
+Panama vs Croatia,Total Goals,Will total goals be over 2.5?,0.5452,54.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
+Panama vs Croatia,BTTS,Will both teams score?,0.464,46.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-23T23:00:00Z,c1bc8c26480cd42b89a0de5329581314
+Colombia vs DR Congo,Moneyline,Will Colombia win the match?,0.6681,66.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
+Colombia vs DR Congo,Moneyline,Will DR Congo win the match?,0.1126,11.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
+Colombia vs DR Congo,Moneyline,Will the match end in a draw?,0.2193,21.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
+Colombia vs DR Congo,Total Goals,Will total goals be over 2.5?,0.4177,41.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
+Colombia vs DR Congo,BTTS,Will both teams score?,0.3613,36.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T02:00:00Z,68bfc965eb267508e04d8e8d75c1a0ae
+Bosnia & Herzegovina vs Qatar,Moneyline,Will Bosnia & Herzegovina win the match?,0.4782,47.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
+Bosnia & Herzegovina vs Qatar,Moneyline,Will Qatar win the match?,0.2764,27.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
+Bosnia & Herzegovina vs Qatar,Moneyline,Will the match end in a draw?,0.2454,24.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
+Bosnia & Herzegovina vs Qatar,Total Goals,Will total goals be over 2.5?,0.5316,53.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
+Bosnia & Herzegovina vs Qatar,BTTS,Will both teams score?,0.556,55.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,512ac18beb5aa936a59f7ea3e497ada2
+Switzerland vs Canada,Moneyline,Will Switzerland win the match?,0.2527,25.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
+Switzerland vs Canada,Moneyline,Will Canada win the match?,0.4802,48.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
+Switzerland vs Canada,Moneyline,Will the match end in a draw?,0.2671,26.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
+Switzerland vs Canada,Total Goals,Will total goals be over 2.5?,0.43,43.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
+Switzerland vs Canada,BTTS,Will both teams score?,0.4712,47.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T19:00:00Z,c9ef5822ee64fd5275f7c73251bb56c7
+Scotland vs Brazil,Moneyline,Will Scotland win the match?,0.0726,7.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
+Scotland vs Brazil,Moneyline,Will Brazil win the match?,0.7737,77.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
+Scotland vs Brazil,Moneyline,Will the match end in a draw?,0.1536,15.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
+Scotland vs Brazil,Total Goals,Will total goals be over 2.5?,0.5621,56.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
+Scotland vs Brazil,BTTS,Will both teams score?,0.3959,39.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,885ba95805db310a7bcc3fb1a7a6dd28
+Morocco vs Haiti,Moneyline,Will Morocco win the match?,0.7567,75.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
+Morocco vs Haiti,Moneyline,Will Haiti win the match?,0.074,7.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
+Morocco vs Haiti,Moneyline,Will the match end in a draw?,0.1692,16.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
+Morocco vs Haiti,Total Goals,Will total goals be over 2.5?,0.5002,50.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
+Morocco vs Haiti,BTTS,Will both teams score?,0.3549,35.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-24T22:00:00Z,d1279ce7f33136a33e99ad442fc855e8
+Czech Republic vs Mexico,Moneyline,Will Czech Republic win the match?,0.1021,10.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
+Czech Republic vs Mexico,Moneyline,Will Mexico win the match?,0.6906,69.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
+Czech Republic vs Mexico,Moneyline,Will the match end in a draw?,0.2072,20.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
+Czech Republic vs Mexico,Total Goals,Will total goals be over 2.5?,0.4363,43.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
+Czech Republic vs Mexico,BTTS,Will both teams score?,0.36,36.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,5993bd5196ca09f83990f0c3261e442e
+South Africa vs South Korea,Moneyline,Will South Africa win the match?,0.2055,20.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
+South Africa vs South Korea,Moneyline,Will South Korea win the match?,0.5329,53.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
+South Africa vs South Korea,Moneyline,Will the match end in a draw?,0.2617,26.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
+South Africa vs South Korea,Total Goals,Will total goals be over 2.5?,0.41,41.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
+South Africa vs South Korea,BTTS,Will both teams score?,0.4354,43.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T01:00:00Z,c0355dfc6e26ec327e379b6ef5824a5f
+Curaçao vs Ivory Coast,Moneyline,Will Curaçao win the match?,0.105,10.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
+Curaçao vs Ivory Coast,Moneyline,Will Ivory Coast win the match?,0.6936,69.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
+Curaçao vs Ivory Coast,Moneyline,Will the match end in a draw?,0.2014,20.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
+Curaçao vs Ivory Coast,Total Goals,Will total goals be over 2.5?,0.4636,46.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
+Curaçao vs Ivory Coast,BTTS,Will both teams score?,0.3833,38.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,a5a0b544a984ab16e564264f3e859b43
+Ecuador vs Germany,Moneyline,Will Ecuador win the match?,0.2317,23.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
+Ecuador vs Germany,Moneyline,Will Germany win the match?,0.5155,51.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
+Ecuador vs Germany,Moneyline,Will the match end in a draw?,0.2529,25.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
+Ecuador vs Germany,Total Goals,Will total goals be over 2.5?,0.466,46.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
+Ecuador vs Germany,BTTS,Will both teams score?,0.4906,49.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T20:00:00Z,0ec28b84ec399bd4dffbe8d1bc72b3c4
+Japan vs Sweden,Moneyline,Will Japan win the match?,0.5166,51.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
+Japan vs Sweden,Moneyline,Will Sweden win the match?,0.2427,24.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
+Japan vs Sweden,Moneyline,Will the match end in a draw?,0.2407,24.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
+Japan vs Sweden,Total Goals,Will total goals be over 2.5?,0.5251,52.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
+Japan vs Sweden,BTTS,Will both teams score?,0.5399,54.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,0ed0233bddc4eafc8507f86a9c17b998
+Tunisia vs Netherlands,Moneyline,Will Tunisia win the match?,0.1015,10.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
+Tunisia vs Netherlands,Moneyline,Will Netherlands win the match?,0.705,70.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
+Tunisia vs Netherlands,Moneyline,Will the match end in a draw?,0.1935,19.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
+Tunisia vs Netherlands,Total Goals,Will total goals be over 2.5?,0.4849,48.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
+Tunisia vs Netherlands,BTTS,Will both teams score?,0.3934,39.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-25T23:00:00Z,f3c4657daa143a0c5bd62cb370d01ce4
+Paraguay vs Australia,Moneyline,Will Paraguay win the match?,0.2505,25.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
+Paraguay vs Australia,Moneyline,Will Australia win the match?,0.4502,45.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
+Paraguay vs Australia,Moneyline,Will the match end in a draw?,0.2993,29.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
+Paraguay vs Australia,Total Goals,Will total goals be over 2.5?,0.3274,32.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
+Paraguay vs Australia,BTTS,Will both teams score?,0.3894,38.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,22f6ac06dfcc88a847920f62633e6459
+Turkey vs USA,Moneyline,Will Turkey win the match?,0.1636,16.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
+Turkey vs USA,Moneyline,Will USA win the match?,0.6377,63.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
+Turkey vs USA,Moneyline,Will the match end in a draw?,0.1987,19.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
+Turkey vs USA,Total Goals,Will total goals be over 2.5?,0.6029,60.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
+Turkey vs USA,BTTS,Will both teams score?,0.5518,55.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T02:00:00Z,f41aeac9a8343a84b4950f15ea25fba2
+Norway vs France,Moneyline,Will Norway win the match?,0.2149,21.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
+Norway vs France,Moneyline,Will France win the match?,0.5645,56.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
+Norway vs France,Moneyline,Will the match end in a draw?,0.2206,22.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
+Norway vs France,Total Goals,Will total goals be over 2.5?,0.583,58.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
+Norway vs France,BTTS,Will both teams score?,0.5709,57.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,b86b4d60f773e9e3c46c00e9a6496e79
+Senegal vs Iraq,Moneyline,Will Senegal win the match?,0.5718,57.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
+Senegal vs Iraq,Moneyline,Will Iraq win the match?,0.1553,15.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
+Senegal vs Iraq,Moneyline,Will the match end in a draw?,0.2729,27.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
+Senegal vs Iraq,Total Goals,Will total goals be over 2.5?,0.3252,32.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
+Senegal vs Iraq,BTTS,Will both teams score?,0.3382,33.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-26T19:00:00Z,7e6aee294ea1a4792c59558791084528
+Cape Verde vs Saudi Arabia,Moneyline,Will Cape Verde win the match?,0.3313,33.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
+Cape Verde vs Saudi Arabia,Moneyline,Will Saudi Arabia win the match?,0.3456,34.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
+Cape Verde vs Saudi Arabia,Moneyline,Will the match end in a draw?,0.3231,32.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
+Cape Verde vs Saudi Arabia,Total Goals,Will total goals be over 2.5?,0.2835,28.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
+Cape Verde vs Saudi Arabia,BTTS,Will both teams score?,0.3647,36.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,e07b1926be5a4d515c7eb108dbcee9c5
+Uruguay vs Spain,Moneyline,Will Uruguay win the match?,0.1849,18.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
+Uruguay vs Spain,Moneyline,Will Spain win the match?,0.5654,56.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
+Uruguay vs Spain,Moneyline,Will the match end in a draw?,0.2497,25.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
+Uruguay vs Spain,Total Goals,Will total goals be over 2.5?,0.4285,42.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
+Uruguay vs Spain,BTTS,Will both teams score?,0.4371,43.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T00:00:00Z,dcff2e31c0bce001a4db5caaf4fa8822
+New Zealand vs Belgium,Moneyline,Will New Zealand win the match?,0.0859,8.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
+New Zealand vs Belgium,Moneyline,Will Belgium win the match?,0.7561,75.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
+New Zealand vs Belgium,Moneyline,Will the match end in a draw?,0.158,15.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
+New Zealand vs Belgium,Total Goals,Will total goals be over 2.5?,0.5904,59.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
+New Zealand vs Belgium,BTTS,Will both teams score?,0.4441,44.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,581691da05dcd75b5c6d3be91ee9d2ab
+Egypt vs Iran,Moneyline,Will Egypt win the match?,0.3254,32.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
+Egypt vs Iran,Moneyline,Will Iran win the match?,0.3575,35.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
 Egypt vs Iran,Moneyline,Will the match end in a draw?,0.3171,31.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
-Egypt vs Iran,Total Goals,Will total goals be over 2.5?,0.2906,29.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
-Egypt vs Iran,BTTS,Will both teams score?,0.3655,36.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
-Croatia vs Ghana,Moneyline,Will Croatia win the match?,0.6447,64.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
-Croatia vs Ghana,Moneyline,Will Ghana win the match?,0.1353,13.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
-Croatia vs Ghana,Moneyline,Will the match end in a draw?,0.22,22.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
-Croatia vs Ghana,Total Goals,Will total goals be over 2.5?,0.4592,45.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
-Croatia vs Ghana,BTTS,Will both teams score?,0.4178,41.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
-Panama vs England,Moneyline,Will Panama win the match?,0.065,6.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
-Panama vs England,Moneyline,Will England win the match?,0.7896,79.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
-Panama vs England,Moneyline,Will the match end in a draw?,0.1454,14.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
-Panama vs England,Total Goals,Will total goals be over 2.5?,0.5697,57.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
-Panama vs England,BTTS,Will both teams score?,0.3835,38.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
-Colombia vs Portugal,Moneyline,Will Colombia win the match?,0.3629,36.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
-Colombia vs Portugal,Moneyline,Will Portugal win the match?,0.376,37.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
-Colombia vs Portugal,Moneyline,Will the match end in a draw?,0.2611,26.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
-Colombia vs Portugal,Total Goals,Will total goals be over 2.5?,0.4935,49.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
-Colombia vs Portugal,BTTS,Will both teams score?,0.5386,53.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
-DR Congo vs Uzbekistan,Moneyline,Will DR Congo win the match?,0.3277,32.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
-DR Congo vs Uzbekistan,Moneyline,Will Uzbekistan win the match?,0.3436,34.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
-DR Congo vs Uzbekistan,Moneyline,Will the match end in a draw?,0.3287,32.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
-DR Congo vs Uzbekistan,Total Goals,Will total goals be over 2.5?,0.2697,27.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
-DR Congo vs Uzbekistan,BTTS,Will both teams score?,0.3524,35.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
-Algeria vs Austria,Moneyline,Will Algeria win the match?,0.3773,37.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
-Algeria vs Austria,Moneyline,Will Austria win the match?,0.3708,37.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
-Algeria vs Austria,Moneyline,Will the match end in a draw?,0.2519,25.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
-Algeria vs Austria,Total Goals,Will total goals be over 2.5?,0.5347,53.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
-Algeria vs Austria,BTTS,Will both teams score?,0.5709,57.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
-Jordan vs Argentina,Moneyline,Will Jordan win the match?,0.0551,5.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
-Jordan vs Argentina,Moneyline,Will Argentina win the match?,0.811,81.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
-Jordan vs Argentina,Moneyline,Will the match end in a draw?,0.1339,13.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
-Jordan vs Argentina,Total Goals,Will total goals be over 2.5?,0.5798,58.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
-Jordan vs Argentina,BTTS,Will both teams score?,0.3639,36.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
+Egypt vs Iran,Total Goals,Will total goals be over 2.5?,0.2988,29.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
+Egypt vs Iran,BTTS,Will both teams score?,0.3779,37.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T03:00:00Z,3e3b5fa2b3c963e74cf044c60db0b573
+Croatia vs Ghana,Moneyline,Will Croatia win the match?,0.5641,56.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
+Croatia vs Ghana,Moneyline,Will Ghana win the match?,0.1937,19.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
+Croatia vs Ghana,Moneyline,Will the match end in a draw?,0.2422,24.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
+Croatia vs Ghana,Total Goals,Will total goals be over 2.5?,0.4661,46.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
+Croatia vs Ghana,BTTS,Will both teams score?,0.4709,47.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,537c0997cd899394f47f16545b7068b2
+Panama vs England,Moneyline,Will Panama win the match?,0.0543,5.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
+Panama vs England,Moneyline,Will England win the match?,0.8138,81.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
+Panama vs England,Moneyline,Will the match end in a draw?,0.1319,13.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
+Panama vs England,Total Goals,Will total goals be over 2.5?,0.5859,58.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
+Panama vs England,BTTS,Will both teams score?,0.3659,36.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T21:00:00Z,4be17c8e1ccfecb0f2a5ef79e045c415
+Colombia vs Portugal,Moneyline,Will Colombia win the match?,0.3943,39.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
+Colombia vs Portugal,Moneyline,Will Portugal win the match?,0.3442,34.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
+Colombia vs Portugal,Moneyline,Will the match end in a draw?,0.2615,26.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
+Colombia vs Portugal,Total Goals,Will total goals be over 2.5?,0.4897,49.0,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
+Colombia vs Portugal,BTTS,Will both teams score?,0.5349,53.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,67ae5751c401a98409b8566ae4897069
+DR Congo vs Uzbekistan,Moneyline,Will DR Congo win the match?,0.4053,40.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
+DR Congo vs Uzbekistan,Moneyline,Will Uzbekistan win the match?,0.2688,26.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
+DR Congo vs Uzbekistan,Moneyline,Will the match end in a draw?,0.3259,32.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
+DR Congo vs Uzbekistan,Total Goals,Will total goals be over 2.5?,0.2673,26.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
+DR Congo vs Uzbekistan,BTTS,Will both teams score?,0.3439,34.4,fundamentals,lbenz bvp + crowd + momentum,2026-06-27T23:30:00Z,13eab94a136b9c264ba974cf437a5f71
+Algeria vs Austria,Moneyline,Will Algeria win the match?,0.3447,34.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
+Algeria vs Austria,Moneyline,Will Austria win the match?,0.4059,40.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
+Algeria vs Austria,Moneyline,Will the match end in a draw?,0.2494,24.9,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
+Algeria vs Austria,Total Goals,Will total goals be over 2.5?,0.5431,54.3,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
+Algeria vs Austria,BTTS,Will both teams score?,0.5763,57.6,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,8756200e539155e571557c4f2e0d7f05
+Jordan vs Argentina,Moneyline,Will Jordan win the match?,0.0367,3.7,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
+Jordan vs Argentina,Moneyline,Will Argentina win the match?,0.8511,85.1,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
+Jordan vs Argentina,Moneyline,Will the match end in a draw?,0.1122,11.2,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
+Jordan vs Argentina,Total Goals,Will total goals be over 2.5?,0.5878,58.8,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
+Jordan vs Argentina,BTTS,Will both teams score?,0.3051,30.5,fundamentals,lbenz bvp + crowd + momentum,2026-06-28T02:00:00Z,54697f453437ab26276d773be1d72e9b
