@@ -40,9 +40,19 @@ def fetch_scores(days_from=3):
     if r.status_code != 200:
         print(f"  scores fetch failed {r.status_code}: {r.text[:140]}", file=sys.stderr)
         return None
-    data = r.json()
+    fresh = r.json()
+    # Merge with existing cache — the API only returns last 3 days, so we must
+    # preserve older completed results rather than overwriting them entirely.
+    try:
+        existing = json.load(open(SCORES_CACHE))
+    except Exception:
+        existing = []
+    by_id = {g["id"]: g for g in existing}
+    for g in fresh:
+        by_id[g["id"]] = g   # fresh data wins for any overlap
+    data = sorted(by_id.values(), key=lambda g: g["commence_time"])
     json.dump(data, open(SCORES_CACHE, "w"))
-    print(f"  fetched scores · {rem} credits left", file=sys.stderr)
+    print(f"  fetched scores · {rem} credits left · {len(data)} total in cache", file=sys.stderr)
     return data
 
 
