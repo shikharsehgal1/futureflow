@@ -77,9 +77,16 @@ SET_PNL_THRESHOLD = {k: -v for k, v in ABS_THRESHOLD.items()}
 # Passive quote half-width, a fraction of that contract's price range (post bid/ask
 # this far off fair to earn the spread when the book is near fair). The TAKE side is
 # governed by the Sizer's own edge gate (MIN_EDGE_FRAC), so no separate take buffer.
-SET_QUOTE_FRAC = {1: 0.04, 2: 0.035, 3: 0.04}
-QUOTE_SIZE = 5          # passive order size per quote
-TAKE_SIZE = 15          # max size to cross per tick when chasing a target
+SET_QUOTE_FRAC = {1: 0.02, 2: 0.015, 3: 0.02}   # tighter quotes = more fills
+QUOTE_SIZE = 20         # aggressive passive quote size
+TAKE_SIZE = 100         # take the full target in one shot
+TICK_SLEEP = 3.0        # seconds between full symbol sweeps
+# Platform allows 20 orders/sec (tokens_per_second=20). With ~48 symbols and
+# up to 4 orders each per tick, we need at least 48*4/20 = 9.6s per full sweep.
+# Use 3s tick + only quote symbols where there's meaningful edge or open position.
+PURGE_EVERY = 5         # purge stale quotes every N ticks to keep book fresh
+# Minimum edge (as fraction of contract price range) to bother quoting/taking.
+MIN_QUOTE_EDGE = 0.02   # only quote/take if edge >= 2% of price range
 
 # Live reprice: re-run the simulation (and optionally an upstream data refresh) on
 # an interval AND whenever a result notification lands, then hot-reload fair values.
@@ -87,17 +94,28 @@ TAKE_SIZE = 15          # max size to cross per tick when chasing a target
 SIM = os.path.join(HERE, "simulate_tournament.py")
 REPRICE_SIMS = 100_000          # sims per live reprice
 RESULT_KEYWORDS = ("full time", "final", "result", "advances", "eliminated",
-                   "wins", "knocked out", "qualifies")
+                   "wins", "knocked out", "qualifies", "goal", "scores",
+                   "penalty", "extra time", "draw", "defeat", "beats",
+                   "1-0", "2-0", "2-1", "3-0", "3-1", "3-2", "0-0", "1-1", "2-2")
 
-SYMBOL_OVERRIDES: Dict[str, str] = {}   # team -> platform symbol, if they differ
+# DRW platform symbol -> canonical model/dist name
+SYMBOL_OVERRIDES: Dict[str, str] = {
+    "Bosnia and Herzegovina": "Bosnia & Herzegovina",
+    "Cabo Verde":             "Cape Verde",
+    "Congo DR":               "DR Congo",
+    "Curacao":                "Curaçao",
+    "Czechia":                "Czech Republic",
+    "United States":          "USA",
+}
 SIDE_IN_ORDER_TYPE = False
 ORDER_TYPE = "LIMIT"
 
 
 class WorldCupBot(Client):
     def __init__(self, session, game_id, token, contract_set: int,
-                 reprice_mins: int = 0, refresh_cmd: Optional[List[str]] = None):
-        super().__init__(session, game_id, token)
+                 reprice_mins: int = 0, refresh_cmd: Optional[List[str]] = None,
+                 base_url: str = "https://games.drw.com"):
+        super().__init__(session, game_id, token, base_url=base_url)
         assert contract_set in (1, 2, 3), "contract_set must be 1, 2 or 3"
         self.cset = contract_set
         self.lo, self.hi = SET_PRICE_RANGE[contract_set]
@@ -119,10 +137,12 @@ class WorldCupBot(Client):
         self.sizer = Sizer()
         df = pd.read_csv(FAIRS)
         col = SET_COLUMN[self.cset]
+        # Reverse map: model/CSV name -> platform symbol
+        model_to_platform = {v: k for k, v in SYMBOL_OVERRIDES.items()}
         self.fairs, self.team_of = {}, {}
         for _, r in df.iterrows():
-            team = r["team"]
-            sym = SYMBOL_OVERRIDES.get(team, team)
+            team = r["team"]   # canonical model name (as in CSV / dist)
+            sym = model_to_platform.get(team, team)   # platform symbol
             self.fairs[sym] = float(r[col])
             self.team_of[sym] = team
         print(f"[{SET_NAME[self.cset]}] loaded {len(self.fairs)} fair values "
@@ -214,10 +234,35 @@ class WorldCupBot(Client):
         pos = self.positions.get(symbol, 0)
         best_bid = book.best_bid_px if book else None
         best_ask = book.best_ask_px if book else None
+        price_range = self.hi - self.lo
 
-        # 1) TAKE toward the Sizer's distribution-aware target. The Sizer evaluates
-        #    edge vs price (with its own MIN_EDGE gate) and returns a signed target
-        #    position; we move toward it, capped at TAKE_SIZE per tick.
+        # Skip if no open position AND no take-able edge (saves rate-limit tokens
+        # for symbols that actually matter — platform allows only 20 orders/sec).
+        if pos == 0 and best_ask is not None and best_bid is not None:
+            mid = (best_ask + best_bid) / 2
+            edge = abs(fv - mid) / max(price_range, 1)
+            if edge < MIN_QUOTE_EDGE:
+                return   # not worth a rate-limit token
+
+        # Force-flatten stale positions on near-dead/near-certain teams.
+        # If we're long and fair has collapsed well below the market price, we're
+        # on the wrong side and should sell at whatever bid exists. Likewise for
+        # shorts when fair is at the ceiling. The Sizer won't help when
+        # edge < MIN_EDGE_FRAC but holding the stale position is worse.
+        FLATTEN_FAIR_LO = 0.50   # if long, fair < this AND market > fair → sell
+        FLATTEN_FAIR_HI = self.hi - 0.50   # if short, fair > this AND market < fair → buy
+        mid = ((best_bid or fv) + (best_ask or fv)) / 2
+        if pos > 10 and fv < FLATTEN_FAIR_LO and mid > fv:
+            px = best_bid if best_bid is not None else self._clamp(fv + 0.01)
+            await self._order(symbol, px, max(-TAKE_SIZE, -pos))
+            return
+        if pos < -10 and fv > FLATTEN_FAIR_HI and mid < fv:
+            px = best_ask if best_ask is not None else self._clamp(fv - 0.01)
+            await self._order(symbol, px, min(TAKE_SIZE, -pos))
+            return
+
+        # Priority 1: TAKE toward Sizer target, largest moves first (reduce-risk or
+        # add-edge). Covers stale shorts/longs after a result changes fair values.
         if best_ask is not None:
             tgt, _ = self.sizer.target_position(self.cset, team, best_ask)
             if tgt > pos:                                # buying is justified at the ask
@@ -227,9 +272,11 @@ class WorldCupBot(Client):
             if tgt < pos:                                # selling is justified at the bid
                 await self._order(symbol, best_bid, max(-TAKE_SIZE, tgt - pos))
 
-        # 2) QUOTE passively around fair, skewed against inventory, to earn spread
-        #    when the book sits near fair. Capped so passive fills can't exceed the
-        #    Sizer's target magnitude at the quote price.
+        # Priority 2: QUOTE passively around fair only if book is near fair.
+        # Skip passive quotes entirely if we're already at target (saves tokens).
+        tgt_now = self.sizer.target_position(self.cset, team, fv)[0]
+        if abs(pos - tgt_now) < 5:
+            return   # already at target, no passive quote needed
         skew = self.qwidth * (pos / MAX_POS) * 0.5
         bid_px, ask_px = fv - self.qwidth - skew, fv + self.qwidth - skew
         tgt_bid, _ = self.sizer.target_position(self.cset, team, bid_px)
@@ -259,17 +306,44 @@ class WorldCupBot(Client):
             print(f"[{SET_NAME[self.cset]}] result notification -> repricing")
             await self.reprice()
 
+    async def _status_loop(self) -> None:
+        """Print P&L and position summary every 30s."""
+        while True:
+            await asyncio.sleep(30)
+            pos = {s: p for s, p in self.positions.items() if p != 0}
+            pnl = self.estimated_pnl()
+            print(f"[{SET_NAME[self.cset]}] pnl≈{pnl:+,.0f}  cash={self.cash:.0f}  "
+                  f"pos={pos}")
+
     async def on_start(self) -> None:
         print(f"[{SET_NAME[self.cset]}] trading game {self.web_url}")
         if self.reprice_mins > 0:
             asyncio.create_task(self._reprice_loop())
+        asyncio.create_task(self._status_loop())
+        tick = 0
         while True:
-            for symbol in list(self.fairs.keys()):
+            # Periodically purge all open orders and requote fresh — avoids
+            # accumulating stale quotes at wrong prices as fair values drift.
+            if tick % PURGE_EVERY == 0:
+                try:
+                    await self.purge_all()
+                except Exception:
+                    pass
+            # Sort symbols: open positions needing large moves first (reduce-risk
+            # and stale positions after a result), then new-edge opportunities.
+            def _priority(sym: str) -> float:
+                pos = self.positions.get(sym, 0)
+                fv = self.fairs.get(sym, 0)
+                tgt = self.sizer.target_position(self.cset,
+                      self.team_of.get(sym, sym), fv)[0] if fv else 0
+                return -abs(pos - tgt)   # most urgent first (most negative = first)
+            for symbol in sorted(self.fairs.keys(), key=_priority):
                 await self.quote_symbol(symbol)
             if self.reduce_only():
                 print(f"[{SET_NAME[self.cset]}] REDUCE-ONLY "
                       f"(pnl≈{self.estimated_pnl():,.0f} ≤ {self.threshold:,.0f})")
-            await asyncio.sleep(2)
+            tick += 1
+            await asyncio.sleep(TICK_SLEEP)
 
 
 # ---------------------------------------------------------------------------
@@ -316,10 +390,13 @@ def paper_run(contract_set: int, mispricing: float = 0.30, seed: int = 7) -> Non
 # ---------------------------------------------------------------------------
 # entrypoint — live on the DRW network, or --paper locally
 # ---------------------------------------------------------------------------
+BASE_URL = "https://games.drw.com"
+
 async def run_market(token: str, game_id: int, contract_set: int, reprice_mins: int = 0):
     from trading_client import create_session
     async with create_session() as session:
-        bot = WorldCupBot(session, game_id, token, contract_set, reprice_mins=reprice_mins)
+        bot = WorldCupBot(session, game_id, token, contract_set,
+                          reprice_mins=reprice_mins, base_url=BASE_URL)
         await bot.start()
 
 
