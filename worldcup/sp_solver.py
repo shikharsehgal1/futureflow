@@ -19,12 +19,25 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 F1, F2 = 0.45, 0.55           # first/second-half goal share
 RATES = load_rates()
 
-# World Cup group-stage card deflation: observed 298 settled markets show our
-# card model (trained on league data) fires at ~82-84% confidence but only hits
-# ~55-60% of the time. WC group games are notably cleaner than domestic leagues
-# (refs instructed to show yellow rarely; high-profile matches, less diving).
-# Empirical deflation factor: scale card lambda by 0.65 before computing P(N+).
-WC_CARD_DEFLATION = 0.65
+# World Cup card deflation: observed 298 settled markets show our card model
+# (trained on league data) fires at ~82-84% confidence but only hits ~55-60% of
+# the time. WC games are notably cleaner than domestic leagues (refs instructed
+# to show yellow rarely; high-profile matches, less diving). Group-stage recap
+# showed "Total cards" at -7.5 RBP, the weakest category. We push the deflation
+# from 0.65 to 0.70 for knockouts and keep it for all remaining matches.
+WC_CARD_DEFLATION = 0.70
+
+# Knockout stage adjustments (single-game elimination).
+# WC knockouts average ~14% fewer goals and ~23% more 90-minute draws than group
+# games. The market under-prices this caution. We scale the Poisson lambdas down
+# by 12% for all knockout fixtures (commence on or after 2026-06-28).
+KO_START_DATE = "2026-06-28"
+KO_GOAL_ADJ = 0.88
+
+# Both-teams SoT is overstated by the independence assumption: if one team dominates
+# possession, the other often gets fewer chances. Apply a small negative correlation
+# fudge to the joint probability.
+BOTH_SOT_CORR = 0.92
 
 # our canonical team names (from match summary) + aliases SP wording -> our name
 SUMMARY = {r["match"]: r for r in csv.DictReader(open(os.path.join(DATA, "wc_match_summary.csv")))}
@@ -64,11 +77,17 @@ def match_row(teams):
             return m, r
     return None, None
 
+def is_knockout(r):
+    """Return True if match starts on or after KO_START_DATE."""
+    ct = r.get("commence", "")
+    return bool(ct and ct[:10] >= KO_START_DATE)
+
+
 def lambdas_for(question_teams):
     m, r = match_row(question_teams)
     if not r or not r.get("lam_h"): return None
     home, away = [t.strip() for t in m.split(" vs ")]
-    return home, away, float(r["lam_h"]), float(r["lam_a"]), r
+    return home, away, float(r["lam_h"]), float(r["lam_a"]), r, is_knockout(r)
 
 def clip(p):
     """Convert raw probability to 1-99 integer with empirical shrinkage.
@@ -133,6 +152,7 @@ def solve(q, match_id):
     """Return (prob, source, confidence) or (None,reason,'low')."""
     teams2 = find_two(q)
     L = lambdas_for(MATCH_TEAMS.get(match_id, teams2))   # match teams derived from all its questions
+    ko = False
     ql = q.lower()
 
     # ---- player shot on target (exclude team/"both teams" subjects) ----
@@ -157,15 +177,35 @@ def solve(q, match_id):
         return (0.30 if "assist" in ql else 0.20, "est:player-goal", "low")
 
     if not L: return (None,"no match lambdas","low")
-    home, away, lh, la, r = L
+    home, away, lh, la, r, ko = L
+    # Knockout caution: reduce expected goals by 12% for single-elimination games.
+    if ko:
+        lh *= KO_GOAL_ADJ; la *= KO_GOAL_ADJ
     M=_matrix(lh,la); g=M.shape[0]; tot=np.add.outer(np.arange(g),np.arange(g))
     def teamlam(t): return lh if t==home else la
     pH,pD,pA=float(np.tril(M,-1).sum()),float(np.trace(M)),float(np.triu(M,1).sum())
 
-    # ---- moneyline ----
-    if "win the match" in ql:
+    # ---- moneyline / match winner (including "in regulation" wording) ----
+    if "win the match" in ql or ("win" in ql and "regulation" in ql):
         t=find_team(q);
         if t: return (pH if t==home else pA, "sharp:moneyline", "high")
+    # ---- 90-minute draw (including "end in a tie" SP wording) ----
+    if "end in a tie" in ql or "end in a draw" in ql or "regulation end in a draw" in ql:
+        return (pD, "poisson:draw", "high")
+    # ---- first goal of the match ----
+    if "score the first goal" in ql or "score first" in ql:
+        t=find_team(q)
+        if t:
+            p_any=1-float(M[0,0])
+            p_first=(lh/(lh+la)*p_any) if t==home else (la/(lh+la)*p_any)
+            return (float(p_first), "poisson:first-goal", "med")
+    # ---- lead at half-time (SP wording "be ahead at halftime") ----
+    if ("ahead at halftime" in ql or "lead at half-time" in ql or "lead at halftime" in ql):
+        t=find_team(q)
+        if t:
+            M1=_matrix(lh*F1,la*F1)
+            return (float(np.tril(M1,-1).sum()) if t==home else float(np.triu(M1,1).sum()),
+                    "poisson:1H-leading", "high")
     # ---- tied at halftime ----
     if "tied at halftime" in ql or "tie at halftime" in ql:
         M1=_matrix(lh*F1,la*F1); return (float(np.trace(M1)),"poisson:1H","high")
@@ -199,6 +239,10 @@ def solve(q, match_id):
         ca,cb=expected(RATES,"corners",home,away)
         ea=ca if teams2[0]==home else cb; eb=cb if teams2[0]==home else ca
         return (_pmore(ea,eb),"teamstat:corners","med")
+    # ---- plain BTTS ----
+    if "both teams score" in ql and "3 or more" not in ql:
+        p_btts = float(M[1:,1:].sum())
+        return (p_btts, "poisson:btts", "high")
     # ---- BTTS AND 3+ ----
     if "both teams score and" in ql and "3 or more" in ql:
         mask=np.zeros_like(M,dtype=bool)
@@ -252,7 +296,9 @@ def solve(q, match_id):
     if "both teams" in ql and "shot on target" in ql:
         sa,sb=expected(RATES,"sot",home,away); f=F2 if "second half" in ql else 1.0
         ph_=1-np.exp(-sa*f); pa_=1-np.exp(-sb*f)
-        return (float(ph_*pa_),"teamstat:both-sot"+("-2H" if f<1 else ""),"med")
+        # Recap: both-teams SoT was -5.5 RBP. Independence overstates the joint event;
+        # apply a small negative-correlation fudge.
+        return (float(ph_*pa_*BOTH_SOT_CORR),"teamstat:both-sot"+("-2H" if f<1 else ""),"med")
     # ---- N or more total shots on target ----
     m=re.search(r"(\d+) or more total shots on target", ql)
     if m:

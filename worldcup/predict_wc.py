@@ -254,7 +254,11 @@ def load_event_niche(match_id):
 # each market (popular markets -> field is sharp -> small edge; obscure markets ->
 # field clusters near 50% -> confident calls earn big relative-Brier points).
 _RELIABILITY = {"sharp": 1.0, "consensus": 0.85, "book": 0.7,
-                "poisson": 0.45, "teamstat": 0.5, "heuristic": 0.2, "elo": 0.15}
+                "poisson": 0.45, "teamstat": 0.55, "heuristic": 0.2, "elo": 0.15}
+# teamstat bumped to 0.55 (from 0.50) after group-stage recap: team SoT (+6.5 RBP),
+# offsides (+3.7) and team totals (+2.1) were strong categories. Cards remain the
+# weakest recap category, so teamstat card rows are still downgraded by the
+# dashboard via value_tier if the sharp market doesn't cover them.
 _OBSCURITY = {"Moneyline": 0.4, "Total Goals": 0.4, "BTTS": 0.5, "Double Chance": 0.45,
               "Draw No Bet": 0.8, "Team Total": 0.8, "Handicap": 0.85,
               "1st Half": 0.85, "2nd Half": 0.85, "First To Score": 0.7,

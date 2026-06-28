@@ -1,0 +1,342 @@
+match,market,question,prob,outcome,brier,source,tier,score
+Ivory Coast vs Ecuador,Team Total,Will Ecuador score over 0.5?,0.6811,0,0.4639,sharp,,1-0
+Ivory Coast vs Ecuador,Team Total,Will Ecuador score over 1.5?,0.2629,0,0.0691,poisson,,1-0
+Ivory Coast vs Ecuador,Team Total,Will Ivory Coast score over 0.5?,0.5888,1,0.1691,sharp,,1-0
+Ivory Coast vs Ecuador,Team Total,Will Ivory Coast score over 1.5?,0.1715,0,0.0294,poisson,,1-0
+Ivory Coast vs Ecuador,Total Goals,Will total goals be over 1.5?,0.5246,0,0.2752,poisson,,1-0
+Ivory Coast vs Ecuador,Total Goals,Will total goals be over 2.5?,0.2536,0,0.0643,poisson,,1-0
+Ivory Coast vs Ecuador,Total Goals,Will total goals be over 3.5?,0.0994,0,0.0099,poisson,,1-0
+Ivory Coast vs Ecuador,Total Goals O/E,Will the total goals be even?,0.5258,0,0.2765,poisson,,1-0
+Ivory Coast vs Ecuador,Total Goals O/E,Will the total goals be odd?,0.4742,1,0.2765,poisson,,1-0
+Sweden vs Tunisia,BTTS,Will NOT both teams score?,0.5358,0,0.2871,poisson,,5-1
+Sweden vs Tunisia,BTTS,Will both teams score?,0.4642,1,0.2871,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 0-0 Tunisia?,0.0958,0,0.0092,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 0-1 Tunisia?,0.0763,0,0.0058,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 1-0 Tunisia?,0.132,0,0.0174,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 1-1 Tunisia?,0.127,0,0.0161,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 2-0 Tunisia?,0.103,0,0.0106,poisson,,5-1
+Sweden vs Tunisia,Correct Score,Will the score be Sweden 2-1 Tunisia?,0.0919,0,0.0084,poisson,,5-1
+Sweden vs Tunisia,Double Chance,Sweden or Draw (1X),0.7815,1,0.0477,sharp,,5-1
+Sweden vs Tunisia,Double Chance,Sweden or Tunisia (12),0.7295,1,0.0732,sharp,,5-1
+Sweden vs Tunisia,Double Chance,Tunisia or Draw (X2),0.489,0,0.2391,sharp,,5-1
+Sweden vs Tunisia,First To Score,Will there be no goals (0-0)?,0.0958,0,0.0092,poisson,,5-1
+Sweden vs Tunisia,Handicap,Will Sweden avoid losing by 2+ (+1.5)?,0.9259,1,0.0055,poisson,,5-1
+Sweden vs Tunisia,Handicap,Will Sweden win by 2+ goals?,0.264,1,0.5417,poisson,,5-1
+Sweden vs Tunisia,Handicap,Will Sweden win by 3+ goals?,0.1064,1,0.7985,poisson,,5-1
+Sweden vs Tunisia,Handicap,Will Tunisia avoid losing by 2+ (+1.5)?,0.736,0,0.5417,poisson,,5-1
+Sweden vs Tunisia,Handicap,Will Tunisia win by 2+ goals?,0.0741,0,0.0055,poisson,,5-1
+Sweden vs Tunisia,Moneyline,Will Sweden win the match?,0.511,1,0.2391,sharp,,5-1
+Sweden vs Tunisia,Moneyline,Will Tunisia win the match?,0.2185,0,0.0477,sharp,,5-1
+Sweden vs Tunisia,Moneyline,Will the match end in a draw?,0.2705,0,0.0732,sharp,,5-1
+Sweden vs Tunisia,Team Total,Will Sweden score over 0.5?,0.7781,1,0.0492,poisson,,5-1
+Sweden vs Tunisia,Team Total,Will Sweden score over 1.5?,0.444,1,0.3091,poisson,,5-1
+Sweden vs Tunisia,Team Total,Will Tunisia score over 0.5?,0.5904,1,0.1678,poisson,,5-1
+Sweden vs Tunisia,Team Total,Will Tunisia score over 1.5?,0.2248,0,0.0505,poisson,,5-1
+Sweden vs Tunisia,Total Goals,Will total goals be over 1.5?,0.696,1,0.0924,poisson,,5-1
+Sweden vs Tunisia,Total Goals,Will total goals be over 2.5?,0.4297,1,0.3252,poisson,,5-1
+Sweden vs Tunisia,Total Goals,Will total goals be over 3.5?,0.2208,1,0.6072,poisson,,5-1
+Sweden vs Tunisia,Total Goals O/E,Will the total goals be even?,0.5139,1,0.2363,poisson,,5-1
+Sweden vs Tunisia,Total Goals O/E,Will the total goals be odd?,0.4861,0,0.2363,poisson,,5-1
+Belgium vs Egypt,BTTS,Will NOT both teams score?,0.5275,0,0.2783,poisson,,1-1
+Belgium vs Egypt,BTTS,Will both teams score?,0.4725,1,0.2783,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 0-0 Egypt?,0.0771,0,0.0059,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 1-0 Egypt?,0.1264,0,0.016,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 1-1 Egypt?,0.112,1,0.7885,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 2-0 Egypt?,0.1174,0,0.0138,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 2-1 Egypt?,0.0968,0,0.0094,poisson,,1-1
+Belgium vs Egypt,Correct Score,Will the score be Belgium 3-0 Egypt?,0.0703,0,0.0049,poisson,,1-1
+Belgium vs Egypt,Double Chance,Belgium or Draw (1X),0.8363,1,0.0268,sharp,,1-1
+Belgium vs Egypt,Double Chance,Belgium or Egypt (12),0.7638,0,0.5834,sharp,,1-1
+Spain vs Cape Verde,BTTS,Will NOT both teams score?,0.5458,1,0.2063,poisson,,0-0
+Spain vs Cape Verde,BTTS,Will both teams score?,0.4542,0,0.2063,poisson,,0-0
+Spain vs Cape Verde,Correct Score,Will the score be Spain 2-0 Cape Verde?,0.1004,0,0.0101,poisson,,0-0
+Spain vs Cape Verde,Correct Score,Will the score be Spain 2-1 Cape Verde?,0.0633,0,0.004,poisson,,0-0
+Spain vs Cape Verde,Correct Score,Will the score be Spain 3-0 Cape Verde?,0.1156,0,0.0134,poisson,,0-0
+Spain vs Cape Verde,Correct Score,Will the score be Spain 3-1 Cape Verde?,0.0729,0,0.0053,poisson,,0-0
+Spain vs Cape Verde,Correct Score,Will the score be Spain 4-0 Cape Verde?,0.0999,0,0.01,poisson,,0-0
+Spain vs Cape Verde,Double Chance,Cape Verde or Draw (X2),0.1155,1,0.7823,sharp,,0-0
+Spain vs Cape Verde,Double Chance,Spain or Cape Verde (12),0.9181,0,0.8429,sharp,,0-0
+Spain vs Cape Verde,Double Chance,Spain or Draw (1X),0.9664,1,0.0011,sharp,,0-0
+Spain vs Cape Verde,First To Score,Will there be no goals (0-0)?,0.03,1,0.9409,poisson,,0-0
+Spain vs Cape Verde,Handicap,Will Cape Verde avoid losing by 2+ (+1.5)?,0.263,1,0.5432,poisson,,0-0
+Spain vs Cape Verde,Handicap,Will Cape Verde win by 2+ goals?,0.03,0,0.0009,poisson,,0-0
+Spain vs Cape Verde,Handicap,Will Spain avoid losing by 2+ (+1.5)?,0.97,1,0.0009,poisson,,0-0
+Spain vs Cape Verde,Handicap,Will Spain win by 2+ goals?,0.737,0,0.5432,poisson,,0-0
+Spain vs Cape Verde,Handicap,Will Spain win by 3+ goals?,0.5407,0,0.2924,poisson,,0-0
+Spain vs Cape Verde,Moneyline,Will Cape Verde win the match?,0.0336,0,0.0011,sharp,,0-0
+Spain vs Cape Verde,Moneyline,Will Spain win the match?,0.8845,0,0.7823,sharp,,0-0
+Spain vs Cape Verde,Moneyline,Will the match end in a draw?,0.0819,1,0.8429,sharp,,0-0
+Spain vs Cape Verde,Team Total,Will Cape Verde score over 0.5?,0.4675,0,0.2186,poisson,,0-0
+Spain vs Cape Verde,Team Total,Will Cape Verde score over 1.5?,0.1319,0,0.0174,poisson,,0-0
+Spain vs Cape Verde,Team Total,Will Spain score over 0.5?,0.9684,0,0.9378,poisson,,0-0
+Spain vs Cape Verde,Team Total,Will Spain score over 1.5?,0.8593,0,0.7384,poisson,,0-0
+Spain vs Cape Verde,Total Goals,Will total goals be over 1.5?,0.9159,0,0.8389,poisson,,0-0
+Spain vs Cape Verde,Total Goals,Will total goals be over 2.5?,0.7741,0,0.5992,poisson,,0-0
+Spain vs Cape Verde,Total Goals,Will total goals be over 3.5?,0.583,0,0.3399,poisson,,0-0
+Spain vs Cape Verde,Total Goals O/E,Will the total goals be even?,0.5031,1,0.2469,poisson,,0-0
+Spain vs Cape Verde,Total Goals O/E,Will the total goals be odd?,0.4969,0,0.2469,poisson,,0-0
+France vs Senegal,Team Total,Will Senegal score over 1.5?,0.1727,0,0.0298,poisson,,3-1
+France vs Senegal,Total Goals,Will total goals be over 1.5?,0.7534,1,0.0608,poisson,,3-1
+France vs Senegal,Total Goals,Will total goals be over 2.5?,0.5038,1,0.2462,poisson,,3-1
+France vs Senegal,Total Goals,Will total goals be over 3.5?,0.2836,1,0.5132,poisson,,3-1
+France vs Senegal,Total Goals O/E,Will the total goals be even?,0.5102,1,0.2399,poisson,,3-1
+France vs Senegal,Total Goals O/E,Will the total goals be odd?,0.4898,0,0.2399,poisson,,3-1
+Iraq vs Norway,BTTS,Will NOT both teams score?,0.5161,0,0.2664,poisson,,1-4
+Iraq vs Norway,BTTS,Will both teams score?,0.4839,1,0.2664,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 0-1 Norway?,0.0804,0,0.0065,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 0-2 Norway?,0.116,0,0.0135,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 0-3 Norway?,0.1085,0,0.0118,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 0-4 Norway?,0.0761,0,0.0058,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 1-2 Norway?,0.0834,0,0.007,poisson,,1-4
+Iraq vs Norway,Correct Score,Will the score be Iraq 1-3 Norway?,0.078,0,0.0061,poisson,,1-4
+Iraq vs Norway,Double Chance,Iraq or Draw (1X),0.1978,0,0.0391,sharp,,1-4
+Iraq vs Norway,Double Chance,Iraq or Norway (12),0.8687,1,0.0172,sharp,,1-4
+Iraq vs Norway,Double Chance,Norway or Draw (X2),0.9336,1,0.0044,sharp,,1-4
+Iraq vs Norway,First To Score,Will there be no goals (0-0)?,0.0319,0,0.001,poisson,,1-4
+Iraq vs Norway,Handicap,Will Iraq avoid losing by 2+ (+1.5)?,0.3948,0,0.1559,poisson,,1-4
+Iraq vs Norway,Handicap,Will Iraq win by 2+ goals?,0.03,0,0.0009,poisson,,1-4
+Iraq vs Norway,Handicap,Will Iraq win by 3+ goals?,0.03,0,0.0009,poisson,,1-4
+Iraq vs Norway,Handicap,Will Norway avoid losing by 2+ (+1.5)?,0.97,1,0.0009,poisson,,1-4
+Iraq vs Norway,Handicap,Will Norway win by 2+ goals?,0.6052,1,0.1559,poisson,,1-4
+Iraq vs Norway,Moneyline,Will Iraq win the match?,0.0664,0,0.0044,sharp,,1-4
+Iraq vs Norway,Moneyline,Will Norway win the match?,0.8022,1,0.0391,sharp,,1-4
+Iraq vs Norway,Moneyline,Will the match end in a draw?,0.1313,0,0.0172,sharp,,1-4
+Iraq vs Norway,Team Total,Will Iraq score over 0.5?,0.5126,1,0.2376,poisson,,1-4
+Iraq vs Norway,Team Total,Will Iraq score over 1.5?,0.1623,0,0.0263,poisson,,1-4
+Iraq vs Norway,Team Total,Will Norway score over 0.5?,0.9395,1,0.0037,poisson,,1-4
+Iraq vs Norway,Team Total,Will Norway score over 1.5?,0.7697,1,0.053,poisson,,1-4
+Iraq vs Norway,Total Goals,Will total goals be over 1.5?,0.8689,1,0.0172,poisson,,1-4
+Iraq vs Norway,Total Goals,Will total goals be over 2.5?,0.6834,1,0.1002,poisson,,1-4
+Iraq vs Norway,Total Goals,Will total goals be over 3.5?,0.4683,1,0.2827,poisson,,1-4
+Iraq vs Norway,Total Goals O/E,Will the total goals be even?,0.5052,0,0.2552,poisson,,1-4
+Iraq vs Norway,Total Goals O/E,Will the total goals be odd?,0.4948,1,0.2552,poisson,,1-4
+England vs Croatia,BTTS,Will NOT both teams score?,0.5053,0,0.2553,poisson,,4-2
+England vs Croatia,BTTS,Will both teams score?,0.4947,1,0.2553,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 0-0 Croatia?,0.0771,0,0.0059,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 0-1 Croatia?,0.0616,0,0.0038,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 1-0 Croatia?,0.1197,0,0.0143,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 1-1 Croatia?,0.1178,0,0.0139,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 2-0 Croatia?,0.1063,0,0.0113,poisson,,4-2
+England vs Croatia,Correct Score,Will the score be England 2-1 Croatia?,0.0969,0,0.0094,poisson,,4-2
+England vs Croatia,Double Chance,Croatia or Draw (X2),0.4421,0,0.1955,sharp,,4-2
+England vs Croatia,Double Chance,England or Croatia (12),0.7525,1,0.0613,sharp,,4-2
+England vs Croatia,Double Chance,England or Draw (1X),0.8054,1,0.0379,sharp,,4-2
+England vs Croatia,First To Score,Will there be no goals (0-0)?,0.0771,0,0.0059,poisson,,4-2
+England vs Croatia,Handicap,Will Croatia avoid losing by 2+ (+1.5)?,0.6874,0,0.4725,poisson,,4-2
+England vs Croatia,Handicap,Will Croatia win by 2+ goals?,0.066,0,0.0044,poisson,,4-2
+England vs Croatia,Handicap,Will England avoid losing by 2+ (+1.5)?,0.934,1,0.0044,poisson,,4-2
+England vs Croatia,Handicap,Will England win by 2+ goals?,0.3126,1,0.4725,poisson,,4-2
+England vs Croatia,Handicap,Will England win by 3+ goals?,0.1391,0,0.0193,poisson,,4-2
+England vs Croatia,Moneyline,Will Croatia win the match?,0.1946,0,0.0379,sharp,,4-2
+England vs Croatia,Moneyline,Will England win the match?,0.5579,1,0.1955,sharp,,4-2
+England vs Croatia,Moneyline,Will the match end in a draw?,0.2475,0,0.0613,sharp,,4-2
+England vs Croatia,Team Total,Will Croatia score over 0.5?,0.5982,1,0.1614,poisson,,4-2
+England vs Croatia,Team Total,Will Croatia score over 1.5?,0.2319,1,0.59,poisson,,4-2
+England vs Croatia,Team Total,Will England score over 0.5?,0.8194,1,0.0326,poisson,,4-2
+England vs Croatia,Team Total,Will England score over 1.5?,0.5103,1,0.2398,poisson,,4-2
+England vs Croatia,Total Goals,Will total goals be over 1.5?,0.7416,1,0.0668,poisson,,4-2
+England vs Croatia,Total Goals,Will total goals be over 2.5?,0.4874,1,0.2628,poisson,,4-2
+England vs Croatia,Total Goals,Will total goals be over 3.5?,0.2691,1,0.5342,poisson,,4-2
+England vs Croatia,Total Goals O/E,Will the total goals be even?,0.5117,1,0.2384,poisson,,4-2
+England vs Croatia,Total Goals O/E,Will the total goals be odd?,0.4883,0,0.2384,poisson,,4-2
+Ghana vs Panama,BTTS,Will NOT both teams score?,0.4968,1,0.2532,poisson,,1-0
+Ghana vs Panama,BTTS,Will both teams score?,0.5032,0,0.2532,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 0-0 Panama?,0.0883,0,0.0078,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 0-1 Panama?,0.0844,0,0.0071,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 1-0 Panama?,0.1124,1,0.7878,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 1-1 Panama?,0.1313,0,0.0172,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 2-0 Panama?,0.0828,0,0.0069,poisson,,1-0
+Ghana vs Panama,Correct Score,Will the score be Ghana 2-1 Panama?,0.0891,0,0.0079,poisson,,1-0
+Ghana vs Panama,Double Chance,Ghana or Draw (1X),0.718,1,0.0795,sharp,,1-0
+Ghana vs Panama,Double Chance,Ghana or Panama (12),0.7236,1,0.0764,sharp,,1-0
+Ghana vs Panama,Double Chance,Panama or Draw (X2),0.5583,0,0.3117,sharp,,1-0
+Ghana vs Panama,First To Score,Will there be no goals (0-0)?,0.0883,0,0.0078,poisson,,1-0
+Ghana vs Panama,Handicap,Will Ghana avoid losing by 2+ (+1.5)?,0.8898,1,0.0121,poisson,,1-0
+Ghana vs Panama,Handicap,Will Ghana win by 2+ goals?,0.2146,0,0.0461,poisson,,1-0
+Ghana vs Panama,Handicap,Will Ghana win by 3+ goals?,0.0811,0,0.0066,poisson,,1-0
+Ghana vs Panama,Handicap,Will Panama avoid losing by 2+ (+1.5)?,0.7854,1,0.0461,poisson,,1-0
+Ghana vs Panama,Handicap,Will Panama win by 2+ goals?,0.1102,0,0.0121,poisson,,1-0
+Ghana vs Panama,Moneyline,Will Ghana win the match?,0.4417,1,0.3117,sharp,,1-0
+Ghana vs Panama,Moneyline,Will Panama win the match?,0.282,0,0.0795,sharp,,1-0
+Ghana vs Panama,Moneyline,Will the match end in a draw?,0.2764,0,0.0764,sharp,,1-0
+Ghana vs Panama,Team Total,Will Ghana score over 0.5?,0.7561,1,0.0595,poisson,,1-0
+Ghana vs Panama,Team Total,Will Ghana score over 1.5?,0.412,0,0.1697,poisson,,1-0
+Ghana vs Panama,Team Total,Will Panama score over 0.5?,0.6588,0,0.434,poisson,,1-0
+Ghana vs Panama,Team Total,Will Panama score over 1.5?,0.2919,0,0.0852,poisson,,1-0
+Ghana vs Panama,Total Goals,Will total goals be over 1.5?,0.715,0,0.5112,poisson,,1-0
+Ghana vs Panama,Total Goals,Will total goals be over 2.5?,0.4527,0,0.2049,poisson,,1-0
+Ghana vs Panama,Total Goals,Will total goals be over 3.5?,0.2395,0,0.0574,poisson,,1-0
+Ghana vs Panama,Total Goals O/E,Will the total goals be even?,0.5136,0,0.2638,poisson,,1-0
+Ghana vs Panama,Total Goals O/E,Will the total goals be odd?,0.4864,1,0.2638,poisson,,1-0
+Uzbekistan vs Colombia,BTTS,Will NOT both teams score?,0.5865,0,0.344,poisson,,1-3
+Uzbekistan vs Colombia,BTTS,Will both teams score?,0.4135,1,0.344,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 0-0 Colombia?,0.0744,0,0.0055,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 0-1 Colombia?,0.1384,0,0.0192,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 0-2 Colombia?,0.1425,0,0.0203,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 0-3 Colombia?,0.0954,0,0.0091,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 1-1 Colombia?,0.0947,0,0.009,poisson,,1-3
+Uzbekistan vs Colombia,Correct Score,Will the score be Uzbekistan 1-2 Colombia?,0.0914,0,0.0084,poisson,,1-3
+Uzbekistan vs Colombia,Double Chance,Colombia or Draw (X2),0.8952,1,0.011,sharp,,1-3
+Uzbekistan vs Colombia,Double Chance,Uzbekistan or Colombia (12),0.797,1,0.0412,sharp,,1-3
+Uzbekistan vs Colombia,Double Chance,Uzbekistan or Draw (1X),0.3078,0,0.0947,sharp,,1-3
+Uzbekistan vs Colombia,First To Score,Will there be no goals (0-0)?,0.0744,0,0.0055,poisson,,1-3
+Uzbekistan vs Colombia,Handicap,Will Colombia avoid losing by 2+ (+1.5)?,0.97,1,0.0009,poisson,,1-3
+Uzbekistan vs Colombia,Handicap,Will Colombia win by 2+ goals?,0.4406,1,0.3129,poisson,,1-3
+Uzbekistan vs Colombia,Handicap,Will Uzbekistan avoid losing by 2+ (+1.5)?,0.5594,0,0.3129,poisson,,1-3
+Uzbekistan vs Colombia,Handicap,Will Uzbekistan win by 2+ goals?,0.03,0,0.0009,poisson,,1-3
+Uzbekistan vs Colombia,Handicap,Will Uzbekistan win by 3+ goals?,0.03,0,0.0009,poisson,,1-3
+Uzbekistan vs Colombia,Moneyline,Will Colombia win the match?,0.6922,1,0.0947,sharp,,1-3
+Uzbekistan vs Colombia,Moneyline,Will Uzbekistan win the match?,0.1048,0,0.011,sharp,,1-3
+Uzbekistan vs Colombia,Moneyline,Will the match end in a draw?,0.203,0,0.0412,sharp,,1-3
+Uzbekistan vs Colombia,Team Total,Will Colombia score over 0.5?,0.8656,1,0.0181,poisson,,1-3
+Uzbekistan vs Colombia,Team Total,Will Colombia score over 1.5?,0.5959,1,0.1633,poisson,,1-3
+Uzbekistan vs Colombia,Team Total,Will Uzbekistan score over 0.5?,0.4734,1,0.2773,poisson,,1-3
+Uzbekistan vs Colombia,Team Total,Will Uzbekistan score over 1.5?,0.1357,0,0.0184,poisson,,1-3
+Uzbekistan vs Colombia,Total Goals,Will total goals be over 1.5?,0.7455,1,0.0648,poisson,,1-3
+Uzbekistan vs Colombia,Total Goals,Will total goals be over 2.5?,0.4937,1,0.2563,poisson,,1-3
+Uzbekistan vs Colombia,Total Goals,Will total goals be over 3.5?,0.2746,1,0.5262,poisson,,1-3
+Uzbekistan vs Colombia,Total Goals O/E,Will the total goals be even?,0.5098,1,0.2403,poisson,,1-3
+Uzbekistan vs Colombia,Total Goals O/E,Will the total goals be odd?,0.4902,0,0.2403,poisson,,1-3
+Czech Republic vs South Africa,BTTS,Will NOT both teams score?,0.4929,0,0.243,poisson,,1-1
+Czech Republic vs South Africa,BTTS,Will both teams score?,0.5071,1,0.243,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 0-0 South Africa?,0.0753,0,0.0057,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 0-1 South Africa?,0.0631,0,0.004,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 1-0 South Africa?,0.1151,0,0.0132,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 1-1 South Africa?,0.1191,1,0.776,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 2-0 South Africa?,0.1013,0,0.0103,poisson,,1-1
+Czech Republic vs South Africa,Correct Score,Will the score be Czech Republic 2-1 South Africa?,0.0969,0,0.0094,poisson,,1-1
+Czech Republic vs South Africa,Double Chance,Czech Republic or Draw (1X),0.792,1,0.0433,sharp,,1-1
+Czech Republic vs South Africa,Double Chance,Czech Republic or South Africa (12),0.75,0,0.5625,sharp,,1-1
+Czech Republic vs South Africa,Double Chance,South Africa or Draw (X2),0.4579,1,0.2939,sharp,,1-1
+Czech Republic vs South Africa,First To Score,Will there be no goals (0-0)?,0.0753,0,0.0057,poisson,,1-1
+Czech Republic vs South Africa,Handicap,Will Czech Republic avoid losing by 2+ (+1.5)?,0.9269,1,0.0053,poisson,,1-1
+Czech Republic vs South Africa,Handicap,Will Czech Republic win by 2+ goals?,0.3001,0,0.0901,poisson,,1-1
+Czech Republic vs South Africa,Handicap,Will Czech Republic win by 3+ goals?,0.1319,0,0.0174,poisson,,1-1
+Czech Republic vs South Africa,Handicap,Will South Africa avoid losing by 2+ (+1.5)?,0.6999,1,0.0901,poisson,,1-1
+Czech Republic vs South Africa,Handicap,Will South Africa win by 2+ goals?,0.0731,0,0.0053,poisson,,1-1
+Czech Republic vs South Africa,Moneyline,Will Czech Republic win the match?,0.5421,0,0.2939,sharp,,1-1
+Czech Republic vs South Africa,Moneyline,Will South Africa win the match?,0.208,0,0.0433,sharp,,1-1
+Czech Republic vs South Africa,Moneyline,Will the match end in a draw?,0.25,1,0.5625,sharp,,1-1
+Czech Republic vs South Africa,Team Total,Will Czech Republic score over 0.5?,0.8159,1,0.0339,poisson,,1-1
+Czech Republic vs South Africa,Team Total,Will Czech Republic score over 1.5?,0.5043,0,0.2543,poisson,,1-1
+Czech Republic vs South Africa,Team Total,Will South Africa score over 0.5?,0.6159,1,0.1475,poisson,,1-1
+Czech Republic vs South Africa,Team Total,Will South Africa score over 1.5?,0.2484,0,0.0617,poisson,,1-1
+Czech Republic vs South Africa,Total Goals,Will total goals be over 1.5?,0.7465,1,0.0643,poisson,,1-1
+Czech Republic vs South Africa,Total Goals,Will total goals be over 2.5?,0.4938,0,0.2438,poisson,,1-1
+Czech Republic vs South Africa,Total Goals,Will total goals be over 3.5?,0.2747,0,0.0755,poisson,,1-1
+Czech Republic vs South Africa,Total Goals O/E,Will the total goals be even?,0.5117,1,0.2384,poisson,,1-1
+Czech Republic vs South Africa,Total Goals O/E,Will the total goals be odd?,0.4883,0,0.2384,poisson,,1-1
+Canada vs Qatar,BTTS,Will NOT both teams score?,0.5556,1,0.1975,poisson,,6-0
+Canada vs Qatar,BTTS,Will both teams score?,0.4444,0,0.1975,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 1-0 Qatar?,0.116,0,0.0135,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 1-1 Qatar?,0.084,0,0.0071,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 2-0 Qatar?,0.1352,0,0.0183,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 2-1 Qatar?,0.0916,0,0.0084,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 3-0 Qatar?,0.1023,0,0.0105,poisson,,6-0
+Canada vs Qatar,Correct Score,Will the score be Canada 3-1 Qatar?,0.0693,0,0.0048,poisson,,6-0
+Canada vs Qatar,Double Chance,Canada or Draw (1X),0.9081,1,0.0084,sharp,,6-0
+Canada vs Qatar,Double Chance,Canada or Qatar (12),0.8234,1,0.0312,sharp,,6-0
+Canada vs Qatar,Double Chance,Qatar or Draw (X2),0.2685,0,0.0721,sharp,,6-0
+Canada vs Qatar,First To Score,Will there be no goals (0-0)?,0.0558,0,0.0031,poisson,,6-0
+Norway vs Senegal,Correct Score,Will the score be Norway 3-0 Senegal?,0.1511,0,0.0228,poisson,,3-2
+Norway vs Senegal,Correct Score,Will the score be Norway 3-1 Senegal?,0.0577,0,0.0033,poisson,,3-2
+Norway vs Senegal,Correct Score,Will the score be Norway 4-0 Senegal?,0.1238,0,0.0153,poisson,,3-2
+Norway vs Senegal,Correct Score,Will the score be Norway 5-0 Senegal?,0.0811,0,0.0066,poisson,,3-2
+Jordan vs Algeria,Correct Score,Will the score be Jordan 1-3 Algeria?,0.0665,0,0.0044,poisson,,1-2
+Portugal vs Uzbekistan,Correct Score,Will the score be Portugal 4-0 Uzbekistan?,0.0866,0,0.0075,poisson,,5-0
+Portugal vs Uzbekistan,Correct Score,Will the score be Portugal 5-0 Uzbekistan?,0.1627,1,0.7011,poisson,,5-0
+Portugal vs Uzbekistan,Correct Score,Will the score be Portugal 6-0 Uzbekistan?,0.1221,0,0.0149,poisson,,5-0
+Portugal vs Uzbekistan,Correct Score,Will the score be Portugal 7-0 Uzbekistan?,0.0785,0,0.0062,poisson,,5-0
+England vs Ghana,BTTS,Will NOT both teams score?,0.5577,1,0.1956,poisson,,0-0
+England vs Ghana,BTTS,Will both teams score?,0.4423,0,0.1956,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 1-0 Ghana?,0.0861,0,0.0074,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 2-0 Ghana?,0.1255,0,0.0158,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 2-1 Ghana?,0.079,0,0.0062,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 3-0 Ghana?,0.1188,0,0.0141,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 3-1 Ghana?,0.0748,0,0.0056,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 4-0 Ghana?,0.0844,0,0.0071,poisson,,0-0
+England vs Ghana,Double Chance,England or Draw (1X),0.946,1,0.0029,sharp,,0-0
+England vs Ghana,Double Chance,England or Ghana (12),0.8784,0,0.7716,sharp,,0-0
+England vs Ghana,Double Chance,Ghana or Draw (X2),0.1756,1,0.6796,sharp,,0-0
+England vs Ghana,First To Score,Will there be no goals (0-0)?,0.0333,1,0.9345,poisson,,0-0
+England vs Ghana,Handicap,Will England avoid losing by 2+ (+1.5)?,0.97,1,0.0009,poisson,,0-0
+England vs Ghana,Handicap,Will England win by 2+ goals?,0.6318,0,0.3992,poisson,,0-0
+England vs Ghana,Handicap,Will England win by 3+ goals?,0.4126,0,0.1702,poisson,,0-0
+England vs Ghana,Handicap,Will Ghana avoid losing by 2+ (+1.5)?,0.3682,1,0.3992,poisson,,0-0
+England vs Ghana,Handicap,Will Ghana win by 2+ goals?,0.03,0,0.0009,poisson,,0-0
+England vs Ghana,Moneyline,Will England win the match?,0.8244,0,0.6796,sharp,,0-0
+England vs Ghana,Moneyline,Will Ghana win the match?,0.054,0,0.0029,sharp,,0-0
+England vs Ghana,Moneyline,Will the match end in a draw?,0.1216,1,0.7716,sharp,,0-0
+England vs Ghana,Team Total,Will England score over 0.5?,0.9416,0,0.8866,poisson,,0-0
+England vs Ghana,Team Total,Will England score over 1.5?,0.7758,0,0.6019,poisson,,0-0
+England vs Ghana,Team Total,Will Ghana score over 0.5?,0.4673,0,0.2184,poisson,,0-0
+England vs Ghana,Team Total,Will Ghana score over 1.5?,0.1318,0,0.0174,poisson,,0-0
+England vs Ghana,Total Goals,Will total goals be over 1.5?,0.8632,0,0.7451,poisson,,0-0
+England vs Ghana,Total Goals,Will total goals be over 2.5?,0.6738,0,0.454,poisson,,0-0
+England vs Ghana,Total Goals,Will total goals be over 3.5?,0.4571,0,0.2089,poisson,,0-0
+England vs Ghana,Total Goals O/E,Will the total goals be even?,0.5049,1,0.2451,poisson,,0-0
+England vs Ghana,Total Goals O/E,Will the total goals be odd?,0.4951,0,0.2451,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 0-0 Ghana?,0.2044,1,0.633,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 0-1 Ghana?,0.0523,0,0.0027,poisson,,0-0
+England vs Ghana,Correct Score,Will the score be England 1-1 Ghana?,0.0763,0,0.0058,poisson,,0-0
+Panama vs Croatia,BTTS,Will NOT both teams score?,0.5556,1,0.1975,poisson,,0-1
+Panama vs Croatia,BTTS,Will both teams score?,0.4444,0,0.1975,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 0-0 Croatia?,0.0689,0,0.0047,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 0-1 Croatia?,0.128,1,0.7604,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 0-2 Croatia?,0.1332,0,0.0177,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 0-3 Croatia?,0.0897,0,0.008,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 1-1 Croatia?,0.0972,0,0.0094,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 1-2 Croatia?,0.0944,0,0.0089,poisson,,0-1
+Panama vs Croatia,Double Chance,Croatia or Draw (X2),0.8831,1,0.0137,sharp,,0-1
+Panama vs Croatia,Double Chance,Panama or Croatia (12),0.7946,1,0.0422,sharp,,0-1
+Panama vs Croatia,Double Chance,Panama or Draw (1X),0.3223,0,0.1039,sharp,,0-1
+Panama vs Croatia,First To Score,Will there be no goals (0-0)?,0.0689,0,0.0047,poisson,,0-1
+Panama vs Croatia,Handicap,Will Croatia avoid losing by 2+ (+1.5)?,0.9677,1,0.001,poisson,,0-1
+Panama vs Croatia,Handicap,Will Croatia win by 2+ goals?,0.4298,0,0.1847,poisson,,0-1
+Panama vs Croatia,Handicap,Will Panama avoid losing by 2+ (+1.5)?,0.5702,1,0.1847,poisson,,0-1
+Panama vs Croatia,Handicap,Will Panama win by 2+ goals?,0.0323,0,0.001,poisson,,0-1
+Panama vs Croatia,Handicap,Will Panama win by 3+ goals?,0.03,0,0.0009,poisson,,0-1
+Panama vs Croatia,Moneyline,Will Croatia win the match?,0.6777,1,0.1039,sharp,,0-1
+Panama vs Croatia,Moneyline,Will Panama win the match?,0.1169,0,0.0137,sharp,,0-1
+Panama vs Croatia,Moneyline,Will the match end in a draw?,0.2054,0,0.0422,sharp,,0-1
+Panama vs Croatia,Team Total,Will Croatia score over 0.5?,0.8675,1,0.0176,poisson,,0-1
+Panama vs Croatia,Team Total,Will Croatia score over 1.5?,0.5997,0,0.3596,poisson,,0-1
+Panama vs Croatia,Team Total,Will Panama score over 0.5?,0.508,0,0.2581,poisson,,0-1
+Panama vs Croatia,Team Total,Will Panama score over 1.5?,0.159,0,0.0253,poisson,,0-1
+Panama vs Croatia,Total Goals,Will total goals be over 1.5?,0.7606,0,0.5785,poisson,,0-1
+Panama vs Croatia,Total Goals,Will total goals be over 2.5?,0.5138,0,0.264,poisson,,0-1
+Panama vs Croatia,Total Goals,Will total goals be over 3.5?,0.2926,0,0.0856,poisson,,0-1
+Panama vs Croatia,Total Goals O/E,Will the total goals be even?,0.5096,0,0.2597,poisson,,0-1
+Panama vs Croatia,Total Goals O/E,Will the total goals be odd?,0.4904,1,0.2597,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 1-0 Croatia?,0.074,0,0.0055,poisson,,0-1
+Panama vs Croatia,Correct Score,Will the score be Panama 0-4 Croatia?,0.0772,0,0.006,poisson,,0-1
+Colombia vs DR Congo,BTTS,Will NOT both teams score?,0.6047,1,0.1563,poisson,,1-0
+Colombia vs DR Congo,BTTS,Will both teams score?,0.3953,0,0.1563,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 0-0 DR Congo?,0.097,0,0.0094,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 1-0 DR Congo?,0.1567,1,0.7112,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 1-1 DR Congo?,0.1078,0,0.0116,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 2-0 DR Congo?,0.1393,0,0.0194,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 2-1 DR Congo?,0.0898,0,0.0081,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 3-0 DR Congo?,0.0804,0,0.0065,poisson,,1-0
+Colombia vs DR Congo,Double Chance,Colombia or DR Congo (12),0.7624,1,0.0565,sharp,,1-0
+Colombia vs DR Congo,Double Chance,Colombia or Draw (1X),0.8701,1,0.0169,sharp,,1-0
+Colombia vs DR Congo,Double Chance,DR Congo or Draw (X2),0.3675,0,0.1351,sharp,,1-0
+Colombia vs DR Congo,First To Score,Will there be no goals (0-0)?,0.097,0,0.0094,poisson,,1-0
+Colombia vs DR Congo,Handicap,Will Colombia avoid losing by 2+ (+1.5)?,0.9661,1,0.0011,poisson,,1-0
+Colombia vs DR Congo,Handicap,Will Colombia win by 2+ goals?,0.3677,0,0.1352,poisson,,1-0
+Colombia vs DR Congo,Handicap,Will Colombia win by 3+ goals?,0.1688,0,0.0285,poisson,,1-0
+Colombia vs DR Congo,Handicap,Will DR Congo avoid losing by 2+ (+1.5)?,0.6323,1,0.1352,poisson,,1-0
+Colombia vs DR Congo,Handicap,Will DR Congo win by 2+ goals?,0.0339,0,0.0011,poisson,,1-0
+Colombia vs DR Congo,Moneyline,Will Colombia win the match?,0.6325,1,0.1351,sharp,,1-0
+Colombia vs DR Congo,Moneyline,Will DR Congo win the match?,0.1299,0,0.0169,sharp,,1-0
+Colombia vs DR Congo,Moneyline,Will the match end in a draw?,0.2376,0,0.0565,sharp,,1-0
+Colombia vs DR Congo,Team Total,Will Colombia score over 0.5?,0.8231,1,0.0313,poisson,,1-0
+Colombia vs DR Congo,Team Total,Will Colombia score over 1.5?,0.5167,0,0.267,poisson,,1-0
+Colombia vs DR Congo,Team Total,Will DR Congo score over 0.5?,0.4752,0,0.2258,poisson,,1-0
+Colombia vs DR Congo,Team Total,Will DR Congo score over 1.5?,0.1368,0,0.0187,poisson,,1-0
+Colombia vs DR Congo,Total Goals,Will total goals be over 1.5?,0.6907,0,0.4771,poisson,,1-0
+Colombia vs DR Congo,Total Goals,Will total goals be over 2.5?,0.4243,0,0.18,poisson,,1-0
+Colombia vs DR Congo,Total Goals,Will total goals be over 3.5?,0.2165,0,0.0469,poisson,,1-0
+Colombia vs DR Congo,Total Goals O/E,Will the total goals be even?,0.5126,0,0.2628,poisson,,1-0
+Colombia vs DR Congo,Total Goals O/E,Will the total goals be odd?,0.4874,1,0.2628,poisson,,1-0
+Colombia vs DR Congo,Correct Score,Will the score be Colombia 0-1 DR Congo?,0.0711,0,0.0051,poisson,,1-0

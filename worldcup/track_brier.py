@@ -145,7 +145,8 @@ def main():
             p = float(r["prob"])
             rows.append(dict(match=r["match"], market=r["market"], question=r["question"],
                              prob=p, outcome=o, brier=round((p - o) ** 2, 4),
-                             source=str(r["source"]).split(":")[0], tier=r["tier"],
+                             source=str(r["source"]).split(":")[0],
+                             tier=r.get("tier", ""),
                              score=f"{hg}-{ag}"))
     if not rows:
         print(f"{len(fin)} finished match(es) but no settleable goal-market questions found.")
